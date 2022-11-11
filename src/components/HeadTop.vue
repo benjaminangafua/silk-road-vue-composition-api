@@ -21,7 +21,7 @@ import  {RouterLink}  from 'vue-router';
                 <!-- <i class="fa-facebook-f" -->
                 <hr class="divider">
                 <div class="bottom-nav">
-                    <div><RouterLink to="/home-widget"> Widget</RouterLink></div>
+                    <div><RouterLink to="/widget"> Widget</RouterLink></div>
 
                     <div class="prty-btn"><button>Post a Property</button></div>
                 </div>

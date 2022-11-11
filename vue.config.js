@@ -1,0 +1,1 @@
+module.exports = { publicPath: import.meta.env.NODE_ENV === "production" ? "/silk-road-composition-api/" : "/", };
