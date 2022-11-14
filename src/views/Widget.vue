@@ -3,7 +3,7 @@
     
 <div class="main-widget">
     <div class="filter-line">
-        <div class="filter-cup">\/ FILTER</div>
+        <div class="filter-cup"><font-awesome-icon :icon="['fas', 'filter']" /> FILTER</div>
         <div class="filter-nav">
             <div>All</div>
             <div>Rent</div>
@@ -55,7 +55,7 @@
 
 <div class="bottom-content">
     <div>OUR LATEST POSTINGS</div>
-    <div>\/</div>
+    <div><font-awesome-icon :icon="['fas', 'filter']" /></div>
 </div>
 
 </template>

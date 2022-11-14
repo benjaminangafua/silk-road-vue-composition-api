@@ -75,12 +75,8 @@ import FooterDownVue from '../components/FooterDown.vue';
                 </div>
                 <div class="nav-icon">
                     <div class="grd-ls">
-                        <div>VIEW</div>
-                        
-                        <div><router-link to="/list"><i class="fas fa-bars"></i></router-link></div>
-                            <div>
-                              <router-link to="/grid"> <i class="fas fa-th"></i> </router-link>
-                            </div>
+                        <div>View</div> <div><router-link to="/list"><span class="material-symbols-outlined">list</span></router-link></div>
+                        <div><router-link to="/grid"> <span class="material-symbols-outlined">grid_view </span> </router-link></div>
                     </div>
                     <div class="srch-filter">
                         <div class="srt">Sort by</div>
@@ -111,10 +107,11 @@ import FooterDownVue from '../components/FooterDown.vue';
                                 <div class="sm-t">Peter Wayne</div>
                             </div>
                             <div class="icons-layout">
-                                <div class="icon">1</div>
-                                <div class="icon">2</div>
-                                <div class="icon">3</div>
-                                <div class="icon">4</div>
+                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
+                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
+                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
                             </div>
                         </div>
                     </div>
@@ -132,10 +129,11 @@ import FooterDownVue from '../components/FooterDown.vue';
                                 <div class="sm-t">Peter Wayne</div>
                             </div>
                             <div class="icons-layout">
-                                <div class="icon">1</div>
-                                <div class="icon">2</div>
-                                <div class="icon">3</div>
-                                <div class="icon">4</div>
+                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
+                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
+                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
                             </div>
                         </div>
                     </div>
@@ -153,10 +151,11 @@ import FooterDownVue from '../components/FooterDown.vue';
                                 <div class="sm-t">Peter Wayne</div>
                             </div>
                             <div class="icons-layout">
-                                <div class="icon">1</div>
-                                <div class="icon">2</div>
-                                <div class="icon">3</div>
-                                <div class="icon">4</div>
+                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
+                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
+                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
                             </div>
                         </div>
                     </div>
@@ -174,10 +173,11 @@ import FooterDownVue from '../components/FooterDown.vue';
                                 <div class="sm-t">Peter Wayne</div>
                             </div>
                             <div class="icons-layout">
-                                <div class="icon">1</div>
-                                <div class="icon">2</div>
-                                <div class="icon">3</div>
-                                <div class="icon">4</div>
+                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
+                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
+                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
                             </div>
                         </div>
                     </div>
@@ -195,10 +195,11 @@ import FooterDownVue from '../components/FooterDown.vue';
                                 <div class="sm-t">Peter Wayne</div>
                             </div>
                             <div class="icons-layout">
-                                <div class="icon">1</div>
-                                <div class="icon">2</div>
-                                <div class="icon">3</div>
-                                <div class="icon">4</div>
+                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
+                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
+                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
                             </div>
                         </div>
                     </div>
@@ -216,10 +217,11 @@ import FooterDownVue from '../components/FooterDown.vue';
                                 <div class="sm-t">Peter Wayne</div>
                             </div>
                             <div class="icons-layout">
-                                <div class="icon">1</div>
-                                <div class="icon">2</div>
-                                <div class="icon">3</div>
-                                <div class="icon">4</div>
+                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
+                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
+                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
                             </div>
                         </div>
                     </div>
@@ -238,10 +240,11 @@ import FooterDownVue from '../components/FooterDown.vue';
                                 <div class="sm-t">Peter Wayne</div>
                             </div>
                             <div class="icons-layout">
-                                <div class="icon">1</div>
-                                <div class="icon">2</div>
-                                <div class="icon">3</div>
-                                <div class="icon">4</div>
+                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
+                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
+                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
                             </div>
                         </div>
                     </div>
@@ -260,10 +263,11 @@ import FooterDownVue from '../components/FooterDown.vue';
                                 <div class="sm-t">Peter Wayne</div>
                             </div>
                             <div class="icons-layout">
-                                <div class="icon">1</div>
-                                <div class="icon">2</div>
-                                <div class="icon">3</div>
-                                <div class="icon">4</div>
+                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
+                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
+                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
                             </div>
                         </div>
                     </div>
@@ -281,10 +285,11 @@ import FooterDownVue from '../components/FooterDown.vue';
                                 <div class="sm-t">Peter Wayne</div>
                             </div>
                             <div class="icons-layout">
-                                <div class="icon">1</div>
-                                <div class="icon">2</div>
-                                <div class="icon">3</div>
-                                <div class="icon">4</div>
+                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
+                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
+                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
                             </div>
                         </div>
                     </div>

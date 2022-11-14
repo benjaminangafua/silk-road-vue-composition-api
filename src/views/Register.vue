@@ -20,16 +20,27 @@
                     <h2>REGISTRATION</h2>
                 </div>
                 <div class="log-input">
-                    <div class="input2"><input type="text" placeholder="Full name"></div>
+                    <div class="input1"  id="placeholder-p"><input type="text" placeholder="Full name">
+                    
+                        <font-awesome-icon id="lock1" :icon="['fas', 'user']" />
+                    </div>
 
-                    <div class="input1">
+                    <div class="input2" id="placeholder-p">
                         <select name="c-code" id="">
                             <option value="+231">+231</option>
                             <option value="+234">+234</option>
                             <option value="+134">+134</option>
                             <option value="+412">+412</option>
-                        </select> <input type="text" placeholder="Phone number"></div>
-                    <div class="input2"><input type="text" placeholder="Password"></div>
+                        </select> 
+                        <input type="text" placeholder="Phone number">
+                        <font-awesome-icon id="phoneAlt" :icon="['fas', 'phone-alt']" />
+                    </div>
+
+                    <div class="input3"  id="placeholder-p"><input type="text" placeholder="Password">
+                    
+                        <font-awesome-icon id="lock1" :icon="['fas', 'lock']" />
+                    </div>
+                   
                     <div class="agree-term">I agree to the terms and conditions <input type="checkbox" name="" id=""></div>
                     <div class="btn"><button>Register</button></div>
                 </div>

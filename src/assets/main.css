@@ -4,6 +4,8 @@
     --dark-gray-clr: #748090;
     --green-clr: #20B2AA;
     --white-clr: #fff;
+    --blue-clr: #4169E1;
+    --black-clr: #000;
 }
 
 
@@ -13,13 +15,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* height: 100vh; */
 }
 
 .container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.418)), url("./images/building4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 100vh; */
 }
 
 
@@ -39,9 +41,7 @@ a {
 .header {
     display: grid;
     grid-template-columns: 15% 77%;
-    /* background-color: var(--bg-color); */
     justify-content: space-around;
-    /* align-content: start; */
     padding: 25px 20px;
     color: #B5BABF;
 }
@@ -49,10 +49,10 @@ a {
 .logo {
     padding: 25px;
     font-weight: 900;
-    color: #fff;
+    color: var(--white-clr);
     font-size: 20px;
     letter-spacing: 0.01px;
-    background-color: #000;
+    background-color: var(--black-clr);
     place-self: start end;
     word-spacing: 0.01px;
 }
@@ -90,7 +90,7 @@ a {
 }
 
 .aut-m {
-    color: #fff;
+    color: var(--white-clr);
     padding: 10px auto;
 }
 
@@ -102,12 +102,12 @@ a {
 .bottom-nav .prty-btn {
     justify-self: end;
     padding: 5px 10px;
-    background-color: #4169E1;
+    background-color: var(--blue-clr);
     border-radius: 5px;
 }
 
 .bottom-nav button {
-    color: #fff;
+    color: var(--white-clr);
     background-color: transparent;
     border: none;
 }
@@ -120,7 +120,7 @@ a {
     margin-top: 10%;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: var(--white-clr);
 }
 
 .main div:first-child {
@@ -142,7 +142,7 @@ a {
 }
 
 .main div input::placeholder {
-    color: #fff;
+    color: var(--white-clr);
     opacity: 1;
 }
 
@@ -154,7 +154,7 @@ a {
 /*  HOME LOGGED IN STYLE*/
 
 .aut1-logged {
-    color: #fff;
+    color: var(--white-clr);
 }
 
 .bottom-content {
@@ -164,13 +164,13 @@ a {
     display: grid;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: var(--white-clr);
 }
 
 .bottom-content div:last-child {
-    border: 1px solid #fff;
+    border: 1px solid var(--white-clr);
     border-radius: 100%;
-    padding: 1px 5px;
+    padding: 5px 9px;
 }
 
 .bottom-content div:first-child {
@@ -189,7 +189,7 @@ a {
     margin: 10% 20%;
     padding: 20px;
     display: grid;
-    color: #fff;
+    color: var(--white-clr);
     background-color: rgba(0, 0, 0, 0.603);
 }
 
@@ -244,7 +244,7 @@ a {
     margin-bottom: 3%;
     background-color: var(--dark-gray-clr);
     border: none;
-    color: #fff;
+    color: var(--white-clr);
 }
 
 .l-detail-select select {
@@ -259,14 +259,14 @@ a {
 .r-detail-select div button,
 .content button {
     padding: 8px 32px;
-    color: #fff;
+    color: var(--white-clr);
     border: none;
     border-radius: 5px;
 }
 
 .r-detail-select div button {
     float: right;
-    background-color: #4169E1;
+    background-color: var(--blue-clr);
 }
 
 input[type=range] {
@@ -280,7 +280,7 @@ input[type=range]::-webkit-slider-thumb,
 input[type=range]::-moz-range-thumb {
     border-radius: 50px;
     border: double 1px var(--green-clr);
-    background: #000;
+    background: var(--black-clr);
 }
 
 
@@ -308,8 +308,8 @@ input[type=range]::-moz-range-thumb {
     grid-template-columns: 54% auto;
     margin: 10% 17%;
     padding: 70px 50px;
-    color: #fff;
-    border: 1px solid #fff;
+    color: var(--white-clr);
+    border: 1px solid var(--white-clr);
     background-color: rgba(0, 0, 0, 0.719);
 }
 
@@ -322,7 +322,7 @@ input[type=range]::-moz-range-thumb {
     display: grid;
     margin: -35% 20% 0% 53%;
     padding: 20px 40px 29px 40px;
-    background-color: #fff;
+    background-color: var(--white-clr);
 }
 
 .heading h2 {
@@ -337,24 +337,42 @@ input[type=range]::-moz-range-thumb {
     margin-bottom: 10%;
 }
 
-.input2 input {
-    width: 100%;
-    padding: 8px 0 8px 5px;
+.input1 input,
+.input2 input,
+.input3 input {
+    padding: 8px 0 8px 40px;
     border: none;
     background-color: #D7DCE2;
+    width: 85%;
 }
 
-.input1 input {
-    width: 75%;
-    padding: 8px 0 8px 5px;
-    margin-left: -6px;
+#phoneAlt {
+    position: absolute;
+    float: left;
+    margin-left: -15%;
+    margin-top: 0.5%;
+}
+
+.input2 input {
+    width: 60%;
+    margin-left: 0;
+}
+
+.input2 select {
+    width: 25%;
+    padding: 8px 6px;
+    background-color: var(--dark-gray-clr);
     border: none;
-    background-color: #D7DCE2;
+    color: var(--white-clr);
+}
+
+#placeholder-p input::placeholder {
+    padding-left: 130px;
 }
 
 .input1 select {
     background-color: var(--dark-gray-clr);
-    color: #fff;
+    color: var(--white-clr);
     padding: 8px 5px;
     border-radius: 0;
     border: none;
@@ -369,7 +387,7 @@ input[type=range]::-moz-range-thumb {
 .btn button {
     justify-self: end;
     padding: 4px 22px;
-    color: #fff;
+    color: var(--white-clr);
     border: none;
     border-radius: 5px;
     background-color: var(--dark-gray-clr);
@@ -387,8 +405,8 @@ input[type=range]::-moz-range-thumb {
     grid-template-columns: auto 54%;
     margin: 10% 17%;
     padding: 50px 50px 70px 50px;
-    color: #fff;
-    border: 1px solid #fff;
+    color: var(--white-clr);
+    border: 1px solid var(--white-clr);
     background-color: rgba(0, 0, 0, 0.719);
 }
 
@@ -396,7 +414,7 @@ input[type=range]::-moz-range-thumb {
     display: grid;
     margin: -35% 53% 0%20%;
     padding: 13px 40px;
-    background-color: #fff;
+    background-color: var(--white-clr);
 }
 
 .rg-content {
@@ -411,6 +429,19 @@ input[type=range]::-moz-range-thumb {
 
 .agree-term input:checked {
     background-color: var(--green-clr);
+}
+
+#phoneAlt,
+#lock1 {
+    position: absolute;
+    float: left;
+    margin-left: -15%;
+    margin-top: 0.5%;
+    color: var(--dark-gray-clr)
+}
+
+#lock1 {
+    margin-left: -20%;
 }
 
 
@@ -451,7 +482,7 @@ input[type=range]::-moz-range-thumb {
 .sidebar-label div select {
     background-color: var(--dark-gray-clr);
     margin-left: -3%;
-    color: #fff;
+    color: var(--white-clr);
     padding: 2% 3%;
     width: 12%;
     border: none;
@@ -477,7 +508,7 @@ input[type=range]::-moz-range-thumb {
 
 .side-btn {
     background-color: var(--dark-gray-clr);
-    color: #fff;
+    color: var(--white-clr);
     text-align: center;
     border-radius: 3px;
     padding: 5px;
@@ -491,7 +522,7 @@ input[type=range]::-moz-range-thumb {
 .search input::placeholder {
     font-size: x-small;
     font-weight: 600;
-    color: #fff;
+    color: var(--white-clr);
     padding: 2px;
     opacity: 1;
 }
@@ -541,7 +572,7 @@ input[type=range]::-moz-range-thumb {
 .srt select {
     background-color: var(--dark-gray-clr);
     margin-left: -3%;
-    color: #fff;
+    color: var(--white-clr);
     padding: 2% 3%;
     width: 12%;
     border: none;
@@ -567,7 +598,7 @@ input[type=range]::-moz-range-thumb {
 
 .carts,
 .carts-ls {
-    background-color: #FFFFFF;
+    background-color: var(--white-clr)FFF;
 }
 
 .cart-txt {
@@ -580,7 +611,7 @@ input[type=range]::-moz-range-thumb {
     position: absolute;
     width: max-content;
     justify-self: end;
-    color: #fff;
+    color: var(--white-clr);
     margin-top: -33px;
     padding: 5px;
 }
@@ -589,6 +620,14 @@ input[type=range]::-moz-range-thumb {
     display: grid;
     grid-template-columns: repeat(4, auto);
     text-align: center;
+}
+
+.icons-layout .icon span {
+    color: var(--green-clr);
+}
+
+a span {
+    color: var(--light-gray-clr);
 }
 
 .icons-layout .icon,
@@ -644,13 +683,13 @@ input[type=range]::-moz-range-thumb {
     background-color: #11c7afcc;
     width: max-content;
     justify-self: end;
-    color: #fff;
+    color: var(--white-clr);
     padding: 5px;
 }
 
 .advertisement {
     display: grid;
-    background-color: #FFFFFF;
+    background-color: var(--white-clr)FFF;
     text-align: center;
     align-self: start;
     align-items: center;
@@ -661,7 +700,7 @@ input[type=range]::-moz-range-thumb {
     background-color: var(--dark-gray-clr);
     justify-self: center;
     text-align: center;
-    color: #fff;
+    color: var(--white-clr);
     border-radius: 3px;
     margin-bottom: 3%;
     padding: 10px;
@@ -669,7 +708,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .footer {
-    color: #fff;
+    color: var(--white-clr);
     background-color: var(--dark-gray-clr);
 }
 
@@ -690,7 +729,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .footer hr {
-    color: #fff;
+    color: var(--white-clr);
 }
 
 .footer-b {
@@ -716,7 +755,7 @@ input[type=range]::-moz-range-thumb {
 
 .fa-bars {
     display: none !important;
-    background-color: #000;
+    background-color: var(--black-clr);
     padding: .1em;
     border-radius: .1em;
 }
@@ -728,7 +767,7 @@ input[type=range]::-moz-range-thumb {
 @media (max-width:818px) {
     /* General */
     .container {
-        height: 100%;
+        height: 100vh;
         padding-bottom: 10%;
     }
     .header {
@@ -797,8 +836,8 @@ input[type=range]::-moz-range-thumb {
         display: block;
         margin: 4% 5%;
         padding: 50px 50px 70px 50px;
-        color: #fff;
-        border: 1px solid #fff;
+        color: var(--white-clr);
+        border: 1px solid var(--white-clr);
         background-color: rgba(0, 0, 0, 0.719);
     }
     /* Registration */
@@ -806,7 +845,7 @@ input[type=range]::-moz-range-thumb {
         display: grid;
         margin: 3% 5% 0% 5%;
         padding: 13px 40px;
-        background-color: #fff;
+        background-color: var(--white-clr);
     }
     .input1 select {
         padding: 8px 3px;
@@ -854,8 +893,24 @@ input[type=range]::-moz-range-thumb {
         display: none;
     }
     .bottom-content {
-        padding-bottom: 8.4%;
+        padding-bottom: 0;
+    }
+    .input2 input {
+        width: 60%;
+        margin-left: 0;
+    }
+    #phoneAlt,
+    #lock1 {
+        color: var(--dark-gray-clr);
+        margin: 2% auto auto -50%;
+    }
+    #lock1 {
+        margin: 2% auto auto -65%;
     }
 }
 
-@media (max-width:600px) {}
+@media (max-width:380px) {
+    .input2 input {
+        width: 59%;
+    }
+}

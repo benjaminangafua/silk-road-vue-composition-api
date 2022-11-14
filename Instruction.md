@@ -74,3 +74,37 @@ npm run build
 ```json 
 {"rewrites": [{ "source": "/:path*", "destination": "/index.html" }]}
 ```
+
+## Adding Fontawesome
+Install latest-3 (3.0.1) of vue-fontawesome, which is compatible with Vue 3, and the icon dependencies:
+
+```sh
+  npm i --save @fortawesome/vue-fontawesome@latest-3
+  npm i --save @fortawesome/fontawesome-svg-core
+  npm i --save @fortawesome/free-solid-svg-icons
+```
+In main.js, select the icons from @fortawesome/free-solid-svg-icons to load:
+
+```js
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+
+library.add(faPhone);
+
+// Globally register the font-awesome-icon component:
+
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
+createApp(App)
+  .component("font-awesome-icon", FontAwesomeIcon)
+  .mount("#app");
+
+// In src/App.vue, use the component like this (note the icon name is phone, not faPhone):
+
+//<!-- explicit style -->
+<font-awesome-icon :icon="['fas', 'phone']" />
+
+//<!-- implicit style (fas is assumed) -->
+<font-awesome-icon icon="phone" />
+
+```
