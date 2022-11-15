@@ -54,7 +54,7 @@ function hamburger(e){
 <template>
     <div class="header" id="head" ref="head">
         <div class="logo" ref="logo"><RouterLink to="/">SILKROAD</RouterLink></div>
-        <div id="closeToggle" ref="closeToggle">X</div>
+        <!-- <div id="closeToggle" ref="closeToggle">X</div> -->
         <div class="toggle">
             <div id="navbar" class="nav"  ref="nav">
                 <div class="top-nav" id="top-nav"  ref="topNav">
