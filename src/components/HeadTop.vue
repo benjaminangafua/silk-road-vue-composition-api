@@ -3,79 +3,87 @@
 import  {RouterLink}  from 'vue-router';
 import { ref, onMounted} from 'vue';
 
-// setup () {
-    const btn = ref(null)
-    function handBurger(e){
-        // console.log(head)
-    
+const head = ref()
+const logo = ref()
+const nav = ref()
+const topNav = ref()
+const authenticate = ref()
+const bottomNav = ref()
+const propertyBtn =ref() 
+const home = ref()
+const hr = ref()
+const hr1 = ref()
+
+function hamburger(e){  
+    console.log(topNav.value.id) 
+    if(nav.value.className =="nav"){
+        logo.value.style = `
+                            margin: 0;
+                                `
+        nav.value.className = "response"
+        head.value.style = `
+        display:block; 
+        background-color:#444;
+        padding:10px 20px;
+        `
+        topNav.value.style.display = "block"
+
+        home.value.firstElementChild.style = `display:block;
+                                        margin: 10px 0px`
+
+        topNav.value.firstElementChild.style = `display:block;
+                                        margin: 8px 0px`
+
+        authenticate.value.style.display = "block"
+        authenticate.value.firstElementChild.style = `padding:0; margin-bottom: 10px;`
+        authenticate.value.lastElementChild.style = "padding:0"
+                                        
+        bottomNav.value.style.display = "block"
+        propertyBtn.value.style = `width: max-content; margin-top: 10px`
+        hr.value.style.display = "none";
+        hr1.value.style.display = "none";
+    }else{
+        nav.value.className = "nav"
+        head.value.style = `display:grid;`
+
     }
+    
+}
 
-    // let nav = document.getElementById("navbar")
-    // let btnL = btn
-    // let topNav = document.querySelector(".top-nav")
-    // let hm = document.querySelector(".home")
-    // let aut = document.querySelector(".auth")
-    // let btm = document.querySelector(".bottom-nav")
-    // let hr = document.querySelector("hr")
-    // let property = document.querySelector(".prty-btn")
-
-    onMounted( ()=>{
-        // console.log(btn)
-
-        // if(nav.className =="nav"){
-        //             nav.className = "response"
-        //             head.style = `display:block; background-color:#444`
-        //             topNav.style.display = "block"
-        //             hm.firstElementChild.style = `display:block;
-        //                                             margin: 10px 0px`
-        //             topNav.firstElementChild.style = `display:block;
-        //                                             margin: 8px 0px`
-        //             aut.style.display = "block"
-        //             aut.firstElementChild.style = `padding:0; margin-bottom: 10px;`
-        //             aut.lastElementChild.style = "padding:0"
-                                                    
-        //             btm.style.display = "block"
-        //             property.style = `width: max-content; margin-top: 10px`
-        //             hr.style.display = "none"
-                            
-        //         }else{
-        //         nav.className = "nav"
-        //         head.style = `display:grid; background-color:auto`
-
-        // }            
-    })
-//  }
 </script>
 <template>
-    <div class="header" id="head">
-            <div class="logo"><a href="/">SILKROAD</a> </div>
-            <div class="toggle">
-                
-            <div id="navbar" class="nav">
-                <div class="top-nav">
-                    <div class="home">
-                        <div><RouterLink to="/">Home</RouterLink> </div>
-                        <div><RouterLink to="/list">Our Property</RouterLink> </div>
+    <div class="header" id="head" ref="head">
+        <div class="logo" ref="logo"><RouterLink to="/">SILKROAD</RouterLink></div>
+        <div id="closeToggle" ref="closeToggle">X</div>
+        <div class="toggle">
+            <div id="navbar" class="nav"  ref="nav">
+                <div class="top-nav" id="top-nav"  ref="topNav">
+                    <div class="home" ref="home">
+
+                        <div class="bg-m bg-m"><RouterLink to="/">Home</RouterLink> </div>
+
+                        <div  class="bg-m bg-m"><RouterLink to="/list">Our Property</RouterLink> </div>
                     </div>
-                    <div class="auth">
-                        <div class="aut1"><RouterLink to="/login">Login</RouterLink></div>
-                        <hr class="aut-m">
-                        <div class="aut1"><RouterLink to="/register">Register</RouterLink></div>
+                    <div class="auth" id="auth"  ref="authenticate">
+
+                        <div class="aut1 bg-m"  id="aut1"  ref="aut1"><RouterLink to="/login">Login</RouterLink></div>
+                        
+                        <hr class="aut-m" ref="hr">
+
+                        <div class="aut1 bg-m"  id="aut1"  ref="aut1"><RouterLink to="/register">Register</RouterLink></div>
                     </div>
                 </div>
                 <!-- <i class="fa-facebook-f" -->
-                <hr class="divider">
-                <div class="bottom-nav">
-                    <div><RouterLink to="/widget"> Widget</RouterLink></div>
+                <hr class="divider" ref="hr1">
+                <div class="bottom-nav"  id="bottom-nav"  ref="bottomNav">
 
-                    <div class="prty-btn"><button>Post a Property</button></div>
+                    <div  class="bg-m"><RouterLink to="/widget"> Widget</RouterLink></div>
+
+                    <div class="property-btn"  id="property-btn"  ref="propertyBtn"><button>Post a Property</button></div>
                 </div>
             </div>
 
-            <a  v-on:click="handBurger(e)" class="icon" ref="toggle">
-                <i class="fa fa-bars"></i>
-              </a>
-
-            </div>
+            <a @click.prevent="hamburger" class="icon" ref="toggleBtn"><i class="fa fa-bars"></i> </a>
         </div>
+    </div>
 </template>

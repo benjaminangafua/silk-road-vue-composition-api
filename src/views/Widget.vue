@@ -58,4 +58,4 @@
     <div><font-awesome-icon :icon="['fas', 'filter']" /></div>
 </div>
 
-</template>
+</template> 

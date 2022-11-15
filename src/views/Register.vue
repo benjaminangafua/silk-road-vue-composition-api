@@ -1,4 +1,6 @@
-
+<script setup>
+import  {RouterLink}  from 'vue-router';
+</script>
 <template> 
     
     <div class="rg-container">
@@ -8,7 +10,7 @@
                 <h4>Already have an account?</h4>
                 <p>If you already have an account you can login to get the view of the latest properties in stock
                 </p>
-                <button>Register</button>
+                <button><RouterLink to="/login">Login</RouterLink> </button>
             </div>
         </div>
     </div>
@@ -51,6 +53,4 @@
             <div></div>
         </form>
     </div>
-    <div class="self">H</div>
-
 </template>

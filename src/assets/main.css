@@ -14,14 +14,16 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* height: 100vh; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
 }
 
 .container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.418)), url("./images/building4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+    padding-bottom: 1.28%;
 }
 
 
@@ -99,7 +101,7 @@ a {
     grid-template-columns: 20% 80%;
 }
 
-.bottom-nav .prty-btn {
+.bottom-nav .property-btn {
     justify-self: end;
     padding: 5px 10px;
     background-color: var(--blue-clr);
@@ -159,8 +161,8 @@ a {
 
 .bottom-content {
     display: grid;
-    margin-top: 10%;
-    padding-bottom: 10%;
+    margin-top: 5%;
+    /* padding-bottom: 5%; */
     display: grid;
     justify-content: center;
     align-items: center;
@@ -169,8 +171,8 @@ a {
 
 .bottom-content div:last-child {
     border: 1px solid var(--white-clr);
-    border-radius: 100%;
-    padding: 5px 9px;
+    border-radius: 50px;
+    padding: 5px 6px;
 }
 
 .bottom-content div:first-child {
@@ -186,7 +188,7 @@ a {
 
 .main-widget {
     display: grid;
-    margin: 10% 20%;
+    margin: 3% 25%;
     padding: 20px;
     display: grid;
     color: var(--white-clr);
@@ -323,6 +325,11 @@ input[type=range]::-moz-range-thumb {
     margin: -35% 20% 0% 53%;
     padding: 20px 40px 29px 40px;
     background-color: var(--white-clr);
+}
+
+#login-select {
+    width: 24%;
+    margin-right: -2%;
 }
 
 .heading h2 {
@@ -764,17 +771,32 @@ a span {
     display: grid;
 }
 
+.block {
+    display: block;
+}
+
+#closeToggle {
+    position: absolute;
+    /* float: right; */
+}
+
 @media (max-width:818px) {
     /* General */
     .container {
-        height: 100vh;
-        padding-bottom: 10%;
+        /* height: 100vh; */
+        /* padding-bottom: 10%; */
     }
+    .bg-m {
+        /* padding: 20px 0; */
+        margin: 1rem 0;
+    }
+    #head,
     .header {
-        /* display: block; */
+        display: grid;
+        grid-template-columns: 10% 70%;
         align-items: center;
-        margin-left: 5%;
-        padding: 10px 20px;
+        padding: 0;
+        /* margin: 0 5%; */
     }
     .nav {
         display: none;
@@ -785,13 +807,13 @@ a span {
     .logo {
         justify-self: center;
         align-self: center;
-        padding: 1.3rem;
+        padding: 1rem;
         width: fit-content;
         font-weight: 900;
         font-size: 13px;
         letter-spacing: 0.01px;
         word-spacing: 0.01px;
-        /* text-align: center; */
+        margin-left: 4.2rem;
     }
     .fa-bars {
         display: block !important;
@@ -835,7 +857,7 @@ a span {
     .main-rg {
         display: block;
         margin: 4% 5%;
-        padding: 50px 50px 70px 50px;
+        padding: 10px;
         color: var(--white-clr);
         border: 1px solid var(--white-clr);
         background-color: rgba(0, 0, 0, 0.719);
@@ -843,7 +865,7 @@ a span {
     /* Registration */
     .rg-form {
         display: grid;
-        margin: 3% 5% 0% 5%;
+        margin: 3% 5%;
         padding: 13px 40px;
         background-color: var(--white-clr);
     }

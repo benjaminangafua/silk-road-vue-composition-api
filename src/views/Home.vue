@@ -1,7 +1,7 @@
 
 <template> 
    <div class="main">
-            <div> Real estate without the hassel</div>
+            <div> Real estate without the hassle</div>
             <div><input type="text" class="property" placeholder="FIND A PROPERTY"></div>
             <div class="filter"><strong><font-awesome-icon :icon="['fas', 'filter']" /> FILTER</strong></div>
         </div>
@@ -12,13 +12,8 @@
         </div>
 </template>
 <style scoped>
-.container{
-    height: 100vh;
-
-}
 @media (max-width: 818px){
 .container {
-  height: 100vh;
   padding-bottom: 10%;
 }}
 
