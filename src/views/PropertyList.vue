@@ -305,7 +305,7 @@ import FooterDownVue from '../components/FooterDown.vue';
 </div>
 </template>
 <style scoped>
-#head {
+#head, .header {
     background-color:gray !important;
 }
 </style>

@@ -4,7 +4,7 @@ import FooterDown from '../components/FooterDown.vue';
 </script>
 
 <template> 
-    <div id="prty-grd">
+    <div id="property-grd">
         <div class="grid-container">
             <div class="sidebar">
                 <div class="sidebar-label">

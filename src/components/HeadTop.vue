@@ -56,6 +56,9 @@ function closeToggleBtn(e){
     head.value.style = `display:grid;`
     topNav.value.style.display = "grid"
     toggleBtn.value.style.display = "block"
+    bottomNav.value.style.display = "grid"
+
+    hr1.value.style.display = "block";
     closeToggle.value.style.display = "none"
     topNav.value.firstElementChild.style = "grid"
 }
@@ -71,7 +74,7 @@ function closeToggleBtn(e){
 
                         <div class="bg-m" id="home"><RouterLink to="/">Home</RouterLink> </div>
 
-                        <div  class="bg-m" id="ourProperty"><RouterLink to="/list">Our Property</RouterLink> </div>
+                        <div  class="bg-m" id="ourProperty"><a href="/list"> Our Property</a></div>
                     </div>
                     <div class="auth" id="auth"  ref="authenticate">
 
