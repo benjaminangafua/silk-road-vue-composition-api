@@ -74,7 +74,7 @@ import FooterDown from '../components/FooterDown.vue';
                     </div>
                     <div class="nav-icon">
                         <div class="grd-ls">
-                            <div>VIEW</div> <div><router-link to="/list"><span class="material-symbols-outlined">list</span></router-link></div>
+                            <div>View</div> <div><router-link to="/list"><span class="material-symbols-outlined">list</span></router-link></div>
                         <div><router-link to="/grid"> <span class="material-symbols-outlined">grid_view </span> </router-link></div>
                     
                         </div>
