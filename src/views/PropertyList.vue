@@ -5,7 +5,7 @@ import FooterDownVue from '../components/FooterDown.vue';
 
 <template> 
     
-<div id="prty-grd">
+<div id="property-grd">
     <div class="grid-container">
         <div class="sidebar">
             <div class="sidebar-label">
@@ -304,3 +304,8 @@ import FooterDownVue from '../components/FooterDown.vue';
     <FooterDownVue />
 </div>
 </template>
+<style scoped>
+#head {
+    background-color:gray !important;
+}
+</style>

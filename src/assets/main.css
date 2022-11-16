@@ -4,7 +4,7 @@
     --dark-gray-clr: #748090;
     --green-clr: #20B2AA;
     --white-clr: #fff;
-    --blue-clr: #4169E1;
+    --blue-clr: navy;
     --black-clr: #000;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.418)), url("./images/building4.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.418)), url("./images/building4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -42,7 +42,7 @@ a {
 #head,
 .header {
     display: grid;
-    grid-template-columns: 15% 77%;
+    grid-template-columns: 10% 80%;
     justify-content: space-around;
     padding: 25px 20px;
     color: #B5BABF;
@@ -187,12 +187,11 @@ a {
 /* HOME WIDGET */
 
 .main-widget {
+    background-color: rgba(0, 0, 0, 0.603);
+    color: var(--white-clr);
     display: grid;
     margin: 3% 25%;
     padding: 20px;
-    display: grid;
-    color: var(--white-clr);
-    background-color: rgba(0, 0, 0, 0.603);
 }
 
 .filter-line {
@@ -454,13 +453,9 @@ input[type=range]::-moz-range-thumb {
 
 /* Property Grid*/
 
-#prty-grd {
+#property-grd {
     display: grid;
     background: #F5F5F5 !important;
-}
-
-#header {
-    background-color: var(--dark-gray-clr) !important;
 }
 
 .grid-container {
@@ -775,20 +770,29 @@ a span {
     display: block;
 }
 
-#closeToggle {
-    position: absolute;
-    /* float: right; */
-}
-
 @media (max-width:818px) {
     /* General */
-    .container {
-        /* height: 100vh; */
-        /* padding-bottom: 10%; */
+    #closeToggle {
+        display: none;
+        float: right;
+        font-size: 40px;
+        padding: 0 10px;
     }
     .bg-m {
-        /* padding: 20px 0; */
-        margin: 1rem 0;
+        border-bottom: 0.5px solid rgb(134, 133, 133);
+        padding: 1rem !important;
+    }
+    #home {
+        /* margin: 2rem 0 !important; */
+        padding: 1rem;
+    }
+    .aut1 {
+        /* margin-top: 2rem; */
+        padding: 1rem !important;
+    }
+    .bg-m:hover {
+        background-color: var(--black-clr);
+        color: var(--white-clr);
     }
     #head,
     .header {
@@ -797,6 +801,9 @@ a span {
         align-items: center;
         padding: 0;
         /* margin: 0 5%; */
+    }
+    .hide {
+        display: none;
     }
     .nav {
         display: none;
@@ -935,4 +942,8 @@ a span {
     .input2 input {
         width: 59%;
     }
+}
+
+#closeToggle {
+    display: none;
 }

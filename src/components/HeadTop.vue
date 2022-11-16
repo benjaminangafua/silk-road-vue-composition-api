@@ -11,19 +11,23 @@ const authenticate = ref()
 const bottomNav = ref()
 const propertyBtn =ref() 
 const home = ref()
+const closeToggle = ref()
+const toggleBtn = ref()
 const hr = ref()
 const hr1 = ref()
 
 function hamburger(e){  
     console.log(topNav.value.id) 
     if(nav.value.className =="nav"){
+        closeToggle.value.style =`display:block; color:#fff; cursor:pointer;`
+        toggleBtn.value.style.display = "none"
         logo.value.style = `
                             margin: 0;
                                 `
         nav.value.className = "response"
         head.value.style = `
         display:block; 
-        background-color:#444;
+        background-color:#3b444b;
         padding:10px 20px;
         `
         topNav.value.style.display = "block"
@@ -42,27 +46,32 @@ function hamburger(e){
         propertyBtn.value.style = `width: max-content; margin-top: 10px`
         hr.value.style.display = "none";
         hr1.value.style.display = "none";
-    }else{
-        nav.value.className = "nav"
-        head.value.style = `display:grid;`
 
     }
+
     
 }
-
+function closeToggleBtn(e){
+    nav.value.className = "nav"
+    head.value.style = `display:grid;`
+    topNav.value.style.display = "grid"
+    toggleBtn.value.style.display = "block"
+    closeToggle.value.style.display = "none"
+    topNav.value.firstElementChild.style = "grid"
+}
 </script>
 <template>
+    <div id="closeToggle" ref="closeToggle" @click.prevent="closeToggleBtn">X</div>
     <div class="header" id="head" ref="head">
         <div class="logo" ref="logo"><RouterLink to="/">SILKROAD</RouterLink></div>
-        <!-- <div id="closeToggle" ref="closeToggle">X</div> -->
         <div class="toggle">
             <div id="navbar" class="nav"  ref="nav">
                 <div class="top-nav" id="top-nav"  ref="topNav">
                     <div class="home" ref="home">
 
-                        <div class="bg-m bg-m"><RouterLink to="/">Home</RouterLink> </div>
+                        <div class="bg-m" id="home"><RouterLink to="/">Home</RouterLink> </div>
 
-                        <div  class="bg-m bg-m"><RouterLink to="/list">Our Property</RouterLink> </div>
+                        <div  class="bg-m" id="ourProperty"><RouterLink to="/list">Our Property</RouterLink> </div>
                     </div>
                     <div class="auth" id="auth"  ref="authenticate">
 
