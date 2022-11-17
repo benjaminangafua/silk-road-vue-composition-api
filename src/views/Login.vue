@@ -28,8 +28,13 @@ import  {RouterLink}  from 'vue-router';
                                 <option value="+234">+234</option>
                                 <option value="+134">+134</option>
                                 <option value="+412">+412</option>
-                            </select> <input type="text" placeholder="Phone number"></div>
-                    <div class="input1"><input type="text" placeholder="Password"></div>
+                            </select> <input type="text" placeholder="Phone number">
+                        <font-awesome-icon id="phoneAlt" :icon="['fas', 'phone-alt']" /></div>
+                    <div class="input1">
+                        <input type="text" placeholder="Password">
+                    
+                        <font-awesome-icon id="lock1" :icon="['fas', 'lock']" />
+                    </div>
                     <div class="forget-password"><strong>Forgot password?</strong></div>
                     <div class="btn"><button>Login</button></div>
                 </div>

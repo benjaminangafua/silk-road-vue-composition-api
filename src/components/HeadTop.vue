@@ -72,26 +72,26 @@ function closeToggleBtn(e){
                 <div class="top-nav" id="top-nav"  ref="topNav">
                     <div class="home" ref="home">
 
-                        <div class="bg-m" id="home"><a href="/">Home</a> </div>
+                        <a href="/"><div class="bg-m" id="home">Home</div></a> 
 
-                        <div  class="bg-m" id="ourProperty"><a href="/list"> Our Property</a></div>
+                        <a href="/list"> <div  class="bg-m" id="ourProperty">Our Property</div></a>
                     </div>
                     <div class="auth" id="auth"  ref="authenticate">
 
-                        <div class="aut1 bg-m"  id="aut1"  ref="aut1"><a href="/login">Login</a></div>
+                        <a href="/login"><div class="aut1 bg-m"  id="aut1"  ref="aut1">Login</div></a>
                         
                         <hr class="aut-m" ref="hr">
 
-                        <div class="aut1 bg-m"  id="aut1"  ref="aut1"><a href="/register">Register</a></div>
+                        <a href="/register"><div class="aut1 bg-m"  id="aut1"  ref="aut1">Register</div></a>
                     </div>
                 </div>
                 <!-- <i class="fa-facebook-f" -->
                 <hr class="divider" ref="hr1">
                 <div class="bottom-nav"  id="bottom-nav"  ref="bottomNav">
 
-                    <div  class="bg-m"><a href="/widget"> Widget</a></div>
+                    <a href="/widget"> <div  class="bg-m">Widget</div></a>
 
-                    <div class="property-btn"  id="property-btn"  ref="propertyBtn"><button>Post a Property</button></div>
+                    <div class="property-btn"  id="property-btn"  ref="propertyBtn"><button><a href="/">Post a Property</a></button></div>
                 </div>
             </div>
 
