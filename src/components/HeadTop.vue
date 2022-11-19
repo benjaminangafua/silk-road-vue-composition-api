@@ -16,7 +16,7 @@ const toggleBtn = ref()
 const hr = ref()
 const hr1 = ref()
 
-function hamburger(e){  
+function toggleHamburger(e){  
     console.log(topNav.value.id) 
     if(nav.value.className =="nav"){
         closeToggle.value.style =`display:block; color:#fff; cursor:pointer;`
@@ -72,30 +72,30 @@ function closeToggleBtn(e){
                 <div class="top-nav" id="top-nav"  ref="topNav">
                     <div class="home" ref="home">
 
-                        <a href="/"><div class="bg-m" id="home">Home</div></a> 
+                        <a href="/"><div class="toggle-menu-border" id="home">Home</div></a> 
 
-                        <a href="/list"> <div  class="bg-m" id="ourProperty">Our Property</div></a>
+                        <a href="/list"> <div  class="toggle-menu-border" id="ourProperty">Our Property</div></a>
                     </div>
                     <div class="auth" id="auth"  ref="authenticate">
 
-                        <a href="/login"><div class="aut1 bg-m"  id="aut1"  ref="aut1">Login</div></a>
+                        <a href="/login"><div class="navbar-right toggle-menu-border"  id="navbar-right"  ref="navbar-right">Login</div></a>
                         
-                        <hr class="aut-m" ref="hr">
+                        <hr class="nav-hr" ref="hr">
 
-                        <a href="/register"><div class="aut1 bg-m"  id="aut1"  ref="aut1">Register</div></a>
+                        <a href="/register"><div class="navbar-right toggle-menu-border"  id="navbar-right"  ref="navbar-right">Register</div></a>
                     </div>
                 </div>
                 <!-- <i class="fa-facebook-f" -->
                 <hr class="divider" ref="hr1">
                 <div class="bottom-nav"  id="bottom-nav"  ref="bottomNav">
 
-                    <a href="/widget"> <div  class="bg-m">Widget</div></a>
+                    <a href="/widget"> <div  class="toggle-menu-border">Widget</div></a>
 
                     <div class="property-btn"  id="property-btn"  ref="propertyBtn"><button><a href="/">Post a Property</a></button></div>
                 </div>
             </div>
 
-            <a @click.prevent="hamburger" class="icon" ref="toggleBtn"><i class="fa fa-bars"></i> </a>
+            <a @click.prevent="toggleHamburger" class="icon" ref="toggleBtn"><i class="fa fa-bars"></i> </a>
         </div>
     </div>
 </template>

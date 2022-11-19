@@ -78,7 +78,7 @@ import FooterDown from '../components/FooterDown.vue';
                         <div><router-link to="/grid"> <span class="material-symbols-outlined">grid_view </span> </router-link></div>
                     
                         </div>
-                        <div class="srch-filter">
+                        <div class="search-filter">
                             <div class="srt">Sort by</div>
                             <div class="srt">
                                 <input type="text" placeholder="Most Recent">
@@ -98,9 +98,9 @@ import FooterDown from '../components/FooterDown.vue';
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong> month</div>
 
-                                <div class="sm-t bed-room">3 Bedroom Townhouse</div>
-                                <div class="sm-t"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="sm-t">Peter Wayne</div>
+                                <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
+                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
+                                <div class="cart-small-text">Peter Wayne</div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -115,9 +115,9 @@ import FooterDown from '../components/FooterDown.vue';
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
-                                <div class="sm-t bed-room">3 Bedroom Townhouse</div>
-                                <div class="sm-t"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="sm-t">Peter Wayne</div>
+                                <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
+                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
+                                <div class="cart-small-text">Peter Wayne</div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -132,9 +132,9 @@ import FooterDown from '../components/FooterDown.vue';
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
-                                <div class="sm-t bed-room">3 Bedroom Townhouse</div>
-                                <div class="sm-t"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="sm-t">Peter Wayne</div>
+                                <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
+                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
+                                <div class="cart-small-text">Peter Wayne</div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -149,9 +149,9 @@ import FooterDown from '../components/FooterDown.vue';
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
-                                <div class="sm-t bed-room">3 Bedroom Townhouse</div>
-                                <div class="sm-t"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="sm-t">Peter Wayne</div>
+                                <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
+                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
+                                <div class="cart-small-text">Peter Wayne</div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -166,9 +166,9 @@ import FooterDown from '../components/FooterDown.vue';
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
-                                <div class="sm-t bed-room">3 Bedroom Townhouse</div>
-                                <div class="sm-t"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="sm-t">Peter Wayne</div>
+                                <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
+                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
+                                <div class="cart-small-text">Peter Wayne</div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -183,9 +183,9 @@ import FooterDown from '../components/FooterDown.vue';
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
-                                <div class="sm-t bed-room">3 Bedroom Townhouse</div>
-                                <div class="sm-t"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="sm-t">Peter Wayne</div>
+                                <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
+                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
+                                <div class="cart-small-text">Peter Wayne</div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -201,9 +201,9 @@ import FooterDown from '../components/FooterDown.vue';
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
-                                <div class="sm-t bed-room">3 Bedroom Townhouse</div>
-                                <div class="sm-t"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="sm-t">Peter Wayne</div>
+                                <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
+                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
+                                <div class="cart-small-text">Peter Wayne</div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -219,9 +219,9 @@ import FooterDown from '../components/FooterDown.vue';
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
-                                <div class="sm-t bed-room">3 Bedroom Townhouse</div>
-                                <div class="sm-t"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="sm-t">Peter Wayne</div>
+                                <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
+                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
+                                <div class="cart-small-text">Peter Wayne</div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -237,9 +237,9 @@ import FooterDown from '../components/FooterDown.vue';
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
-                                <div class="sm-t bed-room">3 Bedroom Townhouse</div>
-                                <div class="sm-t"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="sm-t">Peter Wayne</div>
+                                <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
+                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
+                                <div class="cart-small-text">Peter Wayne</div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
