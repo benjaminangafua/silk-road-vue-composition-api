@@ -17,9 +17,10 @@ import { faBook } from '@fortawesome/free-solid-svg-icons'
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import { faLock } from '@fortawesome/free-solid-svg-icons'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
-
+import { faLocation } from '@fortawesome/free-solid-svg-icons'
 /* <i class="fal fa-chevron-circle-down"></i> */
 /* add icons to the library */
+library.add(faLocation)
 library.add(faFilter)
 library.add(faCaretDown)
 library.add(faBook)

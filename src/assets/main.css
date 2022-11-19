@@ -627,6 +627,7 @@ input[type=range]::-moz-range-thumb {
 
 .icons-layout .icon span {
     color: var(--green-clr);
+    cursor: pointer;
 }
 
 a span {
