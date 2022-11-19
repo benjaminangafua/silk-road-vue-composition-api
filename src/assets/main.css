@@ -299,10 +299,6 @@ input[type=range]::-moz-range-thumb {
     font-size: 0.8rem;
 }
 
-.bottom-l div:last-child {
-    /* font-weight: 600; */
-}
-
 .main-login {
     display: grid;
     grid-template-columns: 54% auto;
@@ -802,6 +798,7 @@ a span {
         grid-template-columns: 10% 70%;
         align-items: center;
         padding: 1rem 0;
+        transition: width 1s;
         /* padding-top: 20px; */
         /* margin: 0 5%; */
     }

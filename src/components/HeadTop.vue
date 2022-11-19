@@ -29,6 +29,7 @@ function toggleHamburger(e){
         display:block; 
         background-color:#3b444b;
         padding:10px 20px;
+        width:50%;
         `
         topNav.value.style.display = "block"
 
@@ -53,7 +54,8 @@ function toggleHamburger(e){
 }
 function closeToggleBtn(e){
     nav.value.className = "nav"
-    head.value.style = `display:grid;`
+    head.value.style = `display:grid; width:100%;
+    `
     topNav.value.style.display = "grid"
     toggleBtn.value.style.display = "block"
     bottomNav.value.style.display = "grid"
