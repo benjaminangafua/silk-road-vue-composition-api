@@ -600,7 +600,7 @@ input[type=range]::-moz-range-thumb {
 
 .carts,
 .carts-ls {
-    background-color: var(--white-clr)FFF;
+    background-color: var(--white-clr);
 }
 
 .cart-txt {
@@ -664,6 +664,7 @@ a span {
 .carts-ls {
     display: grid;
     grid-template-columns: 40% auto;
+    background-color: var(--white-clr);
     margin-bottom: 3%;
 }
 
@@ -692,7 +693,7 @@ a span {
 
 .advertisement {
     display: grid;
-    background-color: var(--white-clr)FFF;
+    background-color: var(--white-clr);
     text-align: center;
     align-self: start;
     align-items: center;
