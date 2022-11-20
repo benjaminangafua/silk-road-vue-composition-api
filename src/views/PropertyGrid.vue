@@ -1,96 +1,22 @@
 
 <script setup>  
 import FooterDown from '../components/FooterDown.vue';
+import SidebarVue from '../components/Sidebar.vue';
+import PropertyMainContentNav from '../components/PropertyMainContentNav.vue'
 </script>
 
 <template> 
     <div id="property-grd">
         <div class="grid-container">
-            <div class="sidebar">
-                <div class="sidebar-label">
-
-                    <div>
-                        <div>Search</div><br>
-                        <div class="search"><input type="search" placeholder="Search"></div>
-                    </div>
-                    <br>
-                    <div>
-                        <div>Location</div>
-                        <input type="text" placeholder="Most Recent" name="" id="">
-                        <select name="" id=""> 
-                            <option value=""></option>
-                            <option value="">1</option>
-                            <option value="">2</option>
-                        </select>
-                    </div>
-                    <br>
-                    <div>
-                        <div>Category</div>
-                        <input type="text" placeholder="Most Recent" name="" id="">
-
-                        <select name="" id="">
-                            <option value=""></option>
-                            <option value="">1</option>
-                            <option value="">2</option>
-                        </select>
-                        <br>
-                    </div>
-                    <br>
-                    <div>
-                        <div>No. of Bedrooms</div>
-                        <input type="text" placeholder="Most Recent" name="" id="">
-
-                        <select name="" id=""> 
-                            <option value=""></option>
-                            <option value="">1</option>
-                            <option value="">2</option>
-                        </select>
-                    </div>
-                    <br>
-                    <div>
-                        <div>No. of Bathrooms</div>
-                        <input type="text" placeholder="Most Recent" name="" id="">
-                        <select name="" id="">
-                            <option value=""></option>
-                            <option value="">1</option>
-                            <option value="">2</option>
-                        </select>
-                    </div>
-                    <br>
-                    <div class="grd-range">
-                        <label class="grd-price" for="Price">Price: $<span id="val-less">00</span>.00 - $<span id="val">10,000</span>.00</label> <br>
-                        <input type="range" class="input-rng" min="0" max="10000" value="5000" name="" id="">
-                    </div>
-                    <div class="side-btn">Done</div>
-
-                </div>
-            </div>
+            <!-- Side bar -->
+            <SidebarVue/>
+            <!-- Main-content -->
             <div class="main-content">
-                <div class="content-nav">
-                    <div class="nav-txt">
-                        <div class="active">All</div>
-                        <div>Recent</div>
-                        <div>Sale</div>
-                    </div>
-                    <div class="nav-icon">
-                        <div class="grd-ls">
-                            <div>View</div> <div><router-link to="/list"><span class="material-symbols-outlined">list</span></router-link></div>
-                        <div><router-link to="/grid"> <span class="material-symbols-outlined">grid_view </span> </router-link></div>
-                    
-                        </div>
-                        <div class="search-filter">
-                            <div class="srt">Sort by</div>
-                            <div class="srt">
-                                <input type="text" placeholder="Most Recent">
-                                <select name="" id=""> 
-                                    <option value=""></option>
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
+            <!-- property Main content nav -->
+            <PropertyMainContentNav/>
+
+            <!-- Property Layout -->
                 <div class="content-grids">
                     <div class="content-grid">
                         <div class="carts">
@@ -256,7 +182,6 @@ import FooterDown from '../components/FooterDown.vue';
                 </div>
             </div>
         </div>
-        <div class="learn-more">Learn More</div>
         <FooterDown />
  </div>
 </template>

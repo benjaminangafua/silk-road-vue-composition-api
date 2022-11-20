@@ -1,5 +1,6 @@
 <template>
 
+<div class="learn-more">Learn More</div>
     <div class="footer">
             <div class="top-ftr">
                 <div class="footer1">
@@ -63,4 +64,5 @@
             <hr>
 
         </div>
+
 </template>
