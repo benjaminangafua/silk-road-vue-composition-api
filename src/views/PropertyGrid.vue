@@ -1,8 +1,21 @@
 
-<script setup>  
+<script>  
 import FooterDown from '../components/FooterDown.vue';
 import SidebarVue from '../components/Sidebar.vue';
 import PropertyMainContentNav from '../components/PropertyMainContentNav.vue'
+import propertyData from '../property-data.json'
+import { ref} from 'vue';
+export default{
+    setup(){
+        const image = ref(propertyData.row)
+
+        return {image};
+    },
+    mounted(){
+        console.log(this.image)
+    }
+
+}
 </script>
 
 <template> 
@@ -20,7 +33,7 @@ import PropertyMainContentNav from '../components/PropertyMainContentNav.vue'
                 <div class="content-grids">
                     <div class="content-grid">
                         <div class="carts">
-                            <div class="img"><img src="../assets/images/building1.jpg" alt=""></div>
+                            <div class="img"><img :src="image.house1.image"  alt=""></div>
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong> month</div>
 
@@ -37,7 +50,7 @@ import PropertyMainContentNav from '../components/PropertyMainContentNav.vue'
                             </div>
                         </div>
                         <div class="carts">
-                            <div class="img"><img src="../assets/images/building2.jpg" alt=""></div>
+                            <div class="img"><img :src="image.house2.image"  alt=""></div>
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
@@ -54,7 +67,7 @@ import PropertyMainContentNav from '../components/PropertyMainContentNav.vue'
                             </div>
                         </div>
                         <div class="carts">
-                            <div class="img"><img src="../assets/images/building3.jpg" alt=""></div>
+                            <div class="img"><img :src="image.house2.image"  alt=""></div>
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
@@ -71,7 +84,7 @@ import PropertyMainContentNav from '../components/PropertyMainContentNav.vue'
                             </div>
                         </div>
                         <div class="carts">
-                            <div class="img"><img src="../assets/images/building4.jpg" alt=""></div>
+                            <div class="img"><img :src="image.house4.image"  alt=""></div>
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
@@ -88,7 +101,7 @@ import PropertyMainContentNav from '../components/PropertyMainContentNav.vue'
                             </div>
                         </div>
                         <div class="carts">
-                            <div class="img"><img src="../assets/images/building5.jpg" alt=""></div>
+                            <div class="img"><img :src="image.house5.image"  alt=""></div>
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
@@ -105,25 +118,7 @@ import PropertyMainContentNav from '../components/PropertyMainContentNav.vue'
                             </div>
                         </div>
                         <div class="carts">
-                            <div class="img"><img src="../assets/images/building6.jpg" alt=""></div>
-                            <div class="cart-txt">
-                                <div class="price"><strong>$500.00/</strong>month</div>
-
-                                <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
-                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">Peter Wayne</div>
-                            </div>
-                            <div class="icons-layout">
-                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
-                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
-                            </div>
-                        </div>
-
-                        <div class="carts">
-                            <div class="img"><img src="../assets/images/building11.jpg" alt=""></div>
+                            <div class="img"><img :src="image.house6.image"  alt=""></div>
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
@@ -141,7 +136,7 @@ import PropertyMainContentNav from '../components/PropertyMainContentNav.vue'
                         </div>
 
                         <div class="carts">
-                            <div class="img"><img src="../assets/images/building8.jpg" alt=""></div>
+                            <div class="img"><img :src="image.house11.image"  alt=""></div>
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
@@ -159,7 +154,25 @@ import PropertyMainContentNav from '../components/PropertyMainContentNav.vue'
                         </div>
 
                         <div class="carts">
-                            <div class="img"><img src="../assets/images/building9.jpg" alt=""></div>
+                            <div class="img"><img :src="image.house8.image"  alt=""></div>
+                            <div class="cart-txt">
+                                <div class="price"><strong>$500.00/</strong>month</div>
+
+                                <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
+                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
+                                <div class="cart-small-text">Peter Wayne</div>
+                            </div>
+                            <div class="icons-layout">
+                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
+                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
+                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
+                            </div>
+                        </div>
+
+                        <div class="carts">
+                            <div class="img"><img :src="image.house9.image"  alt=""></div>
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 

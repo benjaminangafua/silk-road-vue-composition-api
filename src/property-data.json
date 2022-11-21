@@ -1,0 +1,18 @@
+{
+    "row": {
+        "house1": {
+            "id": 1,
+            "image": "./src/assets/images/building1.jpg"
+        },
+        "house2": { "id": 2, "image": "./src/assets/images/building2.jpg" },
+        "house3": { "id": 3, "image": "./src/assets/images/building3.jpg" },
+        "house4": { "id": 4, "image": "./src/assets/images/building4.jpg" },
+        "house5": { "id": 5, "image": "./src/assets/images/building5.jpg" },
+        "house6": { "id": 6, "image": "./src/assets/images/building6.jpg" },
+        "house8": { "id": 8, "image": "./src/assets/images/building8.jpg" },
+        "house9": { "id": 9, "image": "./src/assets/images/building9.jpg" },
+        "house10": { "id": 10, "image": "./src/assets/images/building10.jpg" },
+        "house11": { "id": 11, "image": "./src/assets/images/building11.jpg" },
+        "house12": { "id": 12, "image": "./src/assets/images/building12.jpg" }
+    }
+}
