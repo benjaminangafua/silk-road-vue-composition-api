@@ -23,8 +23,6 @@ export default {
             <div><input type="text" class="property" placeholder="FIND A PROPERTY"></div>
             <div class="filter"><strong><font-awesome-icon :icon="['fas', 'filter']" /> FILTER</strong></div>
         </div>
-        <input type="text" v-model="message">
-        <div>{{message}}</div>
         <div class="bottom-content">
             <div>OUR LATEST POSTINGS</div>
             <div><font-awesome-icon :icon="['fas', 'caret-down']" /></div>
