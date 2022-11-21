@@ -4,8 +4,8 @@ import FooterDown from '../components/FooterDown.vue';
 import SidebarVue from '../components/Sidebar.vue';
 import PropertyMainContentNav from '../components/PropertyMainContentNav.vue'
 import propertyData from '../property-data.json'
-import { ref} from 'vue';
-const house_detail = ref(propertyData.row)
+import { reactive} from 'vue';
+const house_detail = reactive(propertyData.row)
 
 </script>
 

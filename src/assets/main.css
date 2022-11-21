@@ -4,7 +4,7 @@
     --dark-gray-clr: #748090;
     --green-clr: #20B2AA;
     --white-clr: #fff;
-    --blue-clr: navy;
+    /* --green-clr: navy; */
     --black-clr: #000;
 }
 
@@ -103,7 +103,7 @@ a {
 .bottom-nav .property-btn {
     justify-self: end;
     padding: 5px 10px;
-    background-color: var(--blue-clr);
+    background-color: var(--green-clr);
     border-radius: 5px;
 }
 
@@ -266,7 +266,7 @@ a {
 
 .r-detail-select div button {
     float: right;
-    background-color: var(--blue-clr);
+    background-color: var(--green-clr);
 }
 
 input[type=range] {
