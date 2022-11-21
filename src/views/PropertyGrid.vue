@@ -28,9 +28,9 @@ const house_detail = ref(propertyData.row)
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong> month</div>
 
-                                <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
-                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">Peter Wayne</div>
+                                <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
+                                <div class="cart-small-text"><img src="" alt="">{{house_detail.house1.location}}</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}}</div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -45,9 +45,9 @@ const house_detail = ref(propertyData.row)
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
-                                <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
-                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">Peter Wayne</div>
+                                <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
+                                <div class="cart-small-text"><img src="" alt="">{{house_detail.house1.location}}</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}}</div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -62,9 +62,9 @@ const house_detail = ref(propertyData.row)
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
-                                <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
-                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">Peter Wayne</div>
+                                <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
+                                <div class="cart-small-text"><img src="" alt="">{{house_detail.house1.location}}</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}}</div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -79,9 +79,9 @@ const house_detail = ref(propertyData.row)
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
-                                <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
-                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">Peter Wayne</div>
+                                <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
+                                <div class="cart-small-text"><img src="" alt="">{{house_detail.house1.location}}</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}}</div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -96,9 +96,9 @@ const house_detail = ref(propertyData.row)
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
-                                <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
-                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">Peter Wayne</div>
+                                <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
+                                <div class="cart-small-text"><img src="" alt="">{{house_detail.house1.location}}</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}}</div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -113,9 +113,9 @@ const house_detail = ref(propertyData.row)
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
-                                <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
-                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">Peter Wayne</div>
+                                <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
+                                <div class="cart-small-text"><img src="" alt="">{{house_detail.house1.location}}</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}}</div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -131,9 +131,9 @@ const house_detail = ref(propertyData.row)
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
-                                <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
-                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">Peter Wayne</div>
+                                <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
+                                <div class="cart-small-text"><img src="" alt="">{{house_detail.house1.location}}</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}}</div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -149,9 +149,9 @@ const house_detail = ref(propertyData.row)
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
-                                <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
-                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">Peter Wayne</div>
+                                <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
+                                <div class="cart-small-text"><img src="" alt="">{{house_detail.house1.location}}</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}}</div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -167,9 +167,9 @@ const house_detail = ref(propertyData.row)
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
-                                <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
-                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">Peter Wayne</div>
+                                <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
+                                <div class="cart-small-text"><img src="" alt="">{{house_detail.house1.location}}</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}}</div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
