@@ -1,20 +1,4 @@
 <script>
-import { computed } from 'vue'
-export default { 
-  props: { 
-    'modelValue': String, 
-  },
-  setup(props, { emit }) { 
-    const message = computed({ 
-      get: () => props.modelValue, 
-      set: (value) => emit('update:modelValue', value) 
-    }) 
-
-    return { 
-      message, 
-    } 
-  }
-}
 
 </script>
 <template> 

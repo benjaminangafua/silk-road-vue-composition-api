@@ -4,7 +4,7 @@ import  {RouterLink}  from 'vue-router';
 <template> 
     
     <div class="rg-container">
-        <div class="main-rg">
+        <div class="main-registration-content">
             <div></div>
             <div class="rg-content content">
                 <h4>Already have an account?</h4>
@@ -17,7 +17,7 @@ import  {RouterLink}  from 'vue-router';
     <div>
         <!-- Registration Form -->
         <form action="">
-            <div class="rg-form">
+            <div class="registration-form">
                 <div class="heading">
                     <h2>REGISTRATION</h2>
                 </div>

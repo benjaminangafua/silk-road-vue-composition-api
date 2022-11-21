@@ -22,11 +22,11 @@ const house_detail = ref(propertyData.row)
             <!-- Property LAyout -->
             <div class="content-grids">
                 <div class="content-list">
-                    <div class="carts-ls">
+                    <div class="carts-list">
                         <div class="img-ls"><img :src="house_detail.house1.image" alt=""></div>
                         <div class="ls-r">
                             <div class="cart-txt">
-                                <div class="top-carts-ls">
+                                <div class="top-carts-list">
                                     <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
                                     <div class="price-ls"><strong>$500.00/</strong>month</div>
 
@@ -44,12 +44,12 @@ const house_detail = ref(propertyData.row)
                             </div>
                         </div>
                     </div>
-                    <div class="carts-ls">
+                    <div class="carts-list">
                         <div class="img-ls"><img  :src="house_detail.house2.image" alt=""></div>
                         <div class="ls-r">
                             <div class="cart-txt">
 
-                                <div class="top-carts-ls">
+                                <div class="top-carts-list">
                                     <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
                                     <div class="price-ls"><strong>$500.00/</strong>month</div>
 
@@ -66,12 +66,12 @@ const house_detail = ref(propertyData.row)
                             </div>
                         </div>
                     </div>
-                    <div class="carts-ls">
+                    <div class="carts-list">
                         <div class="img-ls"><img :src="house_detail.house3.image" alt=""></div>
                         <div class="ls-r">
                             <div class="cart-txt">
 
-                                <div class="top-carts-ls">
+                                <div class="top-carts-list">
                                     <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
                                     <div class="price-ls"><strong>$500.00/</strong>month</div>
 
@@ -88,12 +88,12 @@ const house_detail = ref(propertyData.row)
                             </div>
                         </div>
                     </div>
-                    <div class="carts-ls">
+                    <div class="carts-list">
                         <div class="img-ls"><img :src="house_detail.house4.image" alt=""></div>
                         <div class="ls-r">
                             <div class="cart-txt">
 
-                                <div class="top-carts-ls">
+                                <div class="top-carts-list">
                                     <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
                                     <div class="price-ls"><strong>$500.00/</strong>month</div>
 
@@ -110,12 +110,12 @@ const house_detail = ref(propertyData.row)
                             </div>
                         </div>
                     </div>
-                    <div class="carts-ls">
+                    <div class="carts-list">
                         <div class="img-ls"><img :src="house_detail.house5.image" alt=""></div>
                         <div class="ls-r">
                             <div class="cart-txt">
 
-                                <div class="top-carts-ls">
+                                <div class="top-carts-list">
                                     <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
                                     <div class="price-ls"><strong>$500.00/</strong>month</div>
 
@@ -132,12 +132,12 @@ const house_detail = ref(propertyData.row)
                             </div>
                         </div>
                     </div>
-                    <div class="carts-ls">
+                    <div class="carts-list">
                         <div class="img-ls"><img :src="house_detail.house6.image" alt=""></div>
                         <div class="ls-r">
                             <div class="cart-txt">
 
-                                <div class="top-carts-ls">
+                                <div class="top-carts-list">
                                     <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
                                     <div class="price-ls"><strong>$500.00/</strong>month</div>
 
@@ -155,12 +155,12 @@ const house_detail = ref(propertyData.row)
                         </div>
                     </div>
 
-                    <div class="carts-ls">
+                    <div class="carts-list">
                         <div class="img-ls"><img :src="house_detail.house11.image" alt=""></div>
                         <div class="ls-r">
                             <div class="cart-txt">
 
-                                <div class="top-carts-ls">
+                                <div class="top-carts-list">
                                     <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
                                     <div class="price-ls"><strong>$500.00/</strong>month</div>
 
@@ -178,12 +178,12 @@ const house_detail = ref(propertyData.row)
                         </div>
                     </div>
 
-                    <div class="carts-ls">
+                    <div class="carts-list">
                         <div class="img-ls"><img :src="house_detail.house8.image" alt=""></div>
                         <div class="ls-r">
                             <div class="cart-txt">
 
-                                <div class="top-carts-ls">
+                                <div class="top-carts-list">
                                     <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
                                     <div class="price-ls"><strong>$500.00/</strong>month</div>
 
@@ -201,12 +201,12 @@ const house_detail = ref(propertyData.row)
                         </div>
                     </div>
 
-                    <div class="carts-ls">
+                    <div class="carts-list">
                         <div class="img-ls"><img :src="house_detail.house9.image" alt=""></div>
                         <div class="ls-r">
                             <div class="cart-txt">
 
-                                <div class="top-carts-ls">
+                                <div class="top-carts-list">
                                     <div class="price-ls"><strong>$500.00/</strong>month</div>
 
                                 </div>

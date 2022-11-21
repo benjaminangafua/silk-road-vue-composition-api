@@ -76,7 +76,7 @@ function closeToggleBtn(e){
 
                         <a href="/"><div class="toggle-menu-border" id="home">Home</div></a> 
 
-                        <a href="/list"> <div  class="toggle-menu-border" id="ourProperty">Our Property</div></a>
+                        <a href="/grid"> <div  class="toggle-menu-border" id="ourProperty">Our Property</div></a>
                     </div>
                     <div class="auth" id="auth"  ref="authenticate">
 
