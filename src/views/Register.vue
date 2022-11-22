@@ -1,7 +1,10 @@
 <script setup>
 import  {RouterLink}  from 'vue-router';
+import HeadTopVue from '../components/HeadTop.vue';
+
 </script>
 <template> 
+<HeadTopVue />
     
     <div class="rg-container">
         <div class="main-registration-content">

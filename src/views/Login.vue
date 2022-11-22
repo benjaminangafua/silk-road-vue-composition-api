@@ -1,8 +1,12 @@
 
 <script setup>
 import  {RouterLink}  from 'vue-router';
+import HeadTopVue from '../components/HeadTop.vue';
+
 </script>
 <template> 
+<div class="container">
+<HeadTopVue />
         <div class="login-container">
             <div class="main-login">
                 <div class="content">
@@ -43,5 +47,13 @@ import  {RouterLink}  from 'vue-router';
                 </div>
             </div>
         </form>   
-
+</div>
 </template>
+
+<style scoped>
+@media (max-width: 575.98px) {
+    .container{
+        height: 100%;
+    }
+}
+</style>

@@ -1,16 +1,20 @@
 
 <script setup> 
+import HeadTopVue from '../components/HeadTop.vue';
 import FooterDownVue from '../components/FooterDown.vue';
 import SidebarVue from '../components/Sidebar.vue';
 import PropertyMainContentNav from '../components/PropertyMainContentNav.vue'
 import propertyData from '../property-data.json'
-import { reactive} from 'vue';
+import { ref, reactive} from 'vue';
 
 const house_detail = reactive(propertyData.row)
-    
+const head = ref()
+    console.log(head)
 </script>
 
 <template> 
+<div id="head-bg-color"><HeadTopVue /></div>
+
 <div id="property-grd">
     <div class="grid-container">
         <!-- Side Bar -->
@@ -32,8 +36,8 @@ const house_detail = reactive(propertyData.row)
 
                                 </div>
 
-                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">Peter Wayne</div>
+                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -54,8 +58,8 @@ const house_detail = reactive(propertyData.row)
                                     <div class="price-ls"><strong>$500.00/</strong>month</div>
 
                                 </div>
-                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">Peter Wayne</div>
+                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -76,8 +80,8 @@ const house_detail = reactive(propertyData.row)
                                     <div class="price-ls"><strong>$500.00/</strong>month</div>
 
                                 </div>
-                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">Peter Wayne</div>
+                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -98,8 +102,8 @@ const house_detail = reactive(propertyData.row)
                                     <div class="price-ls"><strong>$500.00/</strong>month</div>
 
                                 </div>
-                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">Peter Wayne</div>
+                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -120,8 +124,8 @@ const house_detail = reactive(propertyData.row)
                                     <div class="price-ls"><strong>$500.00/</strong>month</div>
 
                                 </div>
-                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">Peter Wayne</div>
+                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -142,8 +146,8 @@ const house_detail = reactive(propertyData.row)
                                     <div class="price-ls"><strong>$500.00/</strong>month</div>
 
                                 </div>
-                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">Peter Wayne</div>
+                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -154,7 +158,6 @@ const house_detail = reactive(propertyData.row)
                             </div>
                         </div>
                     </div>
-
                     <div class="carts-list">
                         <div class="img-ls"><img :src="house_detail.house11.image" alt=""></div>
                         <div class="ls-r">
@@ -165,8 +168,8 @@ const house_detail = reactive(propertyData.row)
                                     <div class="price-ls"><strong>$500.00/</strong>month</div>
 
                                 </div>
-                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">Peter Wayne</div>
+                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -177,7 +180,6 @@ const house_detail = reactive(propertyData.row)
                             </div>
                         </div>
                     </div>
-
                     <div class="carts-list">
                         <div class="img-ls"><img :src="house_detail.house8.image" alt=""></div>
                         <div class="ls-r">
@@ -188,8 +190,8 @@ const house_detail = reactive(propertyData.row)
                                     <div class="price-ls"><strong>$500.00/</strong>month</div>
 
                                 </div>
-                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">Peter Wayne</div>
+                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -200,7 +202,6 @@ const house_detail = reactive(propertyData.row)
                             </div>
                         </div>
                     </div>
-
                     <div class="carts-list">
                         <div class="img-ls"><img :src="house_detail.house9.image" alt=""></div>
                         <div class="ls-r">
@@ -210,8 +211,8 @@ const house_detail = reactive(propertyData.row)
                                     <div class="price-ls"><strong>$500.00/</strong>month</div>
 
                                 </div>
-                                <div class="cart-small-text"><img src="" alt="">45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">Peter Wayne</div>
+                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -233,9 +234,8 @@ const house_detail = reactive(propertyData.row)
 </div>
 </template>
 
-
 <style scoped>
-#head{
-    background-color:gray !important;
-}
+ #head-bg-color{
+        background-color: #748090;
+    }
 </style>

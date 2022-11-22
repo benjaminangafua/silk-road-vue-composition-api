@@ -4,12 +4,16 @@ import FooterDown from '../components/FooterDown.vue';
 import SidebarVue from '../components/Sidebar.vue';
 import PropertyMainContentNav from '../components/PropertyMainContentNav.vue'
 import propertyData from '../property-data.json'
+import HeadTopVue from '../components/HeadTop.vue';
 import { reactive} from 'vue';
+
+
 const house_detail = reactive(propertyData.row)
 
 </script>
-
-<template> 
+<template>  
+<div id="head-bg-color"><HeadTopVue /></div>
+    
     <div id="property-grd">
         <div class="grid-container">
             <!-- Side bar -->
@@ -29,8 +33,8 @@ const house_detail = reactive(propertyData.row)
                                 <div class="price"><strong>$500.00/</strong> month</div>
 
                                 <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
-                                <div class="cart-small-text"><img src="" alt="">{{house_detail.house1.location}}</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}}</div>
+                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{house_detail.house1.location}}</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -46,8 +50,8 @@ const house_detail = reactive(propertyData.row)
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
                                 <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
-                                <div class="cart-small-text"><img src="" alt="">{{house_detail.house1.location}}</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}}</div>
+                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{house_detail.house1.location}}</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -63,8 +67,8 @@ const house_detail = reactive(propertyData.row)
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
                                 <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
-                                <div class="cart-small-text"><img src="" alt="">{{house_detail.house1.location}}</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}}</div>
+                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{house_detail.house1.location}}</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -80,8 +84,8 @@ const house_detail = reactive(propertyData.row)
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
                                 <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
-                                <div class="cart-small-text"><img src="" alt="">{{house_detail.house1.location}}</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}}</div>
+                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{house_detail.house1.location}}</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -97,8 +101,8 @@ const house_detail = reactive(propertyData.row)
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
                                 <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
-                                <div class="cart-small-text"><img src="" alt="">{{house_detail.house1.location}}</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}}</div>
+                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{house_detail.house1.location}}</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -114,8 +118,8 @@ const house_detail = reactive(propertyData.row)
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
                                 <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
-                                <div class="cart-small-text"><img src="" alt="">{{house_detail.house1.location}}</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}}</div>
+                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{house_detail.house1.location}}</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -132,8 +136,8 @@ const house_detail = reactive(propertyData.row)
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
                                 <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
-                                <div class="cart-small-text"><img src="" alt="">{{house_detail.house1.location}}</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}}</div>
+                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{house_detail.house1.location}}</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -150,8 +154,8 @@ const house_detail = reactive(propertyData.row)
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
                                 <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
-                                <div class="cart-small-text"><img src="" alt="">{{house_detail.house1.location}}</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}}</div>
+                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{house_detail.house1.location}}</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -168,8 +172,8 @@ const house_detail = reactive(propertyData.row)
                                 <div class="price"><strong>$500.00/</strong>month</div>
 
                                 <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
-                                <div class="cart-small-text"><img src="" alt="">{{house_detail.house1.location}}</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}}</div>
+                                <div class="cart-small-text"> <span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{house_detail.house1.location}}</div>
+                                <div class="cart-small-text">{{house_detail.house1.owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
@@ -189,3 +193,8 @@ const house_detail = reactive(propertyData.row)
         <FooterDown />
  </div>
 </template>
+<style scoped>
+ #head-bg-color{
+        background-color: #748090;
+    }
+</style>

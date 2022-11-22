@@ -54,8 +54,16 @@ function toggleHamburger(e){
 }
 function closeToggleBtn(e){
     nav.value.className = "nav"
-    head.value.style = `display:grid; width:100%;
+    head.value.style = `
+    display: grid;
+    grid-template-columns: 10% 70%;
+    align-items: center;
+    padding: 1rem 0;
+    transition: width 1s;
+    
     `
+    logo.value.style = `margin-left: 4.2rem;
+                                `
     topNav.value.style.display = "grid"
     toggleBtn.value.style.display = "block"
     bottomNav.value.style.display = "grid"

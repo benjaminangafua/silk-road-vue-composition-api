@@ -1,6 +1,9 @@
+<script setup>
+import HeadTopVue from '../components/HeadTop.vue';
 
+</script>
 <template> 
-    
+<HeadTopVue />
 <div class="main-widget">
     <div class="filter-line">
         <div class="filter-cup"><font-awesome-icon :icon="['fas', 'filter']" /> FILTER</div>
