@@ -33,6 +33,11 @@ const router = createRouter({
         name: 'propertyGrid',
         component: () =>
             import ('../views/PropertyGrid.vue')
+    }, {
+        path: '/single-property',
+        name: 'singleProperty',
+        component: () =>
+            import ('../views/SingleProperty.vue')
     }]
 })
 

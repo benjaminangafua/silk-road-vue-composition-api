@@ -1,6 +1,5 @@
 <template>
-
-<div class="learn-more">Learn More</div>
+<br>
     <div class="footer">
             <div class="top-ftr">
                 <div class="footer1">

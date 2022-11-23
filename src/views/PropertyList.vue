@@ -5,9 +5,9 @@ import FooterDownVue from '../components/FooterDown.vue';
 import SidebarVue from '../components/Sidebar.vue';
 import PropertyMainContentNav from '../components/PropertyMainContentNav.vue'
 import propertyData from '../property-data.json'
-import { ref, reactive} from 'vue';
+import { ref} from 'vue';
 
-const house_detail = reactive(propertyData.row)
+const house_detail = ref(propertyData)
 const head = ref()
     console.log(head)
 </script>
@@ -26,8 +26,8 @@ const head = ref()
             <!-- Property LAyout -->
             <div class="content-grids">
                 <div class="content-list">
-                    <div class="carts-list">
-                        <div class="img-ls"><img :src="house_detail.house1.image" alt=""></div>
+                    <div class="carts-list"  v-for="detail in house_detail"  :key="detail.id">
+                        <div class="img-ls"><router-link to="/single-property"><img :src="detail.image"  alt=""></router-link></div>
                         <div class="ls-r">
                             <div class="cart-txt">
                                 <div class="top-carts-list">
@@ -37,192 +37,18 @@ const head = ref()
                                 </div>
 
                                 <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
+                                <div class="cart-small-text">{{detail.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
                                 <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
+                                <div class="icon"><span class="location-icon"><font-awesome-icon :icon="['fas', 'book']" /></span> </div>
                                 <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
                                 <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
                             </div>
                         </div>
                     </div>
-                    <div class="carts-list">
-                        <div class="img-ls"><img  :src="house_detail.house2.image" alt=""></div>
-                        <div class="ls-r">
-                            <div class="cart-txt">
 
-                                <div class="top-carts-list">
-                                    <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
-                                    <div class="price-ls"><strong>$500.00/</strong>month</div>
-
-                                </div>
-                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
-                            </div>
-                            <div class="icons-layout">
-                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
-                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carts-list">
-                        <div class="img-ls"><img :src="house_detail.house3.image" alt=""></div>
-                        <div class="ls-r">
-                            <div class="cart-txt">
-
-                                <div class="top-carts-list">
-                                    <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
-                                    <div class="price-ls"><strong>$500.00/</strong>month</div>
-
-                                </div>
-                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
-                            </div>
-                            <div class="icons-layout">
-                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
-                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carts-list">
-                        <div class="img-ls"><img :src="house_detail.house4.image" alt=""></div>
-                        <div class="ls-r">
-                            <div class="cart-txt">
-
-                                <div class="top-carts-list">
-                                    <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
-                                    <div class="price-ls"><strong>$500.00/</strong>month</div>
-
-                                </div>
-                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
-                            </div>
-                            <div class="icons-layout">
-                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
-                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carts-list">
-                        <div class="img-ls"><img :src="house_detail.house5.image" alt=""></div>
-                        <div class="ls-r">
-                            <div class="cart-txt">
-
-                                <div class="top-carts-list">
-                                    <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
-                                    <div class="price-ls"><strong>$500.00/</strong>month</div>
-
-                                </div>
-                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
-                            </div>
-                            <div class="icons-layout">
-                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
-                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carts-list">
-                        <div class="img-ls"><img :src="house_detail.house6.image" alt=""></div>
-                        <div class="ls-r">
-                            <div class="cart-txt">
-
-                                <div class="top-carts-list">
-                                    <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
-                                    <div class="price-ls"><strong>$500.00/</strong>month</div>
-
-                                </div>
-                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
-                            </div>
-                            <div class="icons-layout">
-                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
-                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carts-list">
-                        <div class="img-ls"><img :src="house_detail.house11.image" alt=""></div>
-                        <div class="ls-r">
-                            <div class="cart-txt">
-
-                                <div class="top-carts-list">
-                                    <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
-                                    <div class="price-ls"><strong>$500.00/</strong>month</div>
-
-                                </div>
-                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
-                            </div>
-                            <div class="icons-layout">
-                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
-                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carts-list">
-                        <div class="img-ls"><img :src="house_detail.house8.image" alt=""></div>
-                        <div class="ls-r">
-                            <div class="cart-txt">
-
-                                <div class="top-carts-list">
-                                    <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
-                                    <div class="price-ls"><strong>$500.00/</strong>month</div>
-
-                                </div>
-                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
-                            </div>
-                            <div class="icons-layout">
-                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
-                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carts-list">
-                        <div class="img-ls"><img :src="house_detail.house9.image" alt=""></div>
-                        <div class="ls-r">
-                            <div class="cart-txt">
-
-                                <div class="top-carts-list">
-                                    <div class="price-ls"><strong>$500.00/</strong>month</div>
-
-                                </div>
-                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
-                            </div>
-                            <div class="icons-layout">
-                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
-                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="advertisement">
                     Advertisement
@@ -230,6 +56,8 @@ const head = ref()
             </div>
         </div>
     </div>
+
+<div class="learn-more">Learn More</div>
     <FooterDownVue />
 </div>
 </template>

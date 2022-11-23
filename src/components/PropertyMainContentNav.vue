@@ -8,8 +8,8 @@
     </div>
     <div class="nav-icon">
         <div class="grd-ls">
-            <div>View</div> <div><router-link to="/list"><span class="material-symbols-outlined">list</span></router-link></div>
-            <div><router-link to="/grid"> <span class="material-symbols-outlined">grid_view </span> </router-link></div>
+            <div>View</div> <div><router-link to="/list"><span class="material-symbols-outlined" id="list-icon">list</span></router-link></div>
+            <div><router-link to="/grid"> <span><font-awesome-icon :icon="['fas', 'grip-horizontal']" /></span>  </router-link></div>
         </div>
         <div class="search-filter">
             <div class="srt">Sort by</div>

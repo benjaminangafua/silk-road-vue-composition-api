@@ -5,10 +5,10 @@ import SidebarVue from '../components/Sidebar.vue';
 import PropertyMainContentNav from '../components/PropertyMainContentNav.vue'
 import propertyData from '../property-data.json'
 import HeadTopVue from '../components/HeadTop.vue';
-import { reactive} from 'vue';
+import { ref} from 'vue';
 
 
-const house_detail = reactive(propertyData.row)
+const house_detail = ref(propertyData)
 
 </script>
 <template>  
@@ -27,158 +27,19 @@ const house_detail = reactive(propertyData.row)
             <!-- Property Layout -->
                 <div class="content-grids">
                     <div class="content-grid">
-                        <div class="carts">
-                            <div class="img"><img :src="house_detail.house1.image"  alt=""></div>
+                        <div class="carts" v-for="detail in house_detail"  :key="detail.id">
+                            <div class="img"> <router-link to="/single-property"><img :src="detail.image"  alt=""></router-link></div>
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong> month</div>
 
-                                <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
-                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{house_detail.house1.location}}</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
+                                <div class="cart-small-text bed-room">{{detail.description}}</div>
+                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{detail.location}}</div>
+                                <div class="cart-small-text">{{detail.owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
                                 <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
-                            </div>
-                        </div>
-                        <div class="carts">
-                            <div class="img"><img :src="house_detail.house2.image"  alt=""></div>
-                            <div class="cart-txt">
-                                <div class="price"><strong>$500.00/</strong>month</div>
-
-                                <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
-                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{house_detail.house1.location}}</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
-                            </div>
-                            <div class="icons-layout">
-                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
-                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
-                            </div>
-                        </div>
-                        <div class="carts">
-                            <div class="img"><img :src="house_detail.house3.image"  alt=""></div>
-                            <div class="cart-txt">
-                                <div class="price"><strong>$500.00/</strong>month</div>
-
-                                <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
-                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{house_detail.house1.location}}</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
-                            </div>
-                            <div class="icons-layout">
-                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
-                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
-                            </div>
-                        </div>
-                        <div class="carts">
-                            <div class="img"><img :src="house_detail.house4.image"  alt=""></div>
-                            <div class="cart-txt">
-                                <div class="price"><strong>$500.00/</strong>month</div>
-
-                                <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
-                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{house_detail.house1.location}}</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
-                            </div>
-                            <div class="icons-layout">
-                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
-                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
-                            </div>
-                        </div>
-                        <div class="carts">
-                            <div class="img"><img :src="house_detail.house5.image"  alt=""></div>
-                            <div class="cart-txt">
-                                <div class="price"><strong>$500.00/</strong>month</div>
-
-                                <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
-                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{house_detail.house1.location}}</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
-                            </div>
-                            <div class="icons-layout">
-                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
-                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
-                            </div>
-                        </div>
-                        <div class="carts">
-                            <div class="img"><img :src="house_detail.house6.image"  alt=""></div>
-                            <div class="cart-txt">
-                                <div class="price"><strong>$500.00/</strong>month</div>
-
-                                <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
-                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{house_detail.house1.location}}</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
-                            </div>
-                            <div class="icons-layout">
-                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
-                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
-                            </div>
-                        </div>
-
-                        <div class="carts">
-                            <div class="img"><img :src="house_detail.house11.image"  alt=""></div>
-                            <div class="cart-txt">
-                                <div class="price"><strong>$500.00/</strong>month</div>
-
-                                <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
-                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{house_detail.house1.location}}</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
-                            </div>
-                            <div class="icons-layout">
-                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
-                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
-                            </div>
-                        </div>
-
-                        <div class="carts">
-                            <div class="img"><img :src="house_detail.house8.image"  alt=""></div>
-                            <div class="cart-txt">
-                                <div class="price"><strong>$500.00/</strong>month</div>
-
-                                <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
-                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{house_detail.house1.location}}</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
-                            </div>
-                            <div class="icons-layout">
-                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
-                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
-                            </div>
-                        </div>
-
-                        <div class="carts">
-                            <div class="img"><img :src="house_detail.house9.image"  alt=""></div>
-                            <div class="cart-txt">
-                                <div class="price"><strong>$500.00/</strong>month</div>
-
-                                <div class="cart-small-text bed-room">{{house_detail.house1.description}}</div>
-                                <div class="cart-small-text"> <span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{house_detail.house1.location}}</div>
-                                <div class="cart-small-text">{{house_detail.house1.owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
-                            </div>
-                            <div class="icons-layout">
-                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
-                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="material-symbols-outlined">book</span> </div>
+                                <div class="icon"><span class="location-icon"><font-awesome-icon :icon="['fas', 'book']" /></span> </div>
                                 <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
                                 <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
                             </div>
@@ -190,6 +51,8 @@ const house_detail = reactive(propertyData.row)
                 </div>
             </div>
         </div>
+<div class="grid-learn-more">Learn More</div>
+        
         <FooterDown />
  </div>
 </template>
