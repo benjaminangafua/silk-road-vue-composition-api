@@ -3,83 +3,83 @@
         "description": "3 Bedroom Townhouse",
         "location": "45 Circle Dr, Monrovia, Liberia",
         "owner_name": "Peter Wayne",
-        "image": "../public/images/building1.jpg"
+        "image": "/public/images/building1.jpg"
     },
     {
         "id": 2,
         "description": "3 Bedroom Townhouse",
         "location": "45 Circle Dr, Monrovia, Liberia",
         "owner_name": "Peter Wayne",
-        "image": "../public/images/building2.jpg"
+        "image": "/public/images/building2.jpg"
     },
     {
         "id": 3,
         "description": "3 Bedroom Townhouse",
         "location": "45 Circle Dr, Monrovia, Liberia",
         "owner_name": "Peter Wayne",
-        "image": "../public/images/building3.jpg"
+        "image": "/public/images/building3.jpg"
     },
     {
         "id": 4,
         "description": "3 Bedroom Townhouse",
         "location": "45 Circle Dr, Monrovia, Liberia",
         "owner_name": "Peter Wayne",
-        "image": "../public/images/building4.jpg"
+        "image": "/public/images/building4.jpg"
     },
     {
         "id": 5,
         "description": "3 Bedroom Townhouse",
         "location": "45 Circle Dr, Monrovia, Liberia",
         "owner_name": "Peter Wayne",
-        "image": "../public/images/building5.jpg"
+        "image": "/public/images/building5.jpg"
     },
     {
         "id": 6,
         "description": "3 Bedroom Townhouse",
         "location": "45 Circle Dr, Monrovia, Liberia",
         "owner_name": "Peter Wayne",
-        "image": "../public/images/building6.jpg"
+        "image": "/public/images/building6.jpg"
     },
     {
         "id": 7,
         "description": "3 Bedroom Townhouse",
         "location": "45 Circle Dr, Monrovia, Liberia",
         "owner_name": "Peter Wayne",
-        "image": "../public/images/building7.jpg"
+        "image": "/public/images/building7.jpg"
     },
     {
         "id": 8,
         "description": "3 Bedroom Townhouse",
         "location": "45 Circle Dr, Monrovia, Liberia",
         "owner_name": "Peter Wayne",
-        "image": "../public/images/building8.jpg"
+        "image": "/public/images/building8.jpg"
     },
     {
         "id": 9,
         "description": "3 Bedroom Townhouse",
         "location": "45 Circle Dr, Monrovia, Liberia",
         "owner_name": "Peter Wayne",
-        "image": "../public/images/building9.jpg"
+        "image": "/public/images/building9.jpg"
     },
     {
         "id": 10,
         "description": "3 Bedroom Townhouse",
         "location": "45 Circle Dr, Monrovia, Liberia",
         "owner_name": "Peter Wayne",
-        "image": "../public/images/building10.jpg"
+        "image": "/public/images/building10.jpg"
     },
     {
         "id": 11,
         "description": "3 Bedroom Townhouse",
         "location": "45 Circle Dr, Monrovia, Liberia",
         "owner_name": "Peter Wayne",
-        "image": "../public/images/building11.jpg"
+        "image": "/public/images/building11.jpg"
     },
     {
         "id": 12,
         "description": "3 Bedroom Townhouse",
         "location": "45 Circle Dr, Monrovia, Liberia",
         "owner_name": "Peter Wayne",
-        "image": "../public/images/building12.jpg"
+        "image": "/public/images/building12.jpg"
     }
 ]
