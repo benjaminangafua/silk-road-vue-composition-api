@@ -1012,16 +1012,39 @@ a span {
     .main-login {
         display: block;
         margin: 5%;
-        padding: 20px;
+        padding: 30px;
     }
     .login-form {
         display: grid;
         margin: 0% 5% 5% 5%;
-        padding: 20px;
+        padding: 10px 30px 30px 30px;
     }
     .log-input div {
-        margin-bottom: 5%;
+        margin-bottom: 10%;
     }
+    .input1 input,
+    .input2 input,
+    .input3 input {
+        width: 86.6%;
+    }
+    .input2 input {
+        width: 68%;
+        margin-left: 0;
+    }
+    #login-select {
+        width: 19%;
+        margin-right: -1.5%;
+    }
+    #phoneAlt {
+        color: var(--dark-gray-clr);
+        margin-left: -60%;
+        margin-top: 2%;
+    }
+    #lock1 {
+        margin-left: -71%;
+        margin-top: 2%;
+    }
+    /* Registration */
     .main-registration-content {
         display: block;
         margin: 5%;
@@ -1030,7 +1053,6 @@ a span {
         border: 1px solid var(--white-clr);
         background-color: rgba(0, 0, 0, 0.719);
     }
-    /* Registration */
     .registration-form {
         background-color: var(--white-clr);
         display: grid;
@@ -1084,17 +1106,5 @@ a span {
     }
     .bottom-content {
         padding-bottom: 0;
-    }
-    .input2 input {
-        width: 60%;
-        margin-left: 0;
-    }
-    #phoneAlt,
-    #lock1 {
-        color: var(--dark-gray-clr);
-        margin: 2% auto auto -55%;
-    }
-    #lock1 {
-        margin: 2% auto auto -75%;
     }
 }
