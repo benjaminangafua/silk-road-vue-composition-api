@@ -836,12 +836,61 @@ a span {
 /* `lg` applies to medium devices (tablets, less than 992px) */
 
 @media (max-width: 991.98px) {
+    .container {
+        height: 100%;
+    }
     .logo {
         margin-left: 0;
     }
     .header {
         display: grid;
         grid-template-columns: 20% 70%;
+    }
+    /* Login */
+    .main-login {
+        display: block;
+        margin: 5% 20%;
+        padding: 20px 80px;
+    }
+    .login-form {
+        display: grid;
+        margin: 0% 20% 5% 20%;
+        padding: 20px 80px;
+    }
+    #login-select {
+        width: 15%;
+        margin-right: -1%;
+    }
+    .input1 input,
+    .input2 input,
+    .input3 input {
+        width: 90%;
+    }
+    .input2 input {
+        width: 74.43%;
+        margin-left: 0;
+    }
+    #phoneAlt {
+        margin-left: -35%;
+        margin-top: 0.8%;
+    }
+    #lock1 {
+        margin-left: -41%;
+        margin-top: 0.8%;
+    }
+    .log-input div {
+        margin-bottom: 5%;
+    }
+    .heading h2 {
+        text-align: center;
+    }
+    .main-registration-content {
+        display: block;
+        margin: 5%;
+        padding: 20px;
+        color: var(--white-clr);
+        border: 1px solid var(--white-clr);
+        background-color: rgba(0, 0, 0, 0.719);
     }
     .sidebar,
     .advertisement {
