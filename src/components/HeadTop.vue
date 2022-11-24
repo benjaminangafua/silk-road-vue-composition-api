@@ -2,6 +2,10 @@
 <script setup>
 import  {RouterLink}  from 'vue-router';
 import { ref, onMounted} from 'vue';
+import { useRoute } from 'vue-router'
+
+const route = useRoute().path 
+console.log(route)
 
 const head = ref()
 const logo = ref()
@@ -29,7 +33,6 @@ function toggleHamburger(e){
         display:block; 
         background-color:#3b444b;
         padding:10px 20px;
-        width:50%;
         `
         topNav.value.style.display = "block"
 
@@ -98,8 +101,17 @@ function closeToggleBtn(e){
                 <!-- <i class="fa-facebook-f" -->
                 <hr class="divider" ref="hr1">
                 <div class="bottom-nav"  id="bottom-nav"  ref="bottomNav">
+                    <div class="bottom-left-nav">
 
                     <a href="/widget"> <div  class="toggle-menu-border">Widget</div></a>
+                        <a href="">
+                            <div v-if="route == '/register'">Register</div> 
+                            <div v-else-if="route == '/login'">Login</div> 
+                            <div v-else-if="route == '/grid' || route == '/list'">House</div> 
+                            <div v-else > </div> 
+
+                         </a>
+                    </div>
 
                     <div class="property-btn"  id="property-btn"  ref="propertyBtn"><button><a href="/">Post a Property</a></button></div>
                 </div>

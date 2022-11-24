@@ -27,7 +27,7 @@ import HeadTopVue from '../components/HeadTop.vue';
                 <div class="log-input">
                     <div class="input1"  id="placeholder-p"><input type="text" placeholder="Full name">
                     
-                        <font-awesome-icon id="lock1" :icon="['fas', 'user']" />
+                        <font-awesome-icon id="user-icon" :icon="['fas', 'user']" />
                     </div>
 
                     <div class="input2" id="placeholder-p">
@@ -37,13 +37,13 @@ import HeadTopVue from '../components/HeadTop.vue';
                             <option value="+134">+134</option>
                             <option value="+412">+412</option>
                         </select> 
-                        <input type="text" placeholder="Phone number">
-                        <font-awesome-icon id="phoneAlt" :icon="['fas', 'phone-alt']" />
+                        <input id="input2" type="tel" placeholder="Phone number">
+                        <font-awesome-icon id="phone-icon" :icon="['fas', 'phone-alt']" />
                     </div>
 
-                    <div class="input3"  id="placeholder-p"><input type="text" placeholder="Password">
+                    <div class="input3"  id="placeholder-p"><input type="password" placeholder="Password">
                     
-                        <font-awesome-icon id="lock1" :icon="['fas', 'lock']" />
+                        <font-awesome-icon id="password" :icon="['fas', 'lock']" />
                     </div>
                    
                     <div class="agree-term">I agree to the terms and conditions <input type="checkbox" name="" id=""></div>
