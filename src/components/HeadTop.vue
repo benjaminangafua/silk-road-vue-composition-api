@@ -85,32 +85,31 @@ function closeToggleBtn(e){
                 <div class="top-nav" id="top-nav"  ref="topNav">
                     <div class="home" ref="home">
 
-                        <a href="/"><div class="toggle-menu-border" id="home">Home</div></a> 
+                        <RouterLink to="/"><div class="toggle-menu-border" id="home">Home</div></RouterLink> 
 
-                        <a href="/grid"> <div  class="toggle-menu-border" id="ourProperty">Our Property</div></a>
+                        <RouterLink to="/grid"> <div  class="toggle-menu-border" id="ourProperty">Our Property</div></RouterLink>
                     </div>
                     <div class="auth" id="auth"  ref="authenticate">
 
-                        <a href="/login"><div class="navbar-right toggle-menu-border"  id="navbar-right"  ref="navbar-right">Login</div></a>
+                        <RouterLink to="/login"><div class="navbar-right toggle-menu-border"  id="navbar-right"  ref="navbar-right">Login</div></RouterLink>
                         
                         <hr class="nav-hr" ref="hr">
 
-                        <a href="/register"><div class="navbar-right toggle-menu-border"  id="navbar-right"  ref="navbar-right">Register</div></a>
+                        <RouterLink to="/register"><div class="navbar-right toggle-menu-border"  id="navbar-right"  ref="navbar-right">Register</div></RouterLink>
                     </div>
                 </div>
                 <!-- <i class="fa-facebook-f" -->
                 <hr class="divider" ref="hr1">
                 <div class="bottom-nav"  id="bottom-nav"  ref="bottomNav">
                     <div class="bottom-left-nav">
-
-                    <a href="/widget"> <div  class="toggle-menu-border">Widget</div></a>
-                        <a href="">
+                        <RouterLink to="/widget"><div  class="toggle-menu-border">Widget</div></RouterLink>
+                        <RouterLink to="">
                             <div v-if="route == '/register'">Register</div> 
                             <div v-else-if="route == '/login'">Login</div> 
                             <div v-else-if="route == '/grid' || route == '/list'">House</div> 
                             <div v-else > </div> 
 
-                         </a>
+                         </RouterLink>
                     </div>
 
                     <div class="property-btn"  id="property-btn"  ref="propertyBtn"><button><a href="/">Post a Property</a></button></div>
