@@ -820,7 +820,7 @@ a span {
 
 .descriptions li,
 .property-description {
-    list-style: none;
+    list-style: square;
     color: var(--text-clr);
 }
 

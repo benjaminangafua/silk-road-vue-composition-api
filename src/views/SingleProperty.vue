@@ -42,7 +42,7 @@ const property_obj = property[0]
                      <div class="single-property-img" v-if="route =='/single-property/'+property_num">
                         <img :src="property[0].image"  alt="">
                     </div>
-                    <div class="">
+                    <div class="ls-r">
                         <div class="cart-txt">
                             <div class="top-carts-list">
                                 <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
@@ -60,11 +60,11 @@ const property_obj = property[0]
                             <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
                             <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
                         </div>
-                        <div class="property-description">
+                        <div>
                             <div class="btn-primary"><button>Give Peter a call</button><button>Give Peter an email</button></div>
                             <h4>Property Description</h4>
                             
-                            <p>
+                            <p class="property-description">
                             This building comprises of 3 room all with inside bathroom and dresser.
                             The rectangular building faces north on its small lot, which sits on Town Highway 25 in the village of Bakersfield. 
                             </p>
