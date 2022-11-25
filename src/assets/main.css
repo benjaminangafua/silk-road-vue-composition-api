@@ -807,14 +807,8 @@ a span {
     grid-template-columns: repeat(2, 1fr);
 }
 
-@media (max-width:858px) {
-    /* General */
-}
-
-@media (max-width:380px) {
-    .input2 input {
-        width: 59%;
-    }
+.single-property-img img {
+    width: 100%;
 }
 
 #closeToggle {

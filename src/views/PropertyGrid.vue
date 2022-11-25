@@ -5,11 +5,16 @@ import SidebarVue from '../components/Sidebar.vue';
 import PropertyMainContentNav from '../components/PropertyMainContentNav.vue'
 import propertyData from '../property-data.json'
 import HeadTopVue from '../components/HeadTop.vue';
-import { ref} from 'vue';
+import { computed, reactive, ref} from 'vue';
 
 
 const house_detail = ref(propertyData)
 
+// const house_route =  house_detail.value.forEach((val)=> { 
+//     ((((val.image).split("."))[0]).split("/"))[2]
+
+//     })
+// console.log(house_route)
 </script>
 <template>  
 <div id="head-bg-color"><HeadTopVue /></div>
@@ -27,8 +32,8 @@ const house_detail = ref(propertyData)
             <!-- Property Layout -->
                 <div class="content-grids">
                     <div class="content-grid">
-                        <div class="carts" v-for="detail in house_detail"  :key="detail.id">
-                            <div class="img"> <router-link to="/single-property"><img :src="detail.image"  alt=""></router-link></div>
+                        <div class="carts" v-for="(detail, index) in house_detail"  :key="detail.id">
+                            <div class="img"> <router-link v-bind:to="'/single-property/'+(Number(index)+1)"><img :src="detail.image"  alt=""></router-link></div>
                             <div class="cart-txt">
                                 <div class="price"><strong>$500.00/</strong> month</div>
 

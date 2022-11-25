@@ -5,7 +5,7 @@ import { ref, onMounted} from 'vue';
 import { useRoute } from 'vue-router'
 
 const route = useRoute().path 
-console.log(route)
+
 
 const head = ref()
 const logo = ref()

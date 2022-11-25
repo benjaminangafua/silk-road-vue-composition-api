@@ -26,8 +26,8 @@ const head = ref()
             <!-- Property LAyout -->
             <div class="content-grids">
                 <div class="content-list">
-                    <div class="carts-list"  v-for="detail in house_detail"  :key="detail.id">
-                        <div class="img-ls"><router-link to="/single-property"><img :src="detail.image"  alt=""></router-link></div>
+                    <div class="carts-list"  v-for="(detail, index) in house_detail"  :key="detail.id">
+                        <div class="img-ls"><router-link v-bind:to="'/single-property/'+(Number(index)+1)"><img :src="detail.image"  alt=""></router-link></div>
                         <div class="ls-r">
                             <div class="cart-txt">
                                 <div class="top-carts-list">
