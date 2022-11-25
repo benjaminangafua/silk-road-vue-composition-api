@@ -11,9 +11,12 @@ import { useRoute } from 'vue-router'
 const route = useRoute().path 
 const house_detail = ref(propertyData)
 
+// Get route number
 const property_num = Number(route.split("/")[2])
+
+// Match route
 const property = computed(()=>house_detail.value.filter((item,index)=> {
-    if (index+1== property_num){
+    if (item.id == property_num){
         return item
     }
 
