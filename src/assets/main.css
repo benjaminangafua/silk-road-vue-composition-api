@@ -4,7 +4,7 @@
     --dark-gray-clr: #748090;
     --green-clr: #20B2AA;
     --white-clr: #fff;
-    /* --green-clr: navy; */
+    --text-clr: #4a5158;
     --black-clr: #000;
 }
 
@@ -503,7 +503,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .sidebar-label div div {
-    color: #4a5158;
+    color: var(--text-clr);
 }
 
 .grd-price {
@@ -809,6 +809,28 @@ a span {
 
 .single-property-img img {
     width: 100%;
+    margin-bottom: 5%;
+}
+
+.amenity-description {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5% auto;
+}
+
+.descriptions li,
+.property-description {
+    list-style: none;
+    color: var(--text-clr);
+}
+
+.btn-primary button {
+    padding: 10px;
+    margin: 5% 5% 0 5%;
+}
+
+.icon {
+    border: none !important;
 }
 
 #closeToggle {
