@@ -108,7 +108,6 @@ function closeToggleBtn(e){
                             <div v-else-if="route == '/login'">Login</div> 
                             <div v-else-if="route == '/grid' || route == '/list'">House</div> 
                             <div v-else > </div> 
-
                          </RouterLink>
                     </div>
 

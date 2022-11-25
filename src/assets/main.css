@@ -830,7 +830,7 @@ a span {
 }
 
 .icon {
-    border: none !important;
+    border: 1px solid var(--dark-gray-clr);
 }
 
 #closeToggle {
