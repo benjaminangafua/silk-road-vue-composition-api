@@ -1164,4 +1164,9 @@ a span {
     .bottom-content {
         padding-bottom: 0;
     }
+    /* Single property */
+    .amenity-description {
+        display: grid;
+        grid-template-columns: 100%;
+    }
 }
