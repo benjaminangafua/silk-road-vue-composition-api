@@ -103,7 +103,7 @@ function closeToggleBtn(e){
                 <div class="bottom-nav"  id="bottom-nav"  ref="bottomNav">
                     <div class="bottom-left-nav">
                         <RouterLink to="/widget"><div  class="toggle-menu-border">Widget</div></RouterLink>
-                        <RouterLink to="">
+                        <RouterLink to="#">
                             <div v-if="route == '/register'">Register</div> 
                             <div v-else-if="route == '/login'">Login</div> 
                             <div v-else-if="route == '/grid' || route == '/list'">House</div> 
@@ -111,11 +111,11 @@ function closeToggleBtn(e){
                          </RouterLink>
                     </div>
 
-                    <div class="property-btn"  id="property-btn"  ref="propertyBtn"><button><a href="/">Post a Property</a></button></div>
+                    <div class="property-btn"  id="property-btn"  ref="propertyBtn"><button><RouterLink to="/single-property/1">Post a Property</RouterLink></button></div>
                 </div>
             </div>
 
-            <a @click.prevent="toggleHamburger" class="icon" ref="toggleBtn"><i class="fa fa-bars"></i> </a>
+            <a @click.prevent="toggleHamburger" ref="toggleBtn"><i class="fa fa-bars"></i> </a>
         </div>
     </div>
 </template>

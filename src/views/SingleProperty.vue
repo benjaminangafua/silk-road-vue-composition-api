@@ -33,34 +33,29 @@ const property_obj = property[0]
                 
             <!-- property Main content nav -->
             <PropertyMainContentNav/>
-            
 
             <!-- Property Layout -->
                 <div class="content-grids">
-                    <div >
+                    <div class="single-property-layout">
+                        <div class="carts" v-if="route =='/single-property/'+property_num">
+                            <div class="img"><img :src="property[0].image"  alt=""></div>
+                            
+                            <div class="cart-txt">
+                                <div class="price"><strong>$500.00/</strong> month</div>
 
-                     <div class="single-property-img" v-if="route =='/single-property/'+property_num">
-                        <img :src="property[0].image"  alt="">
-                    </div>
-                    <div class="ls-r">
-                        <div class="cart-txt">
-                            <div class="top-carts-list">
-                                <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
-                                <div class="price-ls"><strong>$500.00/</strong>month</div>
-
+                                <div class="cart-small-text bed-room">{{property[0].description}}</div>
+                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{property[0].location}}</div>
+                                <div class="cart-small-text">{{property[0].owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
-
-                            <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
-                            <div class="cart-small-text">{{property[0].owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
-                        </div>
-                        <div class="icons-layout">
-                            <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
-                            <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                            <div class="icon"><span class="location-icon"><font-awesome-icon :icon="['fas', 'book']" /></span> </div>
-                            <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
-                            <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
-                        </div>
-                        <div>
+                            <div class="icons-layout">
+                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
+                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
+                                <div class="icon"><span class="location-icon"><font-awesome-icon :icon="['fas', 'book']" /></span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
+                            </div>
+                        
+                        <div class="available-amenities">
                             <div class="btn-primary"><button>Give Peter a call</button><button>Give Peter an email</button></div>
                             <h4>Property Description</h4>
                             
@@ -105,25 +100,25 @@ const property_obj = property[0]
                                     
                                 </div>
                             </div>
-                            <div class="map-gif">
-                                <img src="/images/gps.gif" alt="">
-                            </div>
+                        </div>
+                        <div class="img">
+                            <img src="/images/gps.gif" alt="">
+                        </div>
                         </div>
                     </div>
-                </div>
-
-
                     <div class="advertisement">
                         Advertisement
                     </div>
                 </div>
             </div>
         </div>
-    <div class="grid-learn-more">Learn More</div>
+<div class="grid-learn-more">Learn More</div>
         
-    <FooterDown />
+        <FooterDown />
  </div>
 </template>
 <style scoped>
-
+ #head-bg-color{
+        background-color: #748090;
+    }
 </style>

@@ -790,7 +790,7 @@ a span {
 .fa-bars {
     display: none !important;
     background-color: var(--black-clr);
-    padding: .1em;
+    padding: 0.25em;
     border-radius: .1em;
 }
 
@@ -807,6 +807,14 @@ a span {
     grid-template-columns: repeat(2, 1fr);
 }
 
+
+/* Single Property */
+
+.single-property-layout {
+    display: grid;
+    grid-template-columns: none;
+}
+
 .single-property-img img {
     width: 100%;
     margin-bottom: 5%;
@@ -815,7 +823,12 @@ a span {
 .amenity-description {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 5% auto;
+    margin-left: 2.5%;
+    margin-bottom: 5%;
+}
+
+.available-amenities {
+    margin-left: 5%;
 }
 
 .descriptions li,
@@ -825,8 +838,12 @@ a span {
 }
 
 .btn-primary button {
-    padding: 10px;
     margin: 5% 5% 0 5%;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: var(--dark-gray-clr);
+    color: var(--white-clr);
 }
 
 .icon {
@@ -933,21 +950,21 @@ a span {
         padding: 20px 30px;
     }
     .input2 select {
-        width: 24%;
+        width: 12%;
     }
     #phone-icon {
         color: var(--dark-gray-clr);
-        margin-left: -16rem;
+        margin-left: -84%;
         margin-top: 0.8%;
     }
     #password,
     #user-icon {
         color: var(--dark-gray-clr);
-        margin-left: -21.2rem;
+        margin-left: -95%;
         margin-top: 2%;
     }
     #input2 {
-        width: 14.2rem;
+        width: 78%;
     }
     .sidebar,
     .advertisement {
@@ -985,12 +1002,12 @@ a span {
 
 @media (max-width: 575.98px) {
     .container {
-        height: 100vh;
+        height: 100%;
     }
     #closeToggle {
         display: none;
         float: right;
-        font-size: 40px;
+        font-size: 30px;
         padding: 0 10px;
     }
     .toggle-menu-border {
@@ -1035,7 +1052,7 @@ a span {
         font-size: 13px;
         letter-spacing: 0.01px;
         word-spacing: 0.01px;
-        margin-left: 4.2rem;
+        margin-left: 2.8rem;
     }
     .fa-bars {
         display: block !important;
@@ -1085,8 +1102,11 @@ a span {
         width: 86.6%;
     }
     .input2 input {
-        width: 68%;
+        /* width: 68%; */
         margin-left: 0;
+    }
+    #input2 {
+        width: 69%;
     }
     #login-select {
         width: 19%;
@@ -1134,6 +1154,18 @@ a span {
     .content-grid {
         display: block;
     }
+    #password,
+    #user-icon {
+        color: var(--dark-gray-clr);
+        margin-left: -20rem;
+        margin-top: 2%;
+    }
+    #phone-icon {
+        margin-left: -79%;
+    }
+    .input2 select {
+        width: 17%;
+    }
     /* List Layout */
     .carts-list,
     .carts {
@@ -1168,5 +1200,8 @@ a span {
     .amenity-description {
         display: grid;
         grid-template-columns: 100%;
+    }
+    .descriptions {
+        margin-bottom: 3%;
     }
 }

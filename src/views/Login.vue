@@ -26,15 +26,17 @@ import HeadTopVue from '../components/HeadTop.vue';
                     <h2>LOGIN</h2>
                 </div>
                 <div class="log-input">
-                    <div class="input2">
-                        <select name="c-code" id="login-select">
-                                <option value="+231">+231</option>
-                                <option value="+234">+234</option>
-                                <option value="+134">+134</option>
-                                <option value="+412">+412</option>
-                            </select> <input type="text" placeholder="Phone number">
-                        <font-awesome-icon id="phoneAlt" :icon="['fas', 'phone-alt']" /></div>
-                    <div class="input1">
+                    <div class="input2" id="placeholder-p">
+                        <select name="c-code" id="">
+                            <option value="+231">+231</option>
+                            <option value="+234">+234</option>
+                            <option value="+134">+134</option>
+                            <option value="+412">+412</option>
+                        </select> 
+                        <input id="input2" type="tel" placeholder="Phone number">
+                        <font-awesome-icon id="phone-icon" :icon="['fas', 'phone-alt']" />
+                    </div>
+                        <div class="input1">
                         <input type="text" placeholder="Password">
                     
                         <font-awesome-icon id="lock1" :icon="['fas', 'lock']" />

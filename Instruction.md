@@ -108,3 +108,15 @@ createApp(App)
 <font-awesome-icon icon="phone" />
 
 ```
+## Problem
+```sh
+  error: object file .git/objects/d6/824c60c76dce043bb7a52c77e8f14f8417f4ea is empty
+  error: object file .git/objects/d6/824c60c76dce043bb7a52c77e8f14f8417f4ea is empty
+  fatal: loose object d6824c60c76dce043bb7a52c77e8f14f8417f4ea (stored in .git/objects/d6/824c60c76dce043bb7a52c77e8f14f8417f4ea) is corrupt
+```
+
+```sh
+
+find .git/objects/ -size 0 -exec rm -f {} \;
+git fetch origin
+```
