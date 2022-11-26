@@ -4,7 +4,8 @@ import HeadTopVue from '../components/HeadTop.vue';
 
 </script>
 <template> 
-<HeadTopVue />
+<div class="container">
+    <HeadTopVue />
     
     <div class="rg-container">
         <div class="main-registration-content">
@@ -56,4 +57,5 @@ import HeadTopVue from '../components/HeadTop.vue';
             <div></div>
         </form>
     </div>
+</div>
 </template>

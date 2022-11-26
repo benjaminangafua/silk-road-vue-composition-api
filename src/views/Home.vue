@@ -3,6 +3,7 @@ import HeadTopVue from '../components/HeadTop.vue';
 
 </script>
 <template> 
+<div class="container">
 <HeadTopVue />
    <div class="main">
             <div> Real estate without the hassle</div>
@@ -13,4 +14,11 @@ import HeadTopVue from '../components/HeadTop.vue';
             <div>OUR LATEST POSTINGS</div>
             <div><font-awesome-icon :icon="['fas', 'caret-down']" /></div>
         </div>
+    </div>
 </template>
+
+<style scoped>
+.container{
+    height: 100vh;
+}
+</style>
