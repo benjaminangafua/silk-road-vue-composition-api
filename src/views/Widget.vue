@@ -52,7 +52,7 @@ import HeadTopVue from '../components/HeadTop.vue';
                         <option value="">2</option>
                     </select>
                 </div>
-                <div><button>Find it</button></div>
+                <div><button><RouterLink to="/grid"> Find it</RouterLink></button></div>
             </div>
         </div>
     </div>

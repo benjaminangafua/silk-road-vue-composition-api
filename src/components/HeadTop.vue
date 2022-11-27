@@ -104,9 +104,9 @@ function closeToggleBtn(e){
                     <div class="bottom-left-nav">
                         <RouterLink to="/widget"><div  class="toggle-menu-border">Widget</div></RouterLink>
                         <RouterLink to="#">
-                            <div v-if="route == '/register'">Register</div> 
-                            <div v-else-if="route == '/login'">Login</div> 
-                            <div v-else-if="route == '/grid' || route == '/list'">House</div> 
+                            <div v-if="route == '/register'"> <span class="active">Register</span></div> 
+                            <div v-else-if="route == '/login'"><span class="active">Login</span></div> 
+                            <div v-else-if="route == '/grid' || route == '/list'"><span class="active">House</span> </div> 
                             <div v-else > </div> 
                          </RouterLink>
                     </div>

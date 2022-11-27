@@ -6,6 +6,7 @@
     --white-clr: #fff;
     --text-clr: #4a5158;
     --black-clr: #000;
+    --header-txt-clr: #bcc0c6;
 }
 
 
@@ -32,6 +33,14 @@ body {
 a {
     text-decoration: none;
     color: var(--white-clr);
+}
+
+.header a {
+    color: var(--header-txt-clr);
+}
+
+.header button a {
+    color: var(--white-clr) !important;
 }
 
 .active {
@@ -264,7 +273,7 @@ input:focus {
 
 .r-detail-select div button,
 .content button {
-    padding: 8px 32px;
+    padding: 8px 60px;
     color: var(--white-clr);
     border: none;
     border-radius: 5px;
@@ -272,7 +281,7 @@ input:focus {
 
 .r-detail-select div button {
     float: right;
-    background-color: var(--green-clr);
+    background-color: #4068df;
 }
 
 input[type=range] {
