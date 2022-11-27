@@ -63,6 +63,11 @@ const house_detail = ref(propertyData)
 
 </template>
 <style scoped>
+
+.grid-learn-more {
+    margin-top: 8%;
+}
+
  #head-bg-color{
         background-color: #748090;
     }

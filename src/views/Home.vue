@@ -21,4 +21,18 @@ import HeadTopVue from '../components/HeadTop.vue';
 .container{
     height: 100vh;
 }
+
+@media (max-width: 575.98px) {
+    .container{
+        height: 100vh;
+    }
+    
+}
+@media (max-height: 575.98px) {
+    .container{
+        height: 100%;
+    }
+    
+}
+
 </style>

@@ -737,10 +737,6 @@ a span {
     width: 190px;
 }
 
-.grid-learn-more {
-    margin-top: 8%;
-}
-
 .footer {
     color: var(--white-clr);
     background-color: var(--dark-gray-clr);
@@ -868,7 +864,7 @@ a span {
         margin: 2%;
     }
     .container {
-        height: 100vh;
+        /* height: 100vh; */
     }
     .input2 select {
         width: 24%;
@@ -906,7 +902,7 @@ a span {
     .login-form {
         display: grid;
         margin: 0% 20% 5% 20%;
-        padding: 20px 80px;
+        padding: 20px 30px;
     }
     #login-select {
         width: 15%;
@@ -926,7 +922,7 @@ a span {
         margin-top: 0.8%;
     }
     #lock1 {
-        margin-left: -41%;
+        margin-left: -50%;
         margin-top: 0.8%;
     }
     .log-input div {

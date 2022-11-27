@@ -55,7 +55,7 @@ import HeadTopVue from '../components/HeadTop.vue';
 <style scoped>
 @media (max-width: 575.98px) {
     .container{
-        height: 100%;
+        height: 100vh;
     }
 }
 </style>
