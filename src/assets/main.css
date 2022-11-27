@@ -48,14 +48,15 @@ a {
 }
 
 .logo {
-    padding: 25px;
-    font-weight: 900;
+    padding: 20px;
+    font-weight: 600;
     color: var(--white-clr);
-    font-size: 20px;
-    letter-spacing: 0.01px;
+    font-size: 18px;
+    letter-spacing: -1px;
     background-color: var(--black-clr);
     place-self: start end;
     word-spacing: 0.01px;
+    border-radius: 5px;
 }
 
 .top-nav {
