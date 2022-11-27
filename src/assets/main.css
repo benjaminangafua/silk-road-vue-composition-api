@@ -105,7 +105,7 @@ a {
 .bottom-nav .property-btn {
     justify-self: end;
     padding: 5px 10px;
-    background-color: var(--green-clr);
+    background-color: #4068df;
     border-radius: 5px;
 }
 
