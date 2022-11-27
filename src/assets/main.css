@@ -43,6 +43,7 @@ a {
     display: grid;
     grid-template-columns: 11% 86.5%;
     justify-content: space-around;
+    background-color: hsla(0, 0%, 0%, 0.329);
     padding: 25px 20px;
     color: #B5BABF;
 }
