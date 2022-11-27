@@ -105,7 +105,7 @@ function closeToggleBtn(e){
                 <hr class="divider" ref="hr1">
                 <div class="bottom-nav"  id="bottom-nav"  ref="bottomNav">
                     <div class="bottom-left-nav">
-                        <RouterLink to="/widget"><div  class="toggle-menu-border">Widget</div></RouterLink>
+                        <RouterLink to="/widget"><div  class="toggle-menu-border" :class="route=='/widget' ?'active':'none'" >Widget</div></RouterLink>
                         <RouterLink to="#">
                             <div v-if="route == '/register'"> <b class="active-board-txt">Register</b></div> 
                             <div v-else-if="route == '/login'"><b class="active-board-txt">Login</b></div> 

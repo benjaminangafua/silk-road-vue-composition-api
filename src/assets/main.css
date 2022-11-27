@@ -39,6 +39,10 @@ a {
     color: var(--header-txt-clr);
 }
 
+.logo a {
+    color: var(--white-clr);
+}
+
 .header button a {
     color: var(--white-clr) !important;
 }
@@ -65,9 +69,7 @@ a {
 .logo {
     padding: 20px;
     font-weight: 600;
-    color: var(--white-clr);
     font-size: 18px;
-    letter-spacing: -1px;
     background-color: var(--black-clr);
     place-self: start end;
     word-spacing: 0.01px;
