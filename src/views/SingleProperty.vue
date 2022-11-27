@@ -60,7 +60,7 @@ const property_obj = property[0]
                             <h4>Property Description</h4>
                             
                             <p class="property-description">
-                            This building comprises of 3 room all with inside bathroom and dresser.
+                            This building comprises of 3 rooms all with inside bathroom and dresser.
                             The rectangular building faces north on its small lot, which sits on Town Highway 25 in the village of Bakersfield. 
                             </p>
                         </div>
