@@ -94,11 +94,11 @@ function closeToggleBtn(e){
                     </div>
                     <div class="auth" id="auth"  ref="authenticate">
 
-                        <RouterLink to="/login"><div class="navbar-right toggle-menu-border" id="navbar-right"  ref="navbar-right">Login</div></RouterLink>
+                        <RouterLink to="/login"><div class="navbar-right toggle-menu-border" :class="route=='/login' ?'active-board-txt':'none'"  id="navbar-right"  ref="navbar-right">Login</div></RouterLink>
                         
                         <hr class="nav-hr" ref="hr">
 
-                        <RouterLink to="/register"><div class="navbar-right toggle-menu-border"  id="navbar-right"  ref="navbar-right">Register</div></RouterLink>
+                        <RouterLink to="/register"><div class="navbar-right toggle-menu-border" :class="route=='/register' ?'active-board-txt':'none'" id="navbar-right"  ref="navbar-right">Register</div></RouterLink>
                     </div>
                 </div>
                 <!-- <i class="fa-facebook-f" -->

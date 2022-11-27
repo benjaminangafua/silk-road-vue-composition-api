@@ -59,11 +59,3 @@ import HeadTopVue from '../components/HeadTop.vue';
     </div>
 </div>
 </template>
-<style scoped>
-
-@media (max-width: 575.98px) {
-    .container{
-        height: 100vh;
-    }
-}
-</style>
