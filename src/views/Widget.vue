@@ -59,7 +59,7 @@ import HeadTopVue from '../components/HeadTop.vue';
 
     <div class="bottom-content">
         <div>OUR LATEST POSTINGS</div>
-        <div><font-awesome-icon :icon="['fas', 'filter']" /></div>
+        <div><font-awesome-icon :icon="['fas', 'caret-down']" /></div>
     </div>
 </div>
 </template> 
