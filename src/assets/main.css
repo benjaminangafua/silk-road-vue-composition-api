@@ -45,7 +45,12 @@ a {
 
 .active {
     color: var(--green-clr);
-    font-weight: 400;
+    /* font-weight: bold; */
+}
+
+.active-board-txt {
+    color: var(--white-clr);
+    font-weight: bold;
 }
 
 .header {

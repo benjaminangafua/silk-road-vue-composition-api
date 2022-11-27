@@ -1,7 +1,7 @@
 
 <script setup>
 import  {RouterLink}  from 'vue-router';
-import { ref, onMounted} from 'vue';
+import { ref, onMounted, reactive} from 'vue';
 import { useRoute } from 'vue-router'
 
 const route = useRoute().path 
@@ -75,6 +75,9 @@ function closeToggleBtn(e){
     closeToggle.value.style.display = "none"
     topNav.value.firstElementChild.style = "grid"
 }
+// const activeClass = reactive({
+//     active : route=='/' ? true: route == '/grid' || route == '/list'? true : null
+// })
 </script>
 <template>
     <div id="closeToggle" ref="closeToggle" @click.prevent="closeToggleBtn">X</div>
@@ -85,13 +88,13 @@ function closeToggleBtn(e){
                 <div class="top-nav" id="top-nav"  ref="topNav">
                     <div class="home" ref="home">
 
-                        <RouterLink to="/"><div class="toggle-menu-border" id="home">Home</div></RouterLink> 
+                        <RouterLink to="/"><div class="toggle-menu-border" :class="route=='/' ?'active':'none'" id="home">Home</div></RouterLink> 
 
-                        <RouterLink to="/grid"> <div  class="toggle-menu-border" id="ourProperty">Our Property</div></RouterLink>
+                        <RouterLink to="/grid"> <div  class="toggle-menu-border" :class="route == '/grid' || route == '/list'?'active':'none'" id="ourProperty">Our Property</div></RouterLink>
                     </div>
                     <div class="auth" id="auth"  ref="authenticate">
 
-                        <RouterLink to="/login"><div class="navbar-right toggle-menu-border"  id="navbar-right"  ref="navbar-right">Login</div></RouterLink>
+                        <RouterLink to="/login"><div class="navbar-right toggle-menu-border" id="navbar-right"  ref="navbar-right">Login</div></RouterLink>
                         
                         <hr class="nav-hr" ref="hr">
 
@@ -104,9 +107,9 @@ function closeToggleBtn(e){
                     <div class="bottom-left-nav">
                         <RouterLink to="/widget"><div  class="toggle-menu-border">Widget</div></RouterLink>
                         <RouterLink to="#">
-                            <div v-if="route == '/register'"> <span class="active">Register</span></div> 
-                            <div v-else-if="route == '/login'"><span class="active">Login</span></div> 
-                            <div v-else-if="route == '/grid' || route == '/list'"><span class="active">House</span> </div> 
+                            <div v-if="route == '/register'"> <b class="active-board-txt">Register</b></div> 
+                            <div v-else-if="route == '/login'"><b class="active-board-txt">Login</b></div> 
+                            <div v-else-if="route == '/grid' || route == '/list'"><b class="active-board-txt">House</b> </div> 
                             <div v-else > </div> 
                          </RouterLink>
                     </div>
