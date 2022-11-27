@@ -17,7 +17,7 @@ const house_detail = ref(propertyData)
 // console.log(house_route)
 </script>
 <template>  
-<div id="head-bg-color"><HeadTopVue /></div>
+    <div id="head-bg-color"><HeadTopVue /></div>
     
     <div id="property-grd">
         <div class="grid-container">
@@ -59,7 +59,8 @@ const house_detail = ref(propertyData)
 <div class="grid-learn-more">Learn More</div>
         
         <FooterDown />
- </div>
+    </div>
+
 </template>
 <style scoped>
  #head-bg-color{

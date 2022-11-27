@@ -41,7 +41,7 @@ a {
 
 .header {
     display: grid;
-    grid-template-columns: 10% 80%;
+    grid-template-columns: 11% 86.5%;
     justify-content: space-around;
     padding: 25px 20px;
     color: #B5BABF;
@@ -66,7 +66,7 @@ a {
 
 .home {
     display: grid;
-    grid-template-columns: 20% auto;
+    grid-template-columns: 21% auto;
     justify-items: start;
     align-items: center;
 }
@@ -804,7 +804,7 @@ a span {
 
 .bottom-left-nav {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 53% auto;
 }
 
 
