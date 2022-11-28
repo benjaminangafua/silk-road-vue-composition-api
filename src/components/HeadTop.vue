@@ -104,14 +104,21 @@ function closeToggleBtn(e){
                 <!-- <i class="fa-facebook-f" -->
                 <hr class="divider" ref="hr1">
                 <div class="bottom-nav"  id="bottom-nav"  ref="bottomNav">
-                    <div class="bottom-left-nav">
-                        <RouterLink to="/widget"><div  class="toggle-menu-border" :class="route=='/widget' ?'active':'none'" >Widget</div></RouterLink>
-                        <RouterLink to="#">
-                            <div v-if="route == '/register'"> <b class="active-board-txt">Register</b></div> 
-                            <div v-else-if="route == '/login'"><b class="active-board-txt">Login</b></div> 
-                            <div v-else-if="route == '/grid' || route == '/list'"><b class="active-board-txt">House</b> </div> 
-                            <div v-else > </div> 
-                         </RouterLink>
+                    <div>                     
+                        
+                        <div class="bottom-left-nav" v-if="route == '/login'">
+                            <div><RouterLink to="/">Home</RouterLink></div> 
+                            <div class="active-board-txt">LOGIN</div>
+                        </div> 
+                        <div class="bottom-left-nav" v-else-if="route == '/register'">
+                            <div><RouterLink to="/">Home</RouterLink></div> 
+                            <div class="active-board-txt">REGISTER</div>
+                        </div> 
+                        <div class="bottom-left-nav" v-else-if="route == '/grid' || route == '/list'">
+                            <div><RouterLink to="/">Home</RouterLink></div> 
+                            <div class="active-board-txt">HOUSE</div>
+                        </div> 
+                       <div v-else > </div>  
                     </div>
 
                     <div class="property-btn"  id="property-btn"  ref="propertyBtn"><button><RouterLink to="/single-property/1">Post a Property</RouterLink></button></div>

@@ -42,11 +42,11 @@ const house_detail = ref(propertyData)
                                 <div class="cart-small-text">{{detail.owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
                             <div class="icons-layout">
-                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
+                                <div class="icon"><span class="material-symbols-outlined">change_history</span> 1</div>
                                 <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="location-icon"><font-awesome-icon :icon="['fas', 'book']" /></span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
+                                <div class="icon"><span class="location-icon"><font-awesome-icon :icon="['fas', 'book']" /></span> 2</div>
+                                <div class="icon"><span class="material-symbols-outlined">memory</span> 3</div>
+                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span> 4</div>
                             </div>
                         </div>
                     </div>

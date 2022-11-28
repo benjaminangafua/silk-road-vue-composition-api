@@ -764,6 +764,7 @@ a span {
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-items: center;
+    margin: auto 5%;
 }
 
 .footer2I {
@@ -783,8 +784,8 @@ a span {
 .footer-b {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 11%;
+    margin-right: 11%;
 }
 
 .footer-2 {
