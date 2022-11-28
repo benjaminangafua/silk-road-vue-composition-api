@@ -42,7 +42,7 @@ const head = ref()
                             <div class="icons-layout">
                                 <div class="icon"><span class="material-symbols-outlined">change_history</span> 1</div>
                                 <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="location-icon"><font-awesome-icon :icon="['fas', 'book']" /></span> </div>
+                                <div class="icon book"><span class="location-icon"><font-awesome-icon :icon="['fas', 'book']" /></span> </div>
                                 <div class="icon"><span class="material-symbols-outlined">memory</span> 3</div>
                                 <div class="icon"><span class="material-symbols-outlined">desktop_windows</span> 4</div>
                             </div>

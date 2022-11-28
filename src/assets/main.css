@@ -663,7 +663,7 @@ input[type=range]::-moz-range-thumb {
 
 .star-icon {
     float: right;
-    color: var(--green-clr);
+    color: var(--dark-gray-clr);
     margin-right: 2%;
 }
 
@@ -726,8 +726,19 @@ a span {
     margin-right: 10%;
 }
 
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+
+.icon-grid .icon-num {
+    margin-top: 17%;
+    color: var(--green-clr);
+}
+
 .price-ls {
-    background-color: #11c7afcc;
+    background-color: var(--green-clr);
     width: max-content;
     justify-self: end;
     color: var(--white-clr);
