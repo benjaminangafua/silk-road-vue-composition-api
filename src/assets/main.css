@@ -91,7 +91,7 @@ a {
 
 .divider {
     color: var(--dark-gray-clr);
-    height: 3px;
+    height: 1px;
 }
 
 .auth {
