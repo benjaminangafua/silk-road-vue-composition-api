@@ -1,9 +1,11 @@
 
 <script setup> 
 import HeadTopVue from '../components/HeadTop.vue';
-import FooterDownVue from '../components/FooterDown.vue';
 import SidebarVue from '../components/Sidebar.vue';
 import PropertyMainContentNav from '../components/PropertyMainContentNav.vue'
+import PropertyIconLayout from '../components/PropertyIconLayout.vue'
+import FooterDownVue from '../components/FooterDown.vue';
+
 import propertyData from '../property-data.json'
 import { ref} from 'vue';
 
@@ -39,13 +41,8 @@ const head = ref()
                                 <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
                                 <div class="cart-small-text">{{detail.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
-                            <div class="icons-layout">
-                                <div class="icon"><span class="material-symbols-outlined">change_history</span> 1</div>
-                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon book"><span class="location-icon"><font-awesome-icon :icon="['fas', 'book']" /></span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">memory</span> 3</div>
-                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span> 4</div>
-                            </div>
+                            <!-- Icons -->
+                            <PropertyIconLayout />
                         </div>
                     </div>
 

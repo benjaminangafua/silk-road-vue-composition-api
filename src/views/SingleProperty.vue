@@ -1,10 +1,11 @@
 
 <script setup>  
-import FooterDown from '../components/FooterDown.vue';
+import HeadTopVue from '../components/HeadTop.vue';
 import SidebarVue from '../components/Sidebar.vue';
 import PropertyMainContentNav from '../components/PropertyMainContentNav.vue'
+import PropertyIconLayout from '../components/PropertyIconLayout.vue'
 import propertyData from '../property-data.json'
-import HeadTopVue from '../components/HeadTop.vue';
+import FooterDown from '../components/FooterDown.vue';
 import { computed, ref} from 'vue';
 import { useRoute } from 'vue-router'
 
@@ -47,13 +48,8 @@ const property_obj = property[0]
                                 <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{property[0].location}}</div>
                                 <div class="cart-small-text">{{property[0].owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
-                            <div class="icons-layout">
-                                <div class="icon"><span class="material-symbols-outlined">change_history</span> </div>
-                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon"><span class="location-icon"><font-awesome-icon :icon="['fas', 'book']" /></span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">memory</span> </div>
-                                <div class="icon"><span class="material-symbols-outlined">desktop_windows</span></div>
-                            </div>
+                            <!-- Icons -->
+                            <PropertyIconLayout />
                         
                         <div class="available-amenities">
                             <div class="btn-primary"><button>Give Peter a call</button><button>Give Peter an email</button></div>

@@ -1,10 +1,11 @@
 
 <script setup>  
-import FooterDown from '../components/FooterDown.vue';
+import HeadTopVue from '../components/HeadTop.vue';
 import SidebarVue from '../components/Sidebar.vue';
 import PropertyMainContentNav from '../components/PropertyMainContentNav.vue'
+import PropertyIconLayout from '../components/PropertyIconLayout.vue'
+import FooterDown from '../components/FooterDown.vue';
 import propertyData from '../property-data.json'
-import HeadTopVue from '../components/HeadTop.vue';
 import { computed, reactive, ref} from 'vue';
 
 
@@ -41,13 +42,8 @@ const house_detail = ref(propertyData)
                                 <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{detail.location}}</div>
                                 <div class="cart-small-text">{{detail.owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
                             </div>
-                            <div class="icons-layout">
-                                <div class="icon icon-grid"> <div><span class="material-symbols-outlined">change_history</span></div> <div class="icon-num">1</div> </div>
-                                <!-- <font-awesome-icon :icon="['fas', 'book']" /> -->
-                                <div class="icon icon-grid"><div><span class="material-symbols-outlined">menu_book</span></div> <div class="icon-num">2</div> </div>
-                                <div class="icon icon-grid"><div><span class="material-symbols-outlined">memory</span> </div><div class="icon-num">3</div> </div>
-                                <div class="icon icon-grid"><div><span class="material-symbols-outlined">desktop_windows</span> </div><div class="icon-num">4</div> </div>
-                            </div>
+                            <!-- Icons -->
+                            <PropertyIconLayout />
                         </div>
                     </div>
                     <div class="advertisement">
