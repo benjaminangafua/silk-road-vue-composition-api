@@ -31,10 +31,6 @@ const property_obj = property[0]
             <SidebarVue/>
             <!-- Main-content -->
             <div class="main-content">
-                
-            <!-- property Main content nav -->
-            <PropertyMainContentNav/>
-
             <!-- Property Layout -->
                 <div class="content-grids">
                     <div class="single-property-layout">
