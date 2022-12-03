@@ -42,7 +42,7 @@ import HeadTopVue from '../components/HeadTop.vue';
                         <font-awesome-icon id="lock1" :icon="['fas', 'lock']" />
                     </div>
                     <div class="forget-password"><strong>Forgot password?</strong></div>
-                    <div class="btn pointer"><button class="pointer">Login</button></div>
+                    <div class="btn pointer"><button class="pointer"><RouterLink to="/logged">Login</RouterLink></button></div>
                 </div>
                 <div class="log-option">
                     <div>Log in with <i class="fa-brands fa-facebook-f pointer"></i> <i class="fa-brands fa-twitter pointer"></i></div>

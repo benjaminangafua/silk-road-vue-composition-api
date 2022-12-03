@@ -92,7 +92,15 @@ function closeToggleBtn(e){
 
                         <RouterLink to="/grid"> <div  class="toggle-menu-border" :class="route == '/grid' || route == '/list'?'active':'none'" id="ourProperty">Our Property</div></RouterLink>
                     </div>
-                    <div class="auth" id="auth"  ref="authenticate">
+                    <div class="auth" id="auth"  ref="authenticate" v-if="route == '/logged'">
+
+                        <div class="navbar-right toggle-menu-border" id="navbar-right"  ref="navbar-right">John Wayne</div>
+                        
+                        <hr class="nav-hr" ref="hr">
+                        <div class="navbar-right toggle-menu-border active" id="navbar-right"  ref="navbar-right">Log Out</div>
+                    </div>
+
+                    <div class="auth" id="auth"  ref="authenticate" v-else>
 
                         <RouterLink to="/login"><div class="navbar-right toggle-menu-border" :class="route=='/login' ?'active-board-txt':'none'"  id="navbar-right"  ref="navbar-right">Login</div></RouterLink>
                         
@@ -111,6 +119,7 @@ function closeToggleBtn(e){
                             <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
                             <div class="active-board-txt">LOGIN</div>
                         </div> 
+
                         <div class="bottom-left-nav" v-else-if="route == '/register'">
                             <div><RouterLink to="/">Home</RouterLink></div> 
                             <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
