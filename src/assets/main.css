@@ -71,8 +71,8 @@ a {
 }
 
 .logo {
-    padding: 30px;
-    font-weight: 600;
+    padding: 25px;
+    font-weight: 500;
     font-size: 25px;
     background-color: var(--black-clr);
     place-self: start center;
