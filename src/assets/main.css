@@ -59,7 +59,7 @@ a {
 
 .header {
     display: grid;
-    grid-template-columns: 11% 86.5%;
+    grid-template-columns: 13% 75%;
     justify-content: space-around;
     background-color: hsla(0, 0%, 0%, 0.329);
     padding: 25px 20px;
@@ -67,13 +67,13 @@ a {
 }
 
 .logo {
-    padding: 20px;
+    padding: 30px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 25px;
     background-color: var(--black-clr);
-    place-self: start end;
+    place-self: start center;
     word-spacing: 0.01px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 .top-nav {
@@ -84,7 +84,7 @@ a {
 
 .home {
     display: grid;
-    grid-template-columns: 21% auto;
+    grid-template-columns: 20% auto;
     justify-items: start;
     align-items: center;
 }
@@ -576,7 +576,7 @@ input[type=range]::-moz-range-thumb {
 
 .nav-txt {
     display: grid;
-    grid-template-columns: 10% 20% 20%;
+    grid-template-columns: 20% 30% 20%;
 }
 
 .nav-icon {
@@ -830,7 +830,7 @@ a span {
 
 .bottom-left-nav {
     display: grid;
-    grid-template-columns: 53% auto;
+    grid-template-columns: 35% 15% auto;
 }
 
 
