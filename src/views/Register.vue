@@ -14,7 +14,7 @@ import HeadTopVue from '../components/HeadTop.vue';
                 <h4>Already have an account?</h4>
                 <p>If you already have an account you can login to get the view of the latest properties in stock
                 </p>
-                <button><RouterLink to="/login">Login</RouterLink> </button>
+                <button class="pointer"><RouterLink to="/login">Login</RouterLink> </button>
             </div>
         </div>
     </div>
@@ -48,10 +48,10 @@ import HeadTopVue from '../components/HeadTop.vue';
                     </div>
                    
                     <div class="agree-term">I agree to the terms and conditions <input type="checkbox" name="" id=""></div>
-                    <div class="btn"><button>Register</button></div>
+                    <div class="btn pointer"><button class="pointer">Register</button></div>
                 </div>
                 <div class="log-option">
-                    <div>Register with <i class="fa-brands fa-facebook-f"></i> <i class="fa-brands fa-twitter"></i></div>
+                    <div>Register with <i class="fa-brands fa-facebook-f pointer"></i> <i class="fa-brands fa-twitter pointer"></i></div>
                 </div>
             </div>
             <div></div>

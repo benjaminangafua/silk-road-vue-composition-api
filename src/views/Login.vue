@@ -13,7 +13,7 @@ import HeadTopVue from '../components/HeadTop.vue';
                     <h4>Don't have an account?</h4>
                     <p>If you don't have an account you can create one now to get the view of all the available properties in stock.
                     </p>
-                    <button><RouterLink to="/register">Register</RouterLink> </button>
+                    <button class="pointer"><RouterLink to="/register">Register</RouterLink> </button>
                 </div>
                 <div></div>
             </div>
@@ -42,10 +42,10 @@ import HeadTopVue from '../components/HeadTop.vue';
                         <font-awesome-icon id="lock1" :icon="['fas', 'lock']" />
                     </div>
                     <div class="forget-password"><strong>Forgot password?</strong></div>
-                    <div class="btn"><button>Login</button></div>
+                    <div class="btn pointer"><button class="pointer">Login</button></div>
                 </div>
                 <div class="log-option">
-                    <div>Log in with <i class="fa-brands fa-facebook-f"></i> <i class="fa-brands fa-twitter"></i></div>
+                    <div>Log in with <i class="fa-brands fa-facebook-f pointer"></i> <i class="fa-brands fa-twitter pointer"></i></div>
                 </div>
             </div>
         </form>   
