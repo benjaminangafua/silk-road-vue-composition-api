@@ -199,8 +199,6 @@ input:focus {
     color: var(--white-clr);
 }
 
-.bottom-content div:last-child {}
-
 .bottom-content div:first-child {
     line-height: 40px;
 }
@@ -888,6 +886,13 @@ a span {
     display: none;
 }
 
+.post-a-property-nav-layout {
+    display: grid;
+    grid-template-columns: 50% 15% auto;
+    /* place-items: center normal;
+    place-content: center */
+}
+
 
 /* `xs` returns only a rule set and no media query */
 
@@ -900,9 +905,6 @@ a span {
 @media (max-width: 1399.98px) {
     .grid-container {
         margin: 2%;
-    }
-    .container {
-        /* height: 100vh; */
     }
     .input2 select {
         width: 24%;

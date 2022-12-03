@@ -1,12 +1,34 @@
 
 <script setup>
 import  {RouterLink}  from 'vue-router';
-import { ref, onMounted, reactive} from 'vue';
+import { ref, onMounted, reactive, computed} from 'vue';
 import { useRoute } from 'vue-router'
+import propertyData from '../property-data.json' 
+const house_detail = reactive(propertyData)
 
 const route = useRoute().path 
 
+const active_clr = computed(()=>{
+    return {
+        grid_list: route == '/grid' || route == '/list'?'active':'none',
+        home: route=='/' ?'active':'none'
+    }
+})
 
+const router_content = computed(()=>{
+    return {
+        logged: route == '/logged',
+        login: route == '/login',
+        register: route == '/register',
+        grid_list:route == '/grid' || route == '/list',
+        single: house_detail.forEach(element =>element.id)
+    }
+})
+
+const iterate=()=>{
+    house_detail.forEach(element =>element.id)
+};
+console.log(iterate())
 const head = ref()
 const logo = ref()
 const nav = ref()
@@ -75,9 +97,6 @@ function closeToggleBtn(e){
     closeToggle.value.style.display = "none"
     topNav.value.firstElementChild.style = "grid"
 }
-// const activeClass = reactive({
-//     active : route=='/' ? true: route == '/grid' || route == '/list'? true : null
-// })
 </script>
 <template>
     <div id="closeToggle" ref="closeToggle" @click.prevent="closeToggleBtn">X</div>
@@ -88,11 +107,11 @@ function closeToggleBtn(e){
                 <div class="top-nav" id="top-nav"  ref="topNav">
                     <div class="home" ref="home">
 
-                        <RouterLink to="/"><div class="toggle-menu-border" :class="route=='/' ?'active':'none'" id="home">Home</div></RouterLink> 
+                        <RouterLink to="/"><div class="toggle-menu-border" :class="active_clr.home" id="home">Home</div></RouterLink> 
 
-                        <RouterLink to="/grid"> <div  class="toggle-menu-border" :class="route == '/grid' || route == '/list'?'active':'none'" id="ourProperty">Our Property</div></RouterLink>
+                        <RouterLink to="/grid"> <div  class="toggle-menu-border" :class="active_clr.grid_list" id="ourProperty">Our Property</div></RouterLink>
                     </div>
-                    <div class="auth" id="auth"  ref="authenticate" v-if="route == '/logged'">
+                    <div class="auth" id="auth"  ref="authenticate" v-if="router_content.logged">
 
                         <div class="navbar-right toggle-menu-border" id="navbar-right"  ref="navbar-right">John Wayne</div>
                         
@@ -114,22 +133,34 @@ function closeToggleBtn(e){
                 <div class="bottom-nav"  id="bottom-nav"  ref="bottomNav">
                     <div>                     
                         
-                        <div class="bottom-left-nav" v-if="route == '/login'">
+                        <div class="bottom-left-nav" v-if="router_content.login">
                             <div><RouterLink to="/">Home</RouterLink></div> 
                             <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
                             <div class="active-board-txt">LOGIN</div>
                         </div> 
 
-                        <div class="bottom-left-nav" v-else-if="route == '/register'">
+                        <div class="bottom-left-nav" v-else-if="router_content.register">
                             <div><RouterLink to="/">Home</RouterLink></div> 
                             <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
                             <div class="active-board-txt">REGISTER</div>
                         </div> 
-                        <div class="bottom-left-nav" v-else-if="route == '/grid' || route == '/list'">
+                        <div class="bottom-left-nav" v-else-if="router_content.grid_list">
                             <div><RouterLink to="/">Home</RouterLink></div> 
                             <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
                             <div class="active-board-txt">HOUSE</div>
                         </div> 
+                        <div class="bottom-left-nav" v-else-if="route =='/single-property/1'">
+                            <div><RouterLink to="/">HOME</RouterLink></div> 
+                            
+                                <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
+                            
+                            <div class="post-a-property-nav-layout">
+                                <div>HOUSES</div>
+                                <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
+                                <div class="active-board-txt">CATEGORY</div>
+                            </div>
+                        </div>
+                        
                        <div v-else > </div>  
                     </div>
 
