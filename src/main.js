@@ -20,7 +20,8 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faLocation } from '@fortawesome/free-solid-svg-icons'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { faGripHorizontal } from '@fortawesome/free-solid-svg-icons'
-/* <i class="fal fa-chevron-circle-down"></i> <font-awesome-icon icon="fas fa-map-marker-alt" />*/
+import { faGreaterThan } from '@fortawesome/free-solid-svg-icons'
+
 /* add icons to the library */
 library.add(faLocation)
 library.add(faFilter)
@@ -31,6 +32,7 @@ library.add(faLock)
 library.add(faUser)
 library.add(faMapMarkerAlt)
 library.add(faGripHorizontal)
+library.add(faGreaterThan)
 
 const app = createApp(App)
 

@@ -108,17 +108,17 @@ function closeToggleBtn(e){
                         
                         <div class="bottom-left-nav" v-if="route == '/login'">
                             <div><RouterLink to="/">Home</RouterLink></div> 
-                            <div id="👉">></div>
+                            <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
                             <div class="active-board-txt">LOGIN</div>
                         </div> 
                         <div class="bottom-left-nav" v-else-if="route == '/register'">
                             <div><RouterLink to="/">Home</RouterLink></div> 
-                            <div id="👉">></div>
+                            <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
                             <div class="active-board-txt">REGISTER</div>
                         </div> 
                         <div class="bottom-left-nav" v-else-if="route == '/grid' || route == '/list'">
                             <div><RouterLink to="/">Home</RouterLink></div> 
-                            <div id="👉">></div>
+                            <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
                             <div class="active-board-txt">HOUSE</div>
                         </div> 
                        <div v-else > </div>  
