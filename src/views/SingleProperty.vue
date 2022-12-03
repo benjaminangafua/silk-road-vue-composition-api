@@ -111,6 +111,6 @@ const property_obj = property[0]
 </template>
 <style scoped>
  #head-bg-color{
-        background-color: #748090;
+        background-color: #505050;
     }
 </style>

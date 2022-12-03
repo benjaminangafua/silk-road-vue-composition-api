@@ -12,7 +12,7 @@ import HeadTopVue from '../components/HeadTop.vue';
         </div>
         <div class="bottom-content">
             <div>OUR LATEST POSTINGS</div>
-            <div><font-awesome-icon :icon="['fas', 'caret-down']" /></div>
+            <div><span class="material-symbols-outlined">expand_circle_down</span></div>
         </div>
     </div>
 </template>

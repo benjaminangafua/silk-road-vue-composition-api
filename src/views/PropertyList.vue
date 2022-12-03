@@ -61,6 +61,6 @@ const head = ref()
 
 <style scoped>
  #head-bg-color{
-        background-color: #748090;
+        background-color: #505050;
     }
 </style>

@@ -65,6 +65,6 @@ const house_detail = ref(propertyData)
 }
 
  #head-bg-color{
-        background-color: #748090;
+        background-color: #505050;
     }
 </style>
