@@ -97,7 +97,7 @@ function closeToggleBtn(e){
                         <div class="navbar-right toggle-menu-border" id="navbar-right"  ref="navbar-right">John Wayne</div>
                         
                         <hr class="nav-hr" ref="hr">
-                        <div class="navbar-right toggle-menu-border active" id="navbar-right"  ref="navbar-right">Log Out</div>
+                        <RouterLink to="/login"><div class="navbar-right toggle-menu-border active" id="navbar-right"  ref="navbar-right">Log Out</div></RouterLink>
                     </div>
 
                     <div class="auth" id="auth"  ref="authenticate" v-else>
