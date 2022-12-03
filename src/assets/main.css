@@ -1031,6 +1031,9 @@ a span {
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 
 @media (max-width: 575.98px) {
+    #👉 {
+        display: none;
+    }
     .container {
         height: 100vh;
     }
@@ -1051,6 +1054,9 @@ a span {
     .navbar-right {
         /* margin-top: 2rem; */
         padding: 1rem !important;
+    }
+    .bottom-left-nav {
+        display: none;
     }
     .toggle-menu-border:hover {
         background-color: var(--black-clr);
