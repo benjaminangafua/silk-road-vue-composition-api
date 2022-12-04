@@ -60,7 +60,6 @@
                 <div>copyright &copy;2022 - Kwagei Group - All rights Reserved</div>
                 <div class="silkroad-end"><strong><router-link to="/">SILKROAD</router-link> </strong></div>
             </div>
-            <hr>
 
         </div>
 

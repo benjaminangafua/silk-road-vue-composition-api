@@ -180,7 +180,7 @@ function closeToggleBtn(e){
                        <div v-else > </div>  
                     </div>
 
-                    <div class="property-btn"  id="property-btn"  ref="propertyBtn"><button><RouterLink to="/single-property/1">Post a Property</RouterLink></button></div>
+                    <div class="property-btn"  id="property-btn"  ref="propertyBtn"><button><RouterLink to="/post-a-property/category">Post a Property</RouterLink></button></div>
                 </div>
             </div>
 

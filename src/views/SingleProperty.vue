@@ -104,9 +104,8 @@ const property_obj = property[0]
                 </div>
             </div>
         </div>
-<div class="grid-learn-more">Learn More</div>
-        
-        <FooterDown />
+    <div class="grid-learn-more">Learn More</div>
+    <FooterDown />
  </div>
 </template>
 <style scoped>

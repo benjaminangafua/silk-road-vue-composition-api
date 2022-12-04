@@ -98,6 +98,26 @@ const router = createRouter({
             name: 'singleProperty12',
             component: () =>
                 import ('../views/SingleProperty.vue')
+        }, {
+            path: '/post-a-property/category',
+            name: 'Category',
+            component: () =>
+                import ('../views/Category.vue')
+        }, {
+            path: '/post-a-property/location',
+            name: 'location',
+            component: () =>
+                import ('../views/Location.vue')
+        }, {
+            path: '/post-a-property/detail',
+            name: 'PropertyDetail',
+            component: () =>
+                import ('../views/Detail.vue')
+        }, {
+            path: '/post-a-property/contact-detail',
+            name: 'ContactDetail',
+            component: () =>
+                import ('../views/ContactDetail.vue')
         }
 
 
