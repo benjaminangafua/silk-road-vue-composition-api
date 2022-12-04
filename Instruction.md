@@ -120,3 +120,24 @@ createApp(App)
 find .git/objects/ -size 0 -exec rm -f {} \;
 git fetch origin
 ```
+
+## Problem 2
+I wanted to change the nav bar for every single page. My first approaches were loops and inline conditionals
+
+## Solution
+I got it done in the computed function instead of writing inline conditionals or loops
+```js
+
+import { ref, onMounted, reactive, computed} from 'vue';
+const house_detail = reactive(propertyData)
+const router_content = computed(()=>{
+    return {
+        logged: route == '/logged',
+        login: route == '/login',
+        register: route == '/register',
+        grid_list:route == '/grid' || route == '/list',
+        single: route =='/single-property/'+route.split("/")[2]
+
+    }
+})
+```
