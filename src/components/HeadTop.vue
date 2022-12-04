@@ -32,6 +32,22 @@ const router_content = computed(()=>{
 //    console.log(param)
 // };
 // iterate()
+
+const state = reactive({
+    head: "",
+    logo: "",
+    nav: "",
+    topNav: '',
+    authenticate: '',
+    bottomNav: '',
+    propertyBtn: '',
+    home: '',
+    closeToggle: '',
+    toggleBtn: '',
+    hr: '',
+    hr1: ''
+
+})
 const head = ref()
 const logo = ref()
 const nav = ref()
@@ -47,7 +63,7 @@ const hr1 = ref()
 
 function toggleHamburger(e){  
     console.log(topNav.value.id) 
-    if(nav.value.className =="nav"){
+    if( nav.value.className =="nav"){
         closeToggle.value.style =`display:block; color:#fff; cursor:pointer;`
         toggleBtn.value.style.display = "none"
         logo.value.style = `
