@@ -67,7 +67,7 @@ const property_obj = property[0]
                                         <li>Garden</li>
                                         <li>Generator</li>
                                         <li>SHARE PROPERTY</li>
-                                        <li><span><i class="fa-brands fa-facebook-f pointer"></i> </span><span><i class="fa-brands fa-instagram pointer"></i></span><span><i class="fa-brands fa-twitter pointer"></i></span></li>
+                                        <li><span><i class="fa-brands fa-facebook-f pointer"></i> </span> <span><i class="fa-brands fa-instagram pointer"></i></span> <span><i class="fa-brands fa-twitter pointer"></i></span></li>
                                         <li>SHARE PROPERTY</li>
                                      
                                 </div>

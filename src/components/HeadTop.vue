@@ -21,14 +21,17 @@ const router_content = computed(()=>{
         login: route == '/login',
         register: route == '/register',
         grid_list:route == '/grid' || route == '/list',
-        single: house_detail.forEach(element =>element.id)
+        single: route =='/single-property/'+route.split("/")[2]
+
     }
 })
 
-const iterate=()=>{
-    house_detail.forEach(element =>element.id)
-};
-console.log(iterate())
+
+// const iterate=()=>{
+//     const param =route.split("/")[2]
+//    console.log(param)
+// };
+// iterate()
 const head = ref()
 const logo = ref()
 const nav = ref()
@@ -131,14 +134,12 @@ function closeToggleBtn(e){
                 <!-- <i class="fa-facebook-f" -->
                 <hr class="divider" ref="hr1">
                 <div class="bottom-nav"  id="bottom-nav"  ref="bottomNav">
-                    <div>                     
-                        
+                    <div>  
                         <div class="bottom-left-nav" v-if="router_content.login">
                             <div><RouterLink to="/">Home</RouterLink></div> 
                             <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
                             <div class="active-board-txt">LOGIN</div>
                         </div> 
-
                         <div class="bottom-left-nav" v-else-if="router_content.register">
                             <div><RouterLink to="/">Home</RouterLink></div> 
                             <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
@@ -147,20 +148,19 @@ function closeToggleBtn(e){
                         <div class="bottom-left-nav" v-else-if="router_content.grid_list">
                             <div><RouterLink to="/">Home</RouterLink></div> 
                             <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
-                            <div class="active-board-txt">HOUSE</div>
+                            <div class="active-board-txt"><RouterLink to="/grid">HOUSES </RouterLink></div>
                         </div> 
-                        <div class="bottom-left-nav" v-else-if="route =='/single-property/1'">
+                        <div class="bottom-left-nav" v-else-if="router_content.single">
                             <div><RouterLink to="/">HOME</RouterLink></div> 
                             
                                 <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
                             
                             <div class="post-a-property-nav-layout">
-                                <div>HOUSES</div>
+                                <div><RouterLink to="/grid">HOUSES </RouterLink></div>
                                 <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
                                 <div class="active-board-txt">CATEGORY</div>
                             </div>
                         </div>
-                        
                        <div v-else > </div>  
                     </div>
 
