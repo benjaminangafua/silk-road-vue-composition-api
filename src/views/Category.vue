@@ -17,18 +17,18 @@ import  {RouterLink}  from 'vue-router';
                 <div class="property-details"><RouterLink to="/post-a-property/detail">Property Details</RouterLink> </div>
                 <div class="contact-details"><RouterLink to="/post-a-property/contact-detail"> Contact Details</RouterLink> </div>
             </div>
-            <div class="select-category"><strong>Select Category</strong></div>
-            <div>
-                <hr>
+            <div class="select-category">
+                <strong>Select Category</strong>
+                <div class="category-hr"></div>
             </div>
             <div class="category-list">
-                <div class="houses">House span</div>
-                <div class="apartments">Apartments</div>
-                <div class="office-space">Office Spaces</div>
-                <div class="storage-space">Storage Spaces</div>
-                <div class="rooms">Rooms</div>
-                <div class="land">Land</div>
-                <div class="commercial-properties">Commercial Properties</div>
+                <div class="houses item">House</div>
+                <div class="apartments item">Apartments</div>
+                <div class="office-space item">Office Spaces</div>
+                <div class="storage-space item">Storage Spaces</div>
+                <div class="rooms item">Rooms</div>
+                <div class="land item">Land</div>
+                <div class="commercial-properties item">Commercial Properties</div>
             </div>
         </div>
         <div id="footer"><FooterDown /></div>
@@ -37,16 +37,19 @@ import  {RouterLink}  from 'vue-router';
 
 <style scoped>
 
-a{
-    color: #505050;
-}
-
 .container-c{
   min-height: 100vh; 
   margin: 0;   
   display: grid;
   grid-template-rows: auto 2fr auto;
   
+}
+
+a{
+    color: #505050;
+}
+.active a{
+    color: #20B2AA !important;
 }
 
 #head-bg-color{ 
@@ -59,7 +62,22 @@ a{
 .title-c {
     display: grid;
     grid-template-columns: repeat(4, auto);
-    border-bottom: 1px solid hsl(214, 11%, 51%);
+    border-bottom: 1px solid hsl(212, 9%, 67.3%);
+}
+.select-category{
+    margin: 2% 0;
+}
+.item{
+    color:#505050;
+    margin-bottom: 3%;
+}
+
+.item:last-child{
+    margin-bottom: 0;
+}
+.category-hr{
+    border: 0.1px solid black;
+    width: 30%;
 }
 .category{
     border-bottom: 3px solid #20B2AA;
@@ -67,7 +85,5 @@ a{
 #footer{ 
   min-height:100%;  
   background: hsl(214, 11%, 51%);
-}
-
-    
+}    
 </style>
