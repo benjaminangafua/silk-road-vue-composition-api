@@ -555,6 +555,7 @@ input[type=range]::-moz-range-thumb {
     background-color: var(--dark-gray-clr);
     color: var(--white-clr);
     text-align: center;
+    cursor: pointer;
     border-radius: 3px;
     padding: 5px;
     width: 95%;
@@ -774,6 +775,7 @@ a span {
 .grid-learn-more {
     background-color: var(--dark-gray-clr);
     justify-self: center;
+    cursor: pointer;
     text-align: center;
     color: var(--white-clr);
     border-radius: 3px;

@@ -14,7 +14,7 @@ import { RouterLink } from 'vue-router';
                             </div>
                             <div>Monrovia, Liberia, West Africa</div>
                             <div>(231) 880-971-128</div>
-                            <div>silkroad@kwagei.com</div>
+                            <div> silkroad@kwagei.com</div>
                         </div>
                     </h6>
                     <div><span><i class="fa-brands fa-facebook-f pointer"></i> </span> <span><i class="fa-brands fa-instagram pointer"></i></span> <span><i class="fa-brands fa-twitter pointer"></i></span></div>
@@ -30,13 +30,13 @@ import { RouterLink } from 'vue-router';
                             <div><RouterLink to="login">Login</RouterLink></div>
                             <div> <RouterLink to="/post-a-property"> Post a Property</RouterLink></div>
                             <div><RouterLink to="#"> Our Recent Postings</RouterLink></div> 
-                            <div>FAQ</div>
-                            <div>Contact Us</div>
+                            <div><RouterLink to="#">FAQ</RouterLink></div>
+                            <div><RouterLink to="#">Contact Us</RouterLink></div>
                         </div>
                         <div class="col-2 footer-2">
-                            <div>About Us</div>
-                            <div>Privacy Policy</div>
-                            <div>Terms and Conditions</div>
+                            <div><RouterLink to="#">About Us</RouterLink></div>
+                            <div><RouterLink to="#">Privacy Policy</RouterLink></div>
+                            <div><RouterLink to="#">Terms and Conditions</RouterLink></div>
                         </div>
                     </div>
                 </div>
