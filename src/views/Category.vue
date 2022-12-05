@@ -22,7 +22,7 @@ import  {RouterLink}  from 'vue-router';
                 <div class="category-hr"></div>
             </div>
             <div class="category-list">
-                <div class="houses item">House</div>
+                <div class="houses item active">House</div>
                 <div class="apartments item">Apartments</div>
                 <div class="office-space item">Office Spaces</div>
                 <div class="storage-space item">Storage Spaces</div>
@@ -48,7 +48,8 @@ import  {RouterLink}  from 'vue-router';
 a{
     color: #505050;
 }
-.active a{
+.active a, .active
+{
     color: #20B2AA !important;
 }
 
@@ -67,17 +68,21 @@ a{
 .select-category{
     margin: 2% 0;
 }
+.select-category>strong{
+    color:#818283;
+}
 .item{
-    color:#505050;
-    margin-bottom: 3%;
+    color:#989a9b;
+    margin-bottom: 2%;
 }
 
 .item:last-child{
     margin-bottom: 0;
 }
 .category-hr{
-    border: 0.1px solid black;
-    width: 30%;
+    border: 0.1px solid #989a9b;
+    width: 25%;
+    margin-top: 1%
 }
 .category{
     border-bottom: 3px solid #20B2AA;

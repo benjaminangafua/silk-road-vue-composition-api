@@ -248,7 +248,7 @@ input:focus {
 }
 
 .main-widget div input:first-child {
-    width: 100%;
+    width: 97.1%;
     background-color: rgba(0, 0, 0, 0.603);
     border: none;
     padding: 10px;
@@ -264,7 +264,7 @@ input:focus {
 
 .select-detail {
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 45% 45%;
     column-gap: 10%;
 }
 

@@ -9,7 +9,7 @@ import HeadTopVue from '../components/HeadTop.vue';
         <div class="filter-line">
             <div class="filter-cup"><font-awesome-icon :icon="['fas', 'filter']" /> FILTER</div>
             <div class="filter-nav">
-                <div>All</div>
+                <div class="active">All</div>
                 <div>Rent</div>
                 <div>Sale</div>
             </div>
@@ -52,7 +52,7 @@ import HeadTopVue from '../components/HeadTop.vue';
                         <option value="">2</option>
                     </select>
                 </div>
-                <div><button><RouterLink to="/grid"> Find it</RouterLink></button></div>
+                <div><button class="pointer"><RouterLink to="/grid"> Find it</RouterLink></button></div>
             </div>
         </div>
     </div>
