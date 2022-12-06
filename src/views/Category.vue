@@ -27,8 +27,8 @@ const greaterThan = computed(()=>{
                 <strong>Select Category</strong>
                 <div class="category-hr"></div>
             </div>
-            <div class="category-list"> 
-                    <div class="category-item">
+            <div class="list-2-col"> 
+                    <div class="list-item">
                         <div class="houses item active">House</div>
                         <div class="apartments item">Apartments </div>
                         <div class="office-space item">Office Spaces</div>
@@ -37,15 +37,14 @@ const greaterThan = computed(()=>{
                         <div class="commercial-properties item">Commercial Properties</div>
                            
                     </div> 
-                    <div class="category-arrow">
+                    <div class="circle-arrow">
                         <div class="active" v-html="greaterThan.grt"></div>
                         <div v-html="greaterThan.grt"></div>
                         <div v-html="greaterThan.grt"></div>
                         <div v-html="greaterThan.grt"></div>
                         <div v-html="greaterThan.grt"></div>
                         <div v-html="greaterThan.grt"></div>
-                     </div>
-                
+                     </div>                
                </div>
         </div>
         <div id="footer"><FooterDown /></div>
@@ -53,5 +52,10 @@ const greaterThan = computed(()=>{
 </template>
 
 <style scoped>
-    @import url('../assets/category.css');
+    @import url('../assets/post-a-property.css');
+
+.category {
+    border-bottom: 3px solid #20B2AA;
+}
+
 </style>

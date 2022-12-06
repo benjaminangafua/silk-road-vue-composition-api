@@ -9,7 +9,7 @@ a {
     color: #505050;
 }
 
-.category-arrow>div {
+.circle-arrow>div {
     color: #989a9b;
 }
 
@@ -40,9 +40,9 @@ a {
     color: #818283;
 }
 
-.category-list {
+.list-2-col {
     display: grid;
-    grid-template-columns: 25% auto;
+    grid-template-columns: 40% 5%;
 }
 
 .item {
@@ -50,7 +50,7 @@ a {
     margin-bottom: 6%;
 }
 
-.category-arrow>div {
+.circle-arrow>div {
     margin-bottom: 0.5%;
 }
 
@@ -62,10 +62,6 @@ a {
     border: 0.1px solid #989a9b;
     width: 25%;
     margin-top: 1%
-}
-
-.category {
-    border-bottom: 3px solid #20B2AA;
 }
 
 #footer {
