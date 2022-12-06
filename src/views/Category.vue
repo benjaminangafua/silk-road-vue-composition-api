@@ -2,7 +2,13 @@
 import FooterDown from '../components/FooterDown.vue'
 import HeadTop from '../components/HeadTop.vue';
 import  {RouterLink}  from 'vue-router';
+import { computed } from '@vue/runtime-core';
 
+const greaterThan = computed(()=>{
+    return {
+        grt: `<span class="material-symbols-outlined">arrow_circle_right</span>`
+    }
+})
 </script>
 
 <template>
@@ -21,15 +27,26 @@ import  {RouterLink}  from 'vue-router';
                 <strong>Select Category</strong>
                 <div class="category-hr"></div>
             </div>
-            <div class="category-list">
-                <div class="houses item active">House</div>
-                <div class="apartments item">Apartments</div>
-                <div class="office-space item">Office Spaces</div>
-                <div class="storage-space item">Storage Spaces</div>
-                <div class="rooms item">Rooms</div>
-                <div class="land item">Land</div>
-                <div class="commercial-properties item">Commercial Properties</div>
-            </div>
+            <div class="category-list"> 
+                    <div class="category-item">
+                        <div class="houses item active">House</div>
+                        <div class="apartments item">Apartments </div>
+                        <div class="office-space item">Office Spaces</div>
+                        <div class="storage-space item">Storage Spaces</div> 
+                        <div class="rooms item">Rooms</div> 
+                        <div class="commercial-properties item">Commercial Properties</div>
+                           
+                    </div> 
+                    <div class="category-arrow">
+                        <div class="active" v-html="greaterThan.grt"></div>
+                        <div v-html="greaterThan.grt"></div>
+                        <div v-html="greaterThan.grt"></div>
+                        <div v-html="greaterThan.grt"></div>
+                        <div v-html="greaterThan.grt"></div>
+                        <div v-html="greaterThan.grt"></div>
+                     </div>
+                
+               </div>
         </div>
         <div id="footer"><FooterDown /></div>
     </div>
@@ -47,6 +64,9 @@ import  {RouterLink}  from 'vue-router';
 
 a{
     color: #505050;
+}
+.category-arrow>div{
+    color: #989a9b;
 }
 .active a, .active
 {
@@ -71,9 +91,13 @@ a{
 .select-category>strong{
     color:#818283;
 }
+.category-list{
+    display: grid;
+    grid-template-columns: 30% auto;
+}
 .item{
     color:#989a9b;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
 
 .item:last-child{
