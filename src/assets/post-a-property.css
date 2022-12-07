@@ -10,7 +10,7 @@ a {
 }
 
 .circle-arrow>div {
-    color: #989a9b;
+    color: var(--property-txt-clr);
 }
 
 .active a,
@@ -24,6 +24,7 @@ a {
 
 #main-c {
     padding: 5% 15% 9% 15%;
+    margin: auto 5%;
 }
 
 .title-c {
@@ -32,26 +33,34 @@ a {
     border-bottom: 1px solid hsl(212, 9%, 67.3%);
 }
 
+
+/* Category */
+
 .select-category {
     margin: 6% auto auto;
 }
 
 .select-category>strong {
-    color: #818283;
+    color: var(--property-txt-clr);
+}
+
+.list-2-col-category {
+    display: grid;
+    grid-template-columns: 50% 5%;
 }
 
 .list-2-col {
     display: grid;
-    grid-template-columns: 40% 5%;
+    grid-template-columns: 70% 5%;
 }
 
 .item {
-    color: #989a9b;
+    color: var(--property-txt-clr);
     margin-bottom: 6%;
 }
 
 .circle-arrow>div {
-    margin-bottom: 0.5%;
+    margin-bottom: 35%;
 }
 
 .item:last-child {
@@ -59,10 +68,57 @@ a {
 }
 
 .category-hr {
-    border: 0.1px solid #989a9b;
+    border: 0.1px solid var(--property-txt-clr);
     width: 25%;
     margin: 1% 0;
 }
+
+
+/* Location */
+
+.location-list {
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+.district-hr {
+    border: 0.1px solid var(--property-txt-clr);
+    width: 75%;
+    margin: 2.5% 0;
+}
+
+.popular-areas {
+    color: var(--property-txt-clr);
+    margin-bottom: 3%;
+}
+
+.other-areas {
+    margin-top: 3%;
+    color: var(--property-txt-clr);
+    ;
+}
+
+.other-areas select {
+    background-color: var(--dark-gray-clr);
+    margin-left: -3%;
+    color: var(--white-clr);
+    padding: 1%;
+    border: none;
+}
+
+.other-areas input {
+    /* width: 86%; */
+    background: #d7dce2;
+    padding: 1%;
+    border: none;
+}
+
+.counties-m {
+    color: var(--property-txt-clr);
+}
+
+
+/* Footer */
 
 #footer {
     min-height: 100%;

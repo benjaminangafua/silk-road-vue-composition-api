@@ -24,10 +24,10 @@ const greaterThan = computed(()=>{
                 <div class="contact-details"><RouterLink to="/post-a-property/contact-detail"> Contact Details</RouterLink> </div>
             </div>
             <div class="select-category1">
-                <strong>Select Category</strong>
+                <strong>Select a Category</strong>
                 <div class="category-hr"></div>
             </div>
-            <div class="list-2-col"> 
+            <div class="list-2-col-category"> 
                     <div class="list-item">
                         <div class="houses item active">House</div>
                         <div class="apartments item">Apartments </div>
@@ -57,8 +57,10 @@ const greaterThan = computed(()=>{
 .category {
     border-bottom: 3px solid #20B2AA;
 }
+
 .select-category1 {
-  margin: 2% auto auto;
+    margin: 2% auto auto;
+    color: var(--property-txt-clr);
 }
 
 </style>

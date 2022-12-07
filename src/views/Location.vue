@@ -30,7 +30,7 @@ const greaterThan = computed(()=>{
                         <strong>Select a County</strong>
                         <div class="category-hr"></div>
                     </div>
-                    <div>Counties</div> <br>
+                    <div class="counties-m">Counties</div> <br>
                     <div class="list-2-col">
                         <div class="counties-col">
                             <div class="county item">Bomi</div>
@@ -58,7 +58,6 @@ const greaterThan = computed(()=>{
                             <div v-html="greaterThan.grt"></div>
                             <div v-html="greaterThan.grt"></div>
                             <div class="active" v-html="greaterThan.grt"></div>
-                            <div v-html="greaterThan.grt"></div>
                             <div v-html="greaterThan.grt"></div>
                             <div v-html="greaterThan.grt"></div>
                             <div v-html="greaterThan.grt"></div>
@@ -115,36 +114,5 @@ const greaterThan = computed(()=>{
 .location {
     border-bottom: 3px solid #20B2AA;
 }
-.location-list{
-    display: grid;
-    grid-template-columns: 50% auto;
-}
-.district-hr{
 
-    border: 0.1px solid #989a9b;
-    width: 75%; 
-    margin: 2.5% 0;
-}
-.popular-areas{
-    color: #989a9b;
-    margin-bottom: 3%;
-}
-
-.other-areas{
-    margin-top: 3%;
-    color: #989a9b;;
-}
-select {
-  background-color: var(--dark-gray-clr);
-  margin-left: -3%;
-  color: var(--white-clr);
-  padding: 1%; 
-  border: none;
-}
-input {
-  /* width: 86%; */
-  background: #d7dce2;
-  padding: 1%;
-  border: none;
-}
 </style>

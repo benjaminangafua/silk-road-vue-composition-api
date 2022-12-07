@@ -112,7 +112,7 @@ const router = createRouter({
             path: '/post-a-property/detail',
             name: 'PropertyDetail',
             component: () =>
-                import ('../views/Detail.vue')
+                import ('../views/PropertyDetail.vue')
         }, {
             path: '/post-a-property/contact-detail',
             name: 'ContactDetail',
