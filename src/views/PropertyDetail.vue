@@ -118,7 +118,8 @@ const greaterThan = computed(()=>{
 }
 .provide-detail{
     margin-top: 2%;
-    color: var(--property-txt-clr);
+    color: var(--dark-gray-clr) !important;
+
 
 }
 .property-hr{
@@ -190,17 +191,17 @@ button{
     padding: 10px 30px;
     font-size: 1em;
 }
-.amenities-cl-4>>>{
+.amenities-cl-4:deep(){
     display: grid;
     grid-template-columns: repeat(4, 20%);
     gap: 0.5%;
     margin-top: 2%;
 }
-.amenities-cl-4>>>.amenities-cl-2{
+.amenities-cl-4:deep(.amenities-cl-2){
     display: grid;
     grid-template-columns: 80% 20%;
 }
-.amenities-cl-4>>>.amenities-cl-2 div{
+.amenities-cl-4:deep(.amenities-cl-2 div) {
     padding-bottom: 14px;
 }
 
