@@ -33,7 +33,7 @@ a {
 }
 
 .select-category {
-    margin: 2% 0;
+    margin: 6% auto auto;
 }
 
 .select-category>strong {
@@ -61,7 +61,7 @@ a {
 .category-hr {
     border: 0.1px solid #989a9b;
     width: 25%;
-    margin-top: 1%
+    margin: 1% 0;
 }
 
 #footer {
