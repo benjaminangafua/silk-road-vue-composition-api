@@ -6,7 +6,28 @@ import { computed } from '@vue/runtime-core';
 
 const greaterThan = computed(()=>{
     return {
-        grt: `<span class="material-symbols-outlined">arrow_circle_right</span>`
+        grt: `<span class="material-symbols-outlined">arrow_circle_right</span>`,
+        amenities: `
+                    <div class="amenities-cl-2">
+                        <div class="amenities-item">
+                            <div><label for="garage"> Garage</label></div> 
+                            <div><label for="Swimming Pool"> Swimming Pool </label></div> 
+                            <div> <label for="Laundry"> Laundry </label></div> 
+                            <div><label for="Advertisements"> Advertisements </label></div> 
+                            <div><label for="Garden"> Garden </label></div> 
+                            <div><label for="Generator"> Generator </label></div> 
+                        </div>
+                        
+                        <div class="amenities-checkbox">
+                            <div><input type="checkbox" name="garage"></div> 
+                            <div><input type="checkbox" name="Swimming Pool"></div> 
+                            <div><input type="checkbox" name="Laundry"></div> 
+                            <div><input type="checkbox" name="Advertisements"></div> 
+                            <div><input type="checkbox" name="Garden"></div> 
+                            <div><input type="checkbox" name="Generator"></div> 
+                        </div>
+                    </div>
+                    `
     }
 })
 </script>
@@ -55,6 +76,30 @@ const greaterThan = computed(()=>{
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
             </div>
+            <!-- Upload imgs -->
+            <div class="upload-img">
+                <div class="btn-upload"> <i class="upload"></i> <button>Upload Photos</button></div>
+                <div class="images-col-5">
+                    <div class="img"><img src="" alt="" class="img1"></div>
+                    <div class="img"><img src="" alt="" class="img2"></div>
+                    <div class="img"><img src="" alt="" class="img3"></div>
+                    <div class="img"><img src="" alt="" class="img4"></div>
+                    <div class="img"><img src="" alt="" class="img5"></div>
+                </div>
+            </div>
+
+            <!-- Amenities -->
+            <div class="amenities">
+                <div><strong>AMENITIES</strong> </div>
+                <div class="amenities-cl-4">
+                    <div v-html="greaterThan.amenities"></div>
+                    <div v-html="greaterThan.amenities"></div>
+                    <div v-html="greaterThan.amenities"></div>
+                    <div v-html="greaterThan.amenities"></div>
+                </div>
+            </div>
+            <div class="btn-continue"> <button>Continue</button></div>
+            
         </div>
         <div id="footer"><FooterDown /></div>
     </div>
@@ -81,57 +126,90 @@ const greaterThan = computed(()=>{
     width: 50%;
     margin: 1% 0 2%;
 }
-.property-detail-form{
-    display: grid;
-    grid-template-rows: 5% 45% 5% 25%;
-    row-gap: 5%;
-
-}
 .form-title,
 .physical-address, .description {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 80%;
+    margin-bottom: 2%;
 }
 .input-fields-property-detail{
     display: grid;
-    grid-template-columns: repeat(2, 45%);
-    gap: 10%
+    grid-template-columns: repeat(2, 40%);
+    gap: 5%
 }
 
 .input-item input, .form-title input, .physical-address input, .description textarea{ 
     background: #d7dce2;
-    padding: 1%;
+    padding: 1.5% 1%;
     border: none;
 }
 .input-item input{
     padding: 3% 1%;
     margin-bottom: 5%;
 }
-.price-input input, .size-input input{
-    margin-bottom: 0;
-}
 .r-property-input{
     display: grid; 
 
 }
 .l-property-input div input,.r-property-input div input{
-    width: 86%;
+    width: 73%;
 } 
 .r-property-input .price-input input{
-    width: 73%;
+    width: 59%;
 }
 
 .l-property-input .size-input input{
-    width: 79%;
+    width: 65.5%;
 }
 .input-item{
     padding: 0;
 }
-select {
+.input-item select {
     background-color: #8a97a5;
     /* margin-left: -1%; */
     color: var(--white-clr);
     padding: 3% 3.5%;
     border: none;
+}
+/* Upload images */
+.images-col-5{
+    display: grid;
+    grid-template-columns: repeat(5, 18%)
+}
+/* Amenities */
+.amenities{
+    color: var(--property-txt-clr);
+}
+
+button{
+
+    border: none;
+    border-radius: 5px;
+    background: var(--dark-gray-clr);
+    color: var(--white-clr);
+    padding: 10px 30px;
+    font-size: 1em;
+}
+.amenities-cl-4>>>{
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    gap: 0.5%;
+    margin-top: 2%;
+}
+.amenities-cl-4>>>.amenities-cl-2{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.amenities-cl-4>>>.amenities-cl-2 div{
+    padding-bottom: 14px;
+}
+
+.btn-continue button{ 
+    padding-right:  40px;
+    padding-left:  40px;
+    float: right;
+}
+.btn-continue{
+    width: 80%;
 }
 </style>
