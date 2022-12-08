@@ -142,7 +142,7 @@ a {
 .input-fields-property-detail {
     display: grid;
     grid-template-columns: repeat(2, 40%);
-    gap: 5%
+    gap: 3%
 }
 
 .input-item input,
@@ -150,12 +150,12 @@ a {
 .physical-address input,
 .description textarea {
     background: #d7dce2;
-    padding: 1.5% 1%;
+    padding: 1.5% 3%;
     border: none;
 }
 
 .input-item input {
-    padding: 3% 1%;
+    padding: 3% 1% 3% 6%;
     margin-bottom: 5%;
 }
 

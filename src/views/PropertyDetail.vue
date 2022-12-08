@@ -77,7 +77,7 @@ const greaterThan = computed(()=>{
                 </div>
 
                 <div class="description">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Description"></textarea>
                 </div>
             </div>
             <!-- Upload imgs -->
