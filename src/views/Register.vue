@@ -26,7 +26,7 @@ import HeadTopVue from '../components/HeadTop.vue';
                     <h2>REGISTRATION</h2>
                 </div>
                 <div class="log-input">
-                    <div class="input1"  id="placeholder-p"><input type="text" placeholder="Full name">
+                    <div class="input1"  id="placeholder-p"><input type="text" placeholder="Full Name">
                     
                         <font-awesome-icon id="user-icon" :icon="['fas', 'user']" />
                     </div>

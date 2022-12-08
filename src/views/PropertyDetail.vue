@@ -114,10 +114,14 @@ const greaterThan = computed(()=>{
 
 .select-category1 {
     margin: 2% auto auto;
-    color: var(--property-txt-clr);
+    color:  var(--dark-gray-clr) !important;;
 }
 .provide-detail{
     margin-top: 2%;
     color: var(--dark-gray-clr) !important;
+}
+.btn-upload button {
+    padding-right: 50px;
+    padding-left: 50px;
 }
 </style>

@@ -41,7 +41,7 @@ a {
 }
 
 .select-category>strong {
-    color: var(--property-txt-clr);
+    color: var(--dark-gray-clr) !important;
 }
 
 .list-2-col-category {
@@ -195,7 +195,7 @@ a {
 /* Amenities */
 
 .amenities {
-    color: var(--property-txt-clr);
+    color: var(--dark-gray-clr) !important;
 }
 
 button {

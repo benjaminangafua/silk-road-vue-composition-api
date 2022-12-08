@@ -26,21 +26,35 @@ const house_detail = ref(propertyData)
                     <form action="">
                         <div class="name">
                             <div><b>Name:</b> </div>
-                            <div>Peter Wayne</div>
+                            
+                                <div class="input1"  id="placeholder-p"><input type="text" placeholder="Full Name">
+                                
+                            </div>
                         </div>
                         <div class="email">
 
                         <div><b>Email:</b> </div>
-                        <div>peterwayne@gamil.com</div>
+                            <div class="input1">
+                            <input type="text" placeholder="Email">
+                        
+                            </div>
                         </div>
 
                         <div class="phone">
                             <div><b>Phone:</b> </div>
-                            <div>(231)-880-971-128</div>
+                        <div class="c-code" id="placeholder-p">
+                            <select name="c-code" id="">
+                                <option value="+231">+231</option>
+                                <option value="+234">+234</option>
+                                <option value="+134">+134</option>
+                                <option value="+412">+412</option>
+                            </select> 
+                            <input id="input2" type="tel" placeholder="Phone number"> 
+                        </div>
                         </div>
                     </form>
                 </div>
-                <div class="btn-continue"> <button><RouterLink to="/update-profile">Update Profile</RouterLink> </button></div>
+                <div class="btn-continue"> <button><RouterLink to="/profile">Save</RouterLink> </button></div>
             </div>
 
             <!-- Property List -->
@@ -98,23 +112,26 @@ const house_detail = ref(propertyData)
   margin-bottom: 5%;
 }
 
+.c-code input { 
+  padding: 7px 78px; 
+  padding-left: 1.8rem;
+}
 .name, .email, .phone{
-  margin-bottom: 10%;
+  margin-bottom: 5%;    
 }
-#password, #user-icon {
-  color: var(--dark-gray-clr);
-  margin-left: -19rem;
-  margin-top: 2%;
-}
+
 .btn-continue button {
     padding-right: 60px;
     padding-left: 60px;
     float: right;
-    margin-top: 5%;
-    margin-right: 1.5%;
+    margin-top: 5%; 
+    margin-right: 0;
 }
 button a{
     color: var(--white-clr);
+}
+.btn-continue{
+    width: 95%;
 }
 .content-list{
     width: 100%;

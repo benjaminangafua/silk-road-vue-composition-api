@@ -123,6 +123,11 @@ const router = createRouter({
             name: 'profile',
             component: () =>
                 import ('../views/MyProfile.vue')
+        }, {
+            path: '/update-profile',
+            name: 'updateProfile',
+            component: () =>
+                import ('../views/UpdateProfile.vue')
         }
 
 

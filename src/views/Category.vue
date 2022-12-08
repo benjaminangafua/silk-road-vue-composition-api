@@ -60,7 +60,7 @@ const greaterThan = computed(()=>{
 
 .select-category1 {
     margin: 2% auto auto;
-    color: var(--property-txt-clr);
+    color:  var(--dark-gray-clr) !important;;
 }
 
 </style>
