@@ -2,10 +2,10 @@
 import FooterDown from '../components/FooterDown.vue'
 import HeadTop from '../components/HeadTop.vue';
 import  {RouterLink}  from 'vue-router';
-import propertyData from '../property-data.json'
 import PropertyIconLayout from '../components/PropertyIconLayout.vue'
 import { ref} from 'vue';
 import { computed } from '@vue/runtime-core';
+import propertyData from '../property-data.json'
 
 const house_detail = ref(propertyData)
 </script>

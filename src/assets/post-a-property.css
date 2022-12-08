@@ -193,7 +193,12 @@ a {
 
 .images-col-5 {
     display: grid;
-    grid-template-columns: repeat(5, 18%)
+    grid-template-columns: repeat(5, 18%);
+    gap: 2.5%;
+    padding: 3%;
+    background: #d7dce2;
+    width: 74%;
+    margin: 3% 0;
 }
 
 

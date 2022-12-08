@@ -2,7 +2,10 @@
 import FooterDown from '../components/FooterDown.vue'
 import HeadTop from '../components/HeadTop.vue';
 import  {RouterLink}  from 'vue-router';
-import { computed } from '@vue/runtime-core';
+import { computed, ref } from '@vue/runtime-core';
+import propertyData from '../property-data.json'
+
+const house_detail = ref(propertyData)
 
 const greaterThan = computed(()=>{
     return {
@@ -81,11 +84,11 @@ const greaterThan = computed(()=>{
             <div class="upload-img">
                 <div class="btn-upload"> <i class="upload"></i> <button>Upload Photos</button></div>
                 <div class="images-col-5">
-                    <div class="img"><img src="" alt="" class="img1"></div>
-                    <div class="img"><img src="" alt="" class="img2"></div>
-                    <div class="img"><img src="" alt="" class="img3"></div>
-                    <div class="img"><img src="" alt="" class="img4"></div>
-                    <div class="img"><img src="" alt="" class="img5"></div>
+                    <div class="img"><img :src="house_detail[0].image" alt="" class="img1"></div>
+                    <div class="img"><img :src="house_detail[1].image" alt="" class="img2"></div>
+                    <div class="img"><img :src="house_detail[2].image" alt="" class="img3"></div>
+                    <div class="img"><img :src="house_detail[3].image" alt="" class="img4"></div>
+                    <div class="img"><img :src="house_detail[4].image" alt="" class="img5"></div>
                 </div>
             </div>
 
