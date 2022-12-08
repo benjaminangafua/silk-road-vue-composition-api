@@ -27,6 +27,10 @@ a {
     margin: auto 5%;
 }
 
+.main-bg-clr {
+    background-color: #f5f5f5;
+}
+
 .title-c {
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -46,7 +50,7 @@ a {
 
 .list-2-col-category {
     display: grid;
-    grid-template-columns: 50% 5%;
+    grid-template-columns: 30% 5%;
 }
 
 .list-2-col {
@@ -60,7 +64,7 @@ a {
 }
 
 .circle-arrow>div {
-    margin-bottom: 35%;
+    margin-bottom: 10%;
 }
 
 .item:last-child {
@@ -68,8 +72,8 @@ a {
 }
 
 .category-hr {
-    border: 0.1px solid var(--property-txt-clr);
-    width: 25%;
+    border: 0.1px solid var(--dark-gray-clr);
+    width: 35%;
     margin: 1% 0;
 }
 
@@ -82,13 +86,12 @@ a {
 }
 
 .district-hr {
-    border: 0.1px solid var(--property-txt-clr);
+    border: 0.1px solid var(--dark-gray-clr);
     width: 75%;
     margin: 2.5% 0;
 }
 
 .popular-areas {
-    color: var(--property-txt-clr);
     margin-bottom: 3%;
 }
 
@@ -113,15 +116,17 @@ a {
     border: none;
 }
 
-.counties-m {
-    color: var(--property-txt-clr);
+.counties-m,
+.popular-areas {
+    margin-top: 4%;
+    color: var(--dark-gray-clr);
+    font-weight: bold;
 }
 
 
 /* Property Details */
 
 .property-hr {
-    border-bottom: 0.1px solid var(--property-txt-clr);
     width: 50%;
     margin: 1% 0 2%;
 }
@@ -245,7 +250,7 @@ button {
 }
 
 .property-hr {
-    border-bottom: 0.1px solid var(--property-txt-clr);
+    border-bottom: 0.1px solid var(--dark-gray-clr);
     margin: 1% 0 4%;
 }
 

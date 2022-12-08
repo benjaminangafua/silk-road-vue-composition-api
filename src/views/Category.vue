@@ -16,6 +16,7 @@ const greaterThan = computed(()=>{
         <div id="head-bg-color">
             <HeadTop />
         </div>
+        <div class="main-bg-clr">
         <div id="main-c">
             <div class="title-c">
                 <div class="category active"><RouterLink to="/post-a-property/category">Category</RouterLink> </div>
@@ -46,6 +47,7 @@ const greaterThan = computed(()=>{
                         <div v-html="greaterThan.grt"></div>
                      </div>                
                </div>
+            </div>
         </div>
         <div id="footer"><FooterDown /></div>
     </div>

@@ -14,6 +14,7 @@ const house_detail = ref(propertyData)
         <div id="head-bg-color">
             <HeadTop />
         </div> 
+        <div class="main-bg-clr">
         <div class="main-content">
 
             <!--Contact Form -->
@@ -69,7 +70,7 @@ const house_detail = ref(propertyData)
                         <div class="img-ls"><router-link v-bind:to="'/single-property/'+(Number(index)+1)"><img :src="detail.image"  alt=""></router-link></div>
                         
                     </div>
-
+                </div>
                 </div>
             </div>
         </div>
