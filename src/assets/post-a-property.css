@@ -195,7 +195,7 @@ a {
     display: grid;
     grid-template-columns: repeat(5, 18%);
     gap: 2.5%;
-    padding: 3%;
+    padding: 1.5% 3%;
     background: #d7dce2;
     width: 74%;
     margin: 3% 0;
