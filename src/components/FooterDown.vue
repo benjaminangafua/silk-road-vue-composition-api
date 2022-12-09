@@ -17,7 +17,7 @@ import { RouterLink } from 'vue-router';
                             <div> silkroad@kwagei.com</div>
                         </div>
                     </h6>
-                    <div><span><i class="fa-brands fa-facebook-f pointer"></i> </span> <span><i class="fa-brands fa-instagram pointer"></i></span> <span><i class="fa-brands fa-twitter pointer"></i></span></div>
+                    <div><span><i class="fa-brands fa-facebook-f pointer"></i> </span>&nbsp;  &nbsp; <span><i class="fa-brands fa-instagram pointer"></i></span> &nbsp;  &nbsp;<span><i class="fa-brands fa-twitter pointer"></i></span></div>
                 </div>
                 <div class="quick-links">
                     <h5>QUICK LINKS</h5>
