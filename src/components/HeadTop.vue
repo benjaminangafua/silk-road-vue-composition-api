@@ -136,12 +136,12 @@ function closeToggleBtn(e){
 
                         <RouterLink to="/grid"> <div  class="toggle-menu-border" :class="active_clr.grid_list" id="ourProperty">Our Property</div></RouterLink>
                     </div>
-                    <div class="auth" id="auth"  ref="authenticate" v-if="router_content.logged">
+                    <div class="auth" id="auth"  ref="authenticate" v-if="(router_content.profile||router_content.update_profile||router_content.logged)">
 
                         <div class="navbar-right toggle-menu-border" id="navbar-right"  ref="navbar-right"><RouterLink to="/profile">John Wayne</RouterLink> </div>
                         
                         <hr class="nav-hr" ref="hr">
-                        <RouterLink to="/login"><div class="navbar-right toggle-menu-border active" id="navbar-right"  ref="navbar-right">Log Out</div></RouterLink>
+                        <RouterLink to="/login"><div class="navbar-right toggle-menu-border active" id="navbar-right"  ref="navbar-right">Logout</div></RouterLink>
                     </div>
 
                     <div class="auth" id="auth"  ref="authenticate" v-else>

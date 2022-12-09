@@ -838,6 +838,10 @@ a span {
     border-radius: .1em;
 }
 
+.fa-bars:hover {
+    cursor: pointer;
+}
+
 .response {
     display: grid;
 }
