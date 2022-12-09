@@ -69,14 +69,12 @@ const house_detail = ref(propertyData)
                     <div class="carts-list"  v-for="(detail, index) in house_detail"  :key="detail.id">
                         <div class="ls-r">
                             <div class="cart-txt">
-                                <div class="top-carts-list">
+                                 <div class="top-carts-list">
                                     <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
-                                    <div class="price-ls"><strong>$500.00/</strong>month</div>
-
+                                    <div class="price-ls"><strong>$500.00</strong>/month</div>
                                 </div>
-
                                 <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">{{detail.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
+                                
                             </div>
                             <!-- Icons -->
                             <PropertyIconLayout />
@@ -112,7 +110,9 @@ const house_detail = ref(propertyData)
   width: 70%;
   margin-bottom: 5%;
 }
-
+.ls-r, .cart-txt{
+    direction: ltr;
+}
 .c-code input { 
   padding: 7px 78px; 
   padding-left: 1.8rem;
