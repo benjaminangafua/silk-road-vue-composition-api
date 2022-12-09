@@ -62,8 +62,7 @@ const house_detail = ref(propertyData)
                                 </div>
 
                                 <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
-                                <div class="cart-small-text">{{detail.owner_name}} <span class="material-symbols-outlined star-icon">hotel_class</span></div>
-                            </div>
+                                </div>
                             <!-- Icons -->
                             <PropertyIconLayout />
                         </div>
@@ -99,6 +98,9 @@ const house_detail = ref(propertyData)
   margin-bottom: 5%;
 }
 
+.ls-r, .cart-txt{
+    direction: ltr;
+}
 .name, .email, .phone{
   margin-bottom: 10%;
 }
