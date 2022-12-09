@@ -45,15 +45,15 @@ import { RouterLink } from 'vue-router';
 
                     <h6>
                         <div class="footer-2">3 Bedroom Apartment at Sinkor Heights</div>
-                        <div class="distance-p">45 Circle Dr, Monrovia, Liberia</div>
+                        <div class="distance-p"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  45 Circle Dr, Monrovia, Liberia</div>
                     </h6>
                     <h6>
                         <div class="footer-2">3 Bedroom Apartment at Sinkor Heights</div>
-                        <div class="distance-p">45 Circle Dr, Monrovia, Liberia</div>
+                        <div class="distance-p"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  45 Circle Dr, Monrovia, Liberia</div>
                     </h6>
                     <h6>
                         <div class="footer-2">3 Bedroom Apartment at Sinkor Heights</div>
-                        <div class="distance-p">45 Circle Dr, Monrovia, Liberia</div>
+                        <div class="distance-p"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  45 Circle Dr, Monrovia, Liberia</div>
                     </h6>
                 </div>
             </div>
@@ -66,3 +66,8 @@ import { RouterLink } from 'vue-router';
         </div>
 
 </template>
+<style scoped>
+    .location-icon{
+        color: var(--white-clr) !important;
+    }
+</style>
