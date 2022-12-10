@@ -141,3 +141,21 @@ const router_content = computed(()=>{
     }
 })
 ```
+
+## Problem: To reduce the length of a border
+```css
+  div  {
+    position: relative;
+    font-size: 1em;
+
+} 
+div :after {
+  content: "";
+  background: #20B2AA;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 90%;
+}
+```
