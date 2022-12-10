@@ -78,9 +78,20 @@ const house_detail = ref(propertyData)
 </template>
 <style scoped>
 @import url('../assets/post-a-property.css');
+ 
+.posting  {
+    position: relative;
+    font-size: 1em;
 
-.posting{
-    border-bottom: 3px solid #20B2AA;
+} 
+.posting :after {
+  content: "";
+  background: #20B2AA;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 95%;
 }
 .title-c{
     margin-bottom: 3%;

@@ -112,10 +112,21 @@ const greaterThan = computed(()=>{
 <style scoped>
     @import url('../assets/post-a-property.css');
 
+ 
 .property-details {
-    border-bottom: 3px solid #20B2AA;
-}
+    position: relative;
+    font-size: 1em;
 
+} 
+.property-details:after {
+  content: "";
+  background: #20B2AA;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 90%;
+}
 .select-category1 {
     margin: 2% auto auto;
     color:  var(--dark-gray-clr) !important;;

@@ -113,8 +113,20 @@ const greaterThan = computed(()=>{
 
 @import url('../assets/post-a-property.css');
     
+
 .location {
-    border-bottom: 3px solid #20B2AA;
+    position: relative;
+    font-size: 1em;
+
+} 
+.location:after {
+  content: "";
+  background: #20B2AA;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 90%;
 }
 .circle-arrow > div{
 
