@@ -834,8 +834,9 @@ a span {
 .fa-bars {
     display: none !important;
     background-color: var(--black-clr);
-    padding: 0.25em;
     border-radius: .1em;
+    border: 1px solid var(--green-clr);
+    padding: 0.15em;
 }
 
 .fa-bars:hover {
@@ -1116,7 +1117,7 @@ a span {
         display: block !important;
         font-size: 1.8em;
         float: right;
-        color: hsl(0, 0%, 100%) !important;
+        color: var(--green-clr) !important;
     }
     .sidebar {
         margin: 2%;

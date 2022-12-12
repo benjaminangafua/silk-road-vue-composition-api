@@ -61,9 +61,22 @@ import { computed } from '@vue/runtime-core';
 <style scoped>
     @import url('../assets/post-a-property.css');
 
+ .contact-details {
+    position: relative;
+    font-size: 1em;
+
+} 
+.contact-details:after {
+  content: "";
+  background: #20B2AA;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+}
 .provide-detail{
     margin-top: 8%;
-
 }
 strong{
     color: var(--dark-gray-clr) !important;

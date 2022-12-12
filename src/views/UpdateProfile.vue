@@ -55,7 +55,7 @@ const house_detail = ref(propertyData)
                         </div>
                     </form>
                 </div>
-                <div class="btn-continue"> <button><RouterLink to="/profile">Save</RouterLink> </button></div>
+                <div class="btn-save"> <button><RouterLink to="/profile">Save</RouterLink> </button></div>
             </div>
 
             <!-- Property List -->
@@ -92,81 +92,5 @@ const house_detail = ref(propertyData)
 <style scoped>
 @import url('../assets/post-a-property.css');
 
-
-.posting  {
-    position: relative;
-    font-size: 1em;
-
-} 
-.posting :after {
-  content: "";
-  background: #20B2AA;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  width: 95%;
-}
-.title-c{
-    margin-bottom: 3%;
-}
-.main-content{
-    display: grid;
-    grid-template-columns: 40% 55%;
-    margin: 2% 1% 5% 10%;
-}
-.provide-detail strong{
-    color: var(--dark-gray-clr) !important;
-}
-.property-hr[data-v-356cf91e] { 
-  width: 70%;
-  margin-bottom: 5%;
-}
-.ls-r, .cart-txt{
-    direction: ltr;
-}
-.c-code input { 
-  padding: 7px 78px; 
-  padding-left: 1.8rem;
-}
-.name, .email, .phone{
-  margin-bottom: 5%;    
-}
-
-.btn-continue button {
-    padding-right: 60px;
-    padding-left: 60px;
-    float: right;
-    margin-top: 5%; 
-    margin-right: 0;
-}
-button a{
-    color: var(--white-clr);
-}
-.btn-continue{
-    width: 95%;
-}
-.content-list{
-    width: 100%;
-}
-
-.scrollable{
-    overflow-y: scroll;
-    direction: rtl;
-    height: 600px;
-}
-.carts-list {
-display: grid;
-grid-template-columns:auto 40% ;
-}
-.main-contact-content{
-    width: 80%;
-}
-.img-ls img {
-  width: 100%;
-}
-.ls-r {
-  margin-right: 1%;
-}
 </style>
 
