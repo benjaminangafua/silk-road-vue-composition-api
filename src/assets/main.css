@@ -1,14 +1,18 @@
 :root {
-    --bg-color: #D7DCE2;
-    --light-gray-clr: #505050;
+    --white-clr: #ffffff;
+    --black-clr: #000000;
+    --blue-clr: #4068df;
+    --bg-color: #d6dbe1;
+    --light-gray-clr: #4f4f4f;
     --dark-gray-clr: #748090;
-    --green-clr: #20B2AA;
-    --white-clr: #fff;
-    --text-clr: #4a5158;
-    --black-clr: #000;
-    --header-txt-clr: #bcc0c6;
-    --header-bg-clr: #505050;
-    --property-txt-clr: #989a9b;
+    --green-clr: #1fb2aa;
+    --text-clr: #4a5259;
+    --header-txt-clr: #bdc1c7;
+    --header-bg-clr: #4f4f4f;
+    --property-txt-clr: #98999a;
+    --property-bg: #f5f5f5;
+    --light-opacity: #00000054;
+    --dark-opacity: rgba(0, 0, 0, 0.719);
 }
 
 
@@ -45,8 +49,8 @@ a {
     color: var(--white-clr);
 }
 
-.header button a {
-    color: var(--white-clr) !important;
+.property-btn button a {
+    color: var(--white-clr);
 }
 
 .active {
@@ -67,9 +71,9 @@ a {
     display: grid;
     grid-template-columns: 13% 75%;
     justify-content: space-around;
-    background-color: hsla(0, 0%, 0%, 0.329);
+    background-color: var(--light-opacity);
     padding: 25px 20px;
-    color: #B5BABF;
+    color: var(--property-txt-clr);
 }
 
 .logo {
@@ -79,7 +83,6 @@ a {
     background-color: var(--black-clr);
     place-self: start center;
     word-spacing: 0.01px;
-    /* border-radius: 5px; */
 }
 
 .top-nav {
@@ -95,7 +98,7 @@ a {
     align-items: start;
 }
 
-.home {
+.top_nav_left {
     display: grid;
     grid-template-columns: 20% auto;
     justify-items: start;
@@ -107,7 +110,7 @@ a {
     height: 1px;
 }
 
-.auth {
+.account-info {
     display: grid;
     grid-template-columns: 1fr auto auto;
     justify-self: end;
@@ -134,7 +137,7 @@ a {
 .bottom-nav .property-btn {
     justify-self: end;
     padding: 5px 10px;
-    background-color: #4068df;
+    background-color: var(--blue-clr);
     border-radius: 5px;
 }
 
@@ -144,11 +147,11 @@ a {
     border: none;
 }
 
-#home,
+#top_nav_left,
 #ourProperty,
 .bottom-left-nav,
 .active-board-txt {
-    font-size: 14px !important;
+    font-size: 14px;
 }
 
 
@@ -259,7 +262,7 @@ input:focus {
 }
 
 .main-widget div input::placeholder {
-    color: rgba(255, 255, 255, 0.781);
+    color: var(--property-txt-clr);
     opacity: 1;
 }
 
@@ -289,7 +292,6 @@ input:focus {
 
 .r-detail-select {
     display: grid;
-    /* justify-items: end;  */
 }
 
 .r-detail-select div button,
@@ -302,21 +304,32 @@ input:focus {
 
 .r-detail-select div button {
     float: right;
-    background-color: #4068df;
+    background-color: var();
 }
 
 input[type=range] {
     -webkit-appearance: none;
     width: 100%;
     height: 4px;
-    background: linear-gradient(20deg, hsl(177, 70%, 41%) 60%, hsla(177, 70%, 41%, 0.502) 60%);
+    background: linear-gradient(20deg, var(--green-clr) 60%, hsla(177, 70%, 41%, 0.502) 60%);
 }
 
 input[type=range]::-webkit-slider-thumb,
 input[type=range]::-moz-range-thumb {
     border-radius: 50px;
     border: double 1px var(--green-clr);
-    background: var(--black-clr);
+}
+
+
+/* Forms */
+
+.main-login,
+.main-registration-content {
+    display: grid;
+    margin: 10% 17%;
+    color: var(--white-clr);
+    border: 1px solid var(--white-clr);
+    background-color: var(--dark-opacity);
 }
 
 
@@ -336,18 +349,13 @@ input[type=range]::-moz-range-thumb {
 }
 
 .main-login {
-    display: grid;
     grid-template-columns: 54% auto;
-    margin: 10% 17%;
     padding: 70px 50px;
-    color: var(--white-clr);
-    border: 1px solid var(--white-clr);
-    background-color: rgba(0, 0, 0, 0.719);
 }
 
 .content button {
     background-color: transparent;
-    border: solid 2px white;
+    border: solid 2px var(--white-clr);
 }
 
 .login-form {
@@ -379,7 +387,7 @@ input[type=range]::-moz-range-thumb {
 .input3 input {
     padding: 8px 0 8px 40px;
     border: none;
-    background-color: #D7DCE2;
+    background-color: var(--bg-color);
     width: 85%;
 }
 
@@ -417,7 +425,7 @@ input[type=range]::-moz-range-thumb {
 
 .forget-password {
     justify-self: end;
-    color: #47BEB7;
+    color: var(--green-clr);
 }
 
 .btn,
@@ -438,13 +446,8 @@ input[type=range]::-moz-range-thumb {
 /* REGISTRATION FORM */
 
 .main-registration-content {
-    display: grid;
     grid-template-columns: auto 54%;
-    margin: 10% 17%;
     padding: 50px 50px 70px 50px;
-    color: var(--white-clr);
-    border: 1px solid var(--white-clr);
-    background-color: rgba(0, 0, 0, 0.719);
 }
 
 .registration-form {
@@ -499,7 +502,7 @@ input[type=range]::-moz-range-thumb {
 
 #property-grd {
     display: grid;
-    background: #F5F5F5 !important;
+    background: var(--property-bg);
 }
 
 .grid-container {
@@ -510,7 +513,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .sidebar {
-    background-color: #D7DCE2;
+    background-color: var(--bg-color);
     padding: 5%;
     height: max-content;
 }
@@ -543,13 +546,13 @@ input[type=range]::-moz-range-thumb {
 }
 
 .grd-range input[type=range] {
-    width: 94% !important;
+    width: 94%;
 }
 
 .input-rng::-webkit-slider-thumb,
 .input-rng::-moz-range-thumb {
     border: double 2px var(--green-clr);
-    background-color: rgba(97, 106, 153, 0.692) !important;
+    background-color: var(--dark-gray-clr);
 }
 
 .side-btn {
@@ -658,7 +661,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .price {
-    background-color: #11c7afcc;
+    background-color: var(--green-clr);
     position: absolute;
     width: max-content;
     justify-self: end;
@@ -697,7 +700,7 @@ a span {
 .icons-layout .icon,
 .carts,
 .carts-list {
-    border: solid 1px #e7e8e9
+    border: solid 1px var(--property-bg)
 }
 
 .icons-layout .icon {
@@ -993,9 +996,6 @@ a span {
         display: block;
         margin: 5% 20%;
         padding: 20px;
-        color: var(--white-clr);
-        border: 1px solid var(--white-clr);
-        background-color: rgba(0, 0, 0, 0.719);
     }
     .registration-form {
         display: grid;
@@ -1070,7 +1070,7 @@ a span {
         border-bottom: 0.5px solid rgb(134, 133, 133);
         padding: 1rem !important;
     }
-    #home {
+    #top_nav_left {
         /* margin: 2rem 0 !important; */
         padding: 1rem;
     }
@@ -1126,10 +1126,8 @@ a span {
         grid-template-columns: auto auto auto;
         gap: 35%;
     }
-    .home {
+    .top_nav_left {
         grid-template-columns: 35% auto;
-        justify-items: start;
-        align-items: center;
     }
     /* Main  Page*/
     .main {
@@ -1185,9 +1183,6 @@ a span {
         display: block;
         margin: 5%;
         padding: 20px;
-        color: var(--white-clr);
-        border: 1px solid var(--white-clr);
-        background-color: rgba(0, 0, 0, 0.719);
     }
     .registration-form {
         background-color: var(--white-clr);

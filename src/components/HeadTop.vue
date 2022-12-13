@@ -11,7 +11,7 @@ const route = useRoute().path
 const active_clr = computed(()=>{
     return {
         grid_list: route == '/grid' || route == '/list'?'active':'none',
-        home: route=='/' ?'active':'none'
+        top_nav_left: route=='/' ?'active':'none'
     }
 })
 
@@ -47,7 +47,7 @@ const state = reactive({
     authenticate: '',
     bottomNav: '',
     propertyBtn: '',
-    home: '',
+    top_nav_left: '',
     closeToggle: '',
     toggleBtn: '',
     hr: '',
@@ -61,7 +61,7 @@ const topNav = ref()
 const authenticate = ref()
 const bottomNav = ref()
 const propertyBtn =ref() 
-const home = ref()
+const top_nav_left = ref()
 const closeToggle = ref()
 const toggleBtn = ref()
 const hr = ref()
@@ -83,7 +83,7 @@ function toggleHamburger(e){
         `
         topNav.value.style.display = "block"
 
-        home.value.firstElementChild.style = `display:block;
+        top_nav_left.value.firstElementChild.style = `display:block;
                                         margin: 10px 0px`
 
         topNav.value.firstElementChild.style = `display:block;
@@ -130,13 +130,13 @@ function closeToggleBtn(e){
         <div class="toggle">
             <div id="navbar" class="nav"  ref="nav">
                 <div class="top-nav" id="top-nav"  ref="topNav">
-                    <div class="home" ref="home">
+                    <div class="top_nav_left" ref="top_nav_left">
 
-                        <RouterLink to="/"><div class="toggle-menu-border" :class="active_clr.home" id="home">Home</div></RouterLink> 
+                        <RouterLink to="/"><div class="toggle-menu-border" :class="active_clr.top_nav_left" id="top_nav_left">Home</div></RouterLink> 
 
                         <RouterLink to="/grid"> <div  class="toggle-menu-border" :class="active_clr.grid_list" id="ourProperty">Our Property</div></RouterLink>
                     </div>
-                    <div class="auth" id="auth"  ref="authenticate" v-if="(router_content.profile||router_content.update_profile||router_content.logged)">
+                    <div class="account-info" id="account-info"  ref="authenticate" v-if="(router_content.profile||router_content.update_profile||router_content.logged)">
 
                         <div class="navbar-right toggle-menu-border" id="navbar-right"  ref="navbar-right"><RouterLink to="/profile">John Wayne</RouterLink> </div>
                         
@@ -144,7 +144,7 @@ function closeToggleBtn(e){
                         <RouterLink to="/login"><div class="navbar-right toggle-menu-border active" id="navbar-right"  ref="navbar-right">Logout</div></RouterLink>
                     </div>
 
-                    <div class="auth" id="auth"  ref="authenticate" v-else>
+                    <div class="account-info" id="account-info"  ref="authenticate" v-else>
 
                         <RouterLink to="/login"><div class="navbar-right toggle-menu-border" id="navbar-right"  ref="navbar-right">Login</div></RouterLink>
                         
@@ -158,31 +158,31 @@ function closeToggleBtn(e){
                 <div class="bottom-nav"  id="bottom-nav"  ref="bottomNav">
                     <div>  
                         <div class="bottom-left-nav" v-if="router_content.login">
-                            <div><RouterLink to="/">Home</RouterLink></div> 
+                            <div><RouterLink to="/">HOME</RouterLink></div> 
                             <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
                             <div class="active-board-txt">LOGIN</div>
                         </div> 
                         <!-- Register -->
                         <div class="bottom-left-nav" v-else-if="router_content.register">
-                            <div><RouterLink to="/">Home</RouterLink></div> 
+                            <div><RouterLink to="/">HOME</RouterLink></div> 
                             <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
                             <div class="active-board-txt">REGISTER</div>
                         </div> 
                         <!-- Grid or list layout -->
                         <div class="bottom-left-nav" v-else-if="router_content.grid_list">
-                            <div><RouterLink to="/">Home</RouterLink></div> 
+                            <div><RouterLink to="/">HOME</RouterLink></div> 
                             <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
                             <div class="active-board-txt"><RouterLink to="/grid">HOUSES </RouterLink></div>
                         </div> 
                         <!-- Profile -->
                         <div class="bottom-left-nav" v-else-if="router_content.profile">
-                            <div><RouterLink to="/">Home</RouterLink></div> 
+                            <div><RouterLink to="/">HOME</RouterLink></div> 
                             <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
                             <div class="active-board-txt"><RouterLink to="#">My Profile </RouterLink></div>
                         </div> 
                         <!-- Update Profile -->
                         <div class="bottom-left-nav" v-else-if="router_content.update_profile">
-                            <div><RouterLink to="/">Home</RouterLink></div> 
+                            <div><RouterLink to="/">HOME</RouterLink></div> 
                             <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
                             <div class="active-board-txt"><RouterLink to="#">Update Profile </RouterLink></div>
                         </div> 
