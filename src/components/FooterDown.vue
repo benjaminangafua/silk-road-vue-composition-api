@@ -3,6 +3,12 @@ import { RouterLink } from 'vue-router';
 </script>
 <template>
 <br>
+
+<div class="mobile-footer">
+    <div class="contact-us content">Contact Us</div> 
+    <div class="quick-links content">Quick Links</div> 
+    <div class="recent-postings content">Recent Postings</div>
+</div>
     <div class="footer">
             <div class="top-ftr">
                 <div class="footer1">

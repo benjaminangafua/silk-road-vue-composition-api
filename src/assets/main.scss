@@ -913,6 +913,10 @@ a span {
     place-content: center */
 }
 
+.mobile-footer {
+    display: none;
+}
+
 
 /* `xs` returns only a rule set and no media query */
 
@@ -1117,7 +1121,6 @@ a span {
         float: right;
         color: var(--green-clr);
     }
-    .fa-bars:target {}
     .sidebar {
         margin: 2%;
     }
@@ -1239,10 +1242,6 @@ a span {
     .advertisement {
         display: none;
     }
-    .top-ftr {
-        display: block;
-        padding: 12px 15px;
-    }
     .bottom-content {
         padding-bottom: 0;
     }
@@ -1253,5 +1252,24 @@ a span {
     }
     .descriptions {
         margin-bottom: 3%;
+    }
+    .footer {
+        display: none;
+    }
+    .mobile-footer {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        place-content: center;
+        // align-content: center;
+    }
+    .mobile-footer {
+        .content {
+            border-right: 2px solid var(--white-clr);
+            padding: .5rem;
+            color: var(--white-clr);
+        }
+        .content:last-child {
+            border-right: none;
+        }
     }
 }
