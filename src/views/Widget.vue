@@ -33,7 +33,7 @@ import HeadTopVue from '../components/HeadTop.vue';
                 </div>
                 <div>
                     <label for="Price">Price: $<span id="val-less">00</span>.00 - $<span id="val">10,000</span>.00</label> <br>
-                    <input type="range" min="0" max="10000" value="5000" name="" id="">
+                    <input type="range" class="input-rng" min="0" max="10000" value="5000" name="" id="">
                 </div>
             </div>
             <div class="r-detail-select">

@@ -32,28 +32,6 @@ const router_content = computed(()=>{
     }
 })
 
-
-// const iterate=()=>{
-//     const param =route.split("/")[2]
-//    console.log(param)
-// };
-// iterate()
-
-const state = reactive({
-    head: "",
-    logo: "",
-    nav: "",
-    topNav: '',
-    authenticate: '',
-    bottomNav: '',
-    propertyBtn: '',
-    top_nav_left: '',
-    closeToggle: '',
-    toggleBtn: '',
-    hr: '',
-    hr1: ''
-
-})
 const head = ref()
 const logo = ref()
 const nav = ref()
@@ -72,54 +50,30 @@ function toggleHamburger(e){
     if( nav.value.className =="nav"){
         closeToggle.value.style =`display:block; color:#fff; cursor:pointer;`
         toggleBtn.value.style.display = "none"
-        logo.value.style = `
-                            margin: 0;
-                                `
-        nav.value.className = "response"
-        head.value.style = `
-        display:block; 
-        background-color:#3b444b;
-        padding:10px 20px;
-        `
-        topNav.value.style.display = "block"
-
-        top_nav_left.value.firstElementChild.style = `display:block;
-                                        margin: 10px 0px`
-
-        topNav.value.firstElementChild.style = `display:block;
-                                        margin: 8px 0px`
-
-        authenticate.value.style.display = "block"
-        authenticate.value.firstElementChild.style = `padding:0; margin-bottom: 10px;`
-        authenticate.value.lastElementChild.style = "padding:0"
-                                        
-        bottomNav.value.style.display = "block"
-        propertyBtn.value.style = `width: max-content; margin-top: 10px`
         hr.value.style.display = "none";
         hr1.value.style.display = "none";
-
+        topNav.value.style.display = "block;"
+        authenticate.value.style.display = "block"                                        
+        bottomNav.value.style.display = "block;"
+        logo.value.style = `margin: 0;`
+        nav.value.className = "response"
+        head.value.style = `display:block; background-color:#3b444b; padding:10px 20px;        `
+        top_nav_left.value.firstElementChild.style = `display:block; margin: 10px 0px;`
+        topNav.value.firstElementChild.style = `display:block; margin: 8px 0px;`
+        authenticate.value.firstElementChild.style = `padding:0; margin-bottom: 10px;`
+        authenticate.value.lastElementChild.style = "padding:0;"
+        propertyBtn.value.style = `width: max-content; margin-top: 10px;`
     }else{
         authenticate.value.style.display = "grid"
-    }
-
-    
+    }    
 }
 function closeToggleBtn(e){
     nav.value.className = "nav"
-    head.value.style = `
-    display: grid;
-    grid-template-columns: 10% 70%;
-    align-items: center;
-    padding: 1rem 0;
-    transition: width 1s;
-    
-    `
-    logo.value.style = `margin-left: 4.2rem;
-                                `
+    head.value.style = ` display: grid; grid-template-columns: 10% 70%; align-items: center; padding: 1rem 0;transition: width 1s;`
+    logo.value.style = `margin-left: 4.2rem;`
     topNav.value.style.display = "grid"
     toggleBtn.value.style.display = "block"
     bottomNav.value.style.display = "grid"
-
     hr1.value.style.display = "block";
     closeToggle.value.style.display = "none"
     topNav.value.firstElementChild.style = "grid"

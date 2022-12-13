@@ -76,8 +76,8 @@ const house_detail = ref(propertyData)
         <div id="footer"><FooterDown /></div>
     </div>
 </template>
-<style scoped>
-@import url('../assets/post-a-property.css');
+<style lang="scss" scoped>
+    @import url('../assets/post-a-property.scss');
  
 .name,
 .email,

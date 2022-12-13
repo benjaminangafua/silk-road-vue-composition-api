@@ -58,8 +58,8 @@ import { computed } from '@vue/runtime-core';
     </div>
 </template>
 
-<style scoped>
-    @import url('../assets/post-a-property.css');
+<style lang="scss" scoped>
+    @import url('../assets/post-a-property.scss');
 
  .contact-details {
     position: relative;

@@ -109,9 +109,8 @@ const greaterThan = computed(()=>{
     </div>
 </template>
 
-<style scoped>
-
-@import url('../assets/post-a-property.css');
+<style lang="scss" scoped>
+    @import url('../assets/post-a-property.scss');
     
 
 .location {

@@ -28,7 +28,7 @@ const house_detail = ref(propertyData)
                         <div class="name">
                             <div><b>Name:</b> </div>
                             
-                                <div class="input1"  id="placeholder-p"><input type="text" placeholder="Full Name">
+                                <div class="input1" ><input type="text" placeholder="Full Name">
                                 
                             </div>
                         </div>
@@ -43,14 +43,14 @@ const house_detail = ref(propertyData)
 
                         <div class="phone">
                             <div><b>Phone:</b> </div>
-                        <div class="c-code" id="placeholder-p">
+                        <div class="c-code">
                             <select name="c-code" id="">
                                 <option value="+231">+231</option>
                                 <option value="+234">+234</option>
                                 <option value="+134">+134</option>
                                 <option value="+412">+412</option>
-                            </select> 
-                            <input id="input2" type="tel" placeholder="Phone number"> 
+                            </select>                             
+                            <input class="input1 profile-phone" type="tel" placeholder="Phone">
                         </div>
                         </div>
                     </form>
@@ -89,8 +89,8 @@ const house_detail = ref(propertyData)
         <div id="footer"><FooterDown /></div>
     </div>
 </template>
-<style scoped>
-@import url('../assets/post-a-property.css');
+<style lang="scss" scoped>
+    @import url('../assets/post-a-property.scss');
 
 </style>
 

@@ -159,3 +159,12 @@ div :after {
   width: 90%;
 }
 ```
+
+## Problem: Make CSS work across many browsers and use reduce code
+## Solution: Use CSS [preprocessor SCSS]('https://vitejs.dev/guide/features.html#css-pre-processors')
+
+```sh
+ npm add -D sass
+
+ ```
+> Name all css file with .scss [SASS/SCSS](https://sass-lang.com/guide)
