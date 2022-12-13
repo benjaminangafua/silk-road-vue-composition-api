@@ -304,7 +304,7 @@ input:focus {
 
 .r-detail-select div button {
     float: right;
-    background-color: var();
+    background-color: var(--blue-clr);
 }
 
 input[type=range] {
@@ -837,8 +837,8 @@ a span {
 .fa-bars {
     display: none;
     background-color: var(--black-clr);
-    border-radius: .1em;
-    border: 1px solid var(--green-clr);
+    cursor: pointer;
+    border: 2px solid var(--green-clr);
     padding: 0.15em;
 }
 
