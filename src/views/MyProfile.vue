@@ -46,7 +46,7 @@ const house_detail = ref(propertyData)
 
             <!-- Property List -->
                 <div>
-                    <div class="title-c">
+                    <div class="category-title">
                         <div class="posting active"><RouterLink to="#">My Postings</RouterLink> </div>
                         <div class="location"> <RouterLink to="#">My Favorites</RouterLink> </div>
                     </div>
@@ -90,7 +90,7 @@ const house_detail = ref(propertyData)
     .carts-list {
         display: block;
     }
-    .title-c{
+    .category-title{
         display: none;
     } */
 }

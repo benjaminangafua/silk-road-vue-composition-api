@@ -13,7 +13,7 @@ import { computed } from '@vue/runtime-core';
         </div>
         <div class="main-bg-clr">
         <div id="main-c">
-            <div class="title-c">
+            <div class="category-title">
                 <div class="category "><RouterLink to="/post-a-property/category">Category</RouterLink> </div>
                 <div class="location"> <RouterLink to="/post-a-property/location">Location</RouterLink> </div>
                 <div class="property-details"><RouterLink to="/post-a-property/detail">Property Details</RouterLink> </div>
