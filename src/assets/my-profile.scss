@@ -10,7 +10,7 @@
         font-weight: bolder;
         font-size: 16px;
         color: var(--green-clr);
-        margin: 5% auto;
+        margin: 5%;
     }
     .name,
     .email,
@@ -46,12 +46,16 @@
     form {
         padding: 0px 20px;
     }
+    .carts-list {
+        margin: 0 3%;
+    }
     .top-carts-list {
         display: grid;
+        grid-template-columns: 30% auto;
     }
     .carts-list,
     .carts {
-        margin-bottom: 10%;
+        margin-bottom: 6%;
     }
     .price-ls {
         color: var(--green-clr);
