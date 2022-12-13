@@ -835,7 +835,7 @@ a span {
 }
 
 .fa-bars {
-    display: none !important;
+    display: none;
     background-color: var(--black-clr);
     border-radius: .1em;
     border: 1px solid var(--green-clr);
@@ -1068,14 +1068,12 @@ a span {
     }
     .toggle-menu-border {
         border-bottom: 0.5px solid rgb(134, 133, 133);
-        padding: 1rem !important;
+        padding: 1rem;
     }
     #top_nav_left {
-        /* margin: 2rem 0 !important; */
         padding: 1rem;
     }
     .navbar-right {
-        /* margin-top: 2rem; */
         padding: 1rem !important;
     }
     .bottom-left-nav {
@@ -1115,9 +1113,9 @@ a span {
     }
     .fa-bars {
         display: block !important;
-        font-size: 1.8em;
+        font-size: 1.7em;
         float: right;
-        color: var(--green-clr) !important;
+        color: var(--green-clr);
     }
     .sidebar {
         margin: 2%;

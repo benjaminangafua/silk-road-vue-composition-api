@@ -98,6 +98,8 @@ function toggleHamburger(e){
         hr.value.style.display = "none";
         hr1.value.style.display = "none";
 
+    }else{
+        authenticate.value.style.display = "grid"
     }
 
     
