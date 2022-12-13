@@ -205,4 +205,15 @@ function closeToggleBtn(e){
             <a @click.prevent="toggleHamburger" ref="toggleBtn"><i class="fa fa-bars"></i> </a>
         </div>
     </div>
+    <div class="mobile-header">
+        <div class="top-mobile-nav">
+            <div class="top-right-mobile-nav"> <i id="left-less" class="far fa-less-than"></i> Back</div>
+            <div class="top-left-mobile-nav"> <button class="btn submit-ad-btn">Submit an Ad</button></div>
+        </div>
+        <div class="bottom-mobile-nav">
+            <div>HOME <span id="right"><font-awesome-icon  :icon="['fas', 'greater-than']" /></span> </div>
+            <div>Submit an Ad <span id="right"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></span> </div>
+            <div>Category</div>
+        </div>
+    </div>
 </template>

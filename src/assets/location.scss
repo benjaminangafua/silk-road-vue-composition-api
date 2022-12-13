@@ -1,0 +1,42 @@
+.location-list {
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+.district-hr {
+    border: 0.1px solid var(--dark-gray-clr);
+    width: 75%;
+    margin: 2.5% 0;
+}
+
+.popular-areas {
+    margin-bottom: 3%;
+}
+
+.other-areas {
+    margin-top: 3%;
+    color: var(--property-txt-clr);
+    ;
+}
+
+.other-areas select {
+    background-color: var(--dark-gray-clr);
+    margin-left: -3%;
+    color: var(--white-clr);
+    padding: 1%;
+    border: none;
+}
+
+.other-areas input {
+    /* width: 86%; */
+    background: #d7dce2;
+    padding: 1%;
+    border: none;
+}
+
+.counties-m,
+.popular-areas {
+    margin-top: 4%;
+    color: var(--dark-gray-clr);
+    font-weight: bold;
+}

@@ -27,7 +27,7 @@ import HeadTopVue from '../components/HeadTop.vue';
         </div>
         <div class="log-input">
             <div class="input2" id="placeholder-p">
-                <select name="c-code" id="">
+                <select id="">
                     <option value="+231">+231</option>
                     <option value="+234">+234</option>
                     <option value="+134">+134</option>

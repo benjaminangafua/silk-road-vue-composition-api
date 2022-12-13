@@ -21,22 +21,23 @@ const house_detail = ref(propertyData)
             <div class="main-contact-content">
                 <div class="provide-detail">
                     <strong>My Profile</strong>
+                    <div class="provide-a-contact-detail">Provide a contact detail</div>
                     <div class="property-hr"></div>
                 </div>
                 <div class="contact-content">
                     <form action="">
                         <div class="name">
-                            <div><b>Name:</b> </div>
+                            <div><b>Name</b> </div>
                             <div>Peter Wayne</div>
                         </div>
                         <div class="email">
 
-                        <div><b>Email:</b> </div>
-                        <div>peterwayne@gamil.com</div>
+                            <div><b>Email</b> </div>
+                            <div>peterwayne@gamil.com</div>
                         </div>
 
                         <div class="phone">
-                            <div><b>Phone:</b> </div>
+                            <div><b>Phone</b> </div>
                             <div>(231)-880-971-128</div>
                         </div>
                     </form>
@@ -78,12 +79,8 @@ const house_detail = ref(propertyData)
 </template>
 <style lang="scss" scoped>
     @import url('../assets/post-a-property.scss');
+    @import url('../assets/my-profile.scss');
  
-.name,
-.email,
-.phone {
-    margin-bottom: 5%;
-}
 
 @media (max-width:575.98px) {
     /* .main-content,

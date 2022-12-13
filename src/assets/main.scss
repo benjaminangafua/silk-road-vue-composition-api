@@ -15,6 +15,7 @@
     --dark-opacity: rgba(0, 0, 0, 0.719);
 }
 
+$grid: grid;
 
 /* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"); */
 
@@ -68,7 +69,7 @@ a {
 }
 
 .header {
-    display: grid;
+    display: $grid;
     grid-template-columns: 13% 75%;
     justify-content: space-around;
     background-color: var(--light-opacity);
@@ -87,19 +88,19 @@ a {
 
 .top-nav {
     overflow: hidden;
-    display: grid;
+    display: $grid;
     grid-template-columns: 50% auto;
 }
 
 #👉>svg {
     font-size: 0.5em;
-    display: grid;
+    display: $grid;
     margin: 25%;
     align-items: start;
 }
 
 .top_nav_left {
-    display: grid;
+    display: $grid;
     grid-template-columns: 20% auto;
     justify-items: start;
     align-items: center;
@@ -111,7 +112,7 @@ a {
 }
 
 .account-info {
-    display: grid;
+    display: $grid;
     grid-template-columns: 1fr auto auto;
     justify-self: end;
 }
@@ -130,7 +131,7 @@ a {
 }
 
 .bottom-nav {
-    display: grid;
+    display: $grid;
     grid-template-columns: 20% 80%;
 }
 
@@ -158,7 +159,7 @@ a {
 /* Home page main */
 
 .main {
-    display: grid;
+    display: $grid;
     margin-top: 10%;
     justify-content: center;
     align-items: center;
@@ -204,10 +205,10 @@ input:focus {
 }
 
 .bottom-content {
-    display: grid;
+    display: $grid;
     margin-top: 5%;
     /* padding-bottom: 5%; */
-    display: grid;
+    display: $grid;
     justify-content: center;
     align-items: center;
     color: var(--white-clr);
@@ -227,19 +228,19 @@ input:focus {
 .main-widget {
     background-color: rgba(0, 0, 0, 0.603);
     color: var(--white-clr);
-    display: grid;
+    display: $grid;
     margin: 3% 25%;
     padding: 20px;
 }
 
 .filter-line {
-    display: grid;
+    display: $grid;
     grid-template-columns: 50% auto;
     justify-items: end;
 }
 
 .filter-nav {
-    display: grid;
+    display: $grid;
     grid-template-columns: 1fr auto auto;
 }
 
@@ -267,13 +268,13 @@ input:focus {
 }
 
 .select-detail {
-    display: grid;
+    display: $grid;
     grid-template-columns: 45% 45%;
     column-gap: 10%;
 }
 
 .l-detail-select {
-    display: grid;
+    display: $grid;
 }
 
 .l-detail-select select,
@@ -291,7 +292,7 @@ input:focus {
 }
 
 .r-detail-select {
-    display: grid;
+    display: $grid;
 }
 
 .r-detail-select div button,
@@ -325,7 +326,7 @@ input[type=range]::-moz-range-thumb {
 
 .main-login,
 .main-registration-content {
-    display: grid;
+    display: $grid;
     margin: 10% 17%;
     color: var(--white-clr);
     border: 1px solid var(--white-clr);
@@ -340,7 +341,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .bottom-l {
-    display: grid;
+    display: $grid;
     grid-template-columns: auto auto;
 }
 
@@ -359,7 +360,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .login-form {
-    display: grid;
+    display: $grid;
     margin: -35% 20% 0% 53%;
     padding: 20px 40px 29px 40px;
     background-color: var(--white-clr);
@@ -375,7 +376,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .log-input {
-    display: grid;
+    display: $grid;
 }
 
 .log-input div {
@@ -451,7 +452,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .registration-form {
-    display: grid;
+    display: $grid;
     margin: -35% 53% 0%20%;
     padding: 13px 40px;
     background-color: var(--white-clr);
@@ -501,12 +502,12 @@ input[type=range]::-moz-range-thumb {
 /* Property Grid*/
 
 #property-grd {
-    display: grid;
+    display: $grid;
     background: var(--property-bg);
 }
 
 .grid-container {
-    display: grid;
+    display: $grid;
     grid-template-columns: 1fr 4fr;
     gap: 2%;
     margin: 2% 4.5% 6% 4.5%
@@ -579,13 +580,13 @@ input[type=range]::-moz-range-thumb {
 }
 
 .main-content {
-    display: grid;
+    display: $grid;
 }
 
 .content-nav {
     background-color: var(--bg-color);
     color: var(--light-gray-clr);
-    display: grid;
+    display: $grid;
     grid-template-columns: 40% auto;
     padding: 2%;
     align-self: center;
@@ -593,18 +594,18 @@ input[type=range]::-moz-range-thumb {
 }
 
 .nav-txt {
-    display: grid;
+    display: $grid;
     grid-template-columns: 20% 30% 20%;
 }
 
 .nav-icon {
-    display: grid;
+    display: $grid;
     grid-template-columns: 30% auto;
     place-items: center normal;
 }
 
 .grd-ls {
-    display: grid;
+    display: $grid;
     grid-template-columns: 25% 25% 0%;
     place-items: center normal;
     place-content: center;
@@ -612,7 +613,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .search-filter {
-    display: grid;
+    display: $grid;
     grid-template-columns: 20% auto;
     place-content: center;
 }
@@ -633,7 +634,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .content-grids {
-    display: grid;
+    display: $grid;
     grid-template-columns: 78% 20%;
     grid-template-rows: repeat(3, auto);
     margin-top: 2%;
@@ -641,7 +642,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .content-grid {
-    display: grid;
+    display: $grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3%;
 }
@@ -656,7 +657,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .cart-txt {
-    display: grid;
+    display: $grid;
     padding-left: 10px;
 }
 
@@ -671,7 +672,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .icons-layout {
-    display: grid;
+    display: $grid;
     grid-template-columns: repeat(4, auto);
     text-align: center;
 }
@@ -721,19 +722,19 @@ a span {
 /* Property List*/
 
 .content-list {
-    display: grid;
+    display: $grid;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
 .carts-list {
-    display: grid;
+    display: $grid;
     grid-template-columns: 40% auto;
     background-color: var(--white-clr);
     margin-bottom: 3%;
 }
 
 .top-carts-list {
-    display: grid;
+    display: $grid;
     grid-template-columns: 50% auto;
 }
 
@@ -742,13 +743,13 @@ a span {
 }
 
 .ls-r {
-    display: grid;
+    display: $grid;
     align-items: end;
     margin-right: 10%;
 }
 
 .icon-grid {
-    display: grid;
+    display: $grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
 }
@@ -767,7 +768,7 @@ a span {
 }
 
 .advertisement {
-    display: grid;
+    display: $grid;
     background-color: var(--white-clr);
     text-align: center;
     align-self: start;
@@ -794,14 +795,14 @@ a span {
 }
 
 .top-ftr {
-    display: grid;
+    display: $grid;
     grid-template-columns: repeat(3, auto);
     justify-items: center;
     margin: auto 5%;
 }
 
 .footer2I {
-    display: grid;
+    display: $grid;
     grid-template-columns: repeat(2, auto);
 }
 
@@ -814,7 +815,7 @@ a span {
 }
 
 .footer-b {
-    display: grid;
+    display: $grid;
     grid-template-columns: repeat(2, auto);
     margin-left: 11%;
     margin-right: 11%;
@@ -847,7 +848,7 @@ a span {
 }
 
 .response {
-    display: grid;
+    display: $grid;
 }
 
 .block {
@@ -855,7 +856,7 @@ a span {
 }
 
 .bottom-left-nav {
-    display: grid;
+    display: $grid;
     grid-template-columns: 35% 15% auto;
 }
 
@@ -863,7 +864,7 @@ a span {
 /* Single Property */
 
 .single-property-layout {
-    display: grid;
+    display: $grid;
     grid-template-columns: none;
 }
 
@@ -873,7 +874,7 @@ a span {
 }
 
 .amenity-description {
-    display: grid;
+    display: $grid;
     grid-template-columns: repeat(3, 1fr);
     margin-left: 2.5%;
     margin-bottom: 5%;
@@ -907,13 +908,14 @@ a span {
 }
 
 .post-a-property-nav-layout {
-    display: grid;
+    display: $grid;
     grid-template-columns: 88% 12% auto;
     /* place-items: center normal;
     place-content: center */
 }
 
-.mobile-footer {
+.mobile-footer,
+.mobile-header {
     display: none;
 }
 
@@ -954,7 +956,7 @@ a span {
         margin-left: 0;
     }
     .header {
-        display: grid;
+        display: $grid;
         grid-template-columns: 20% 70%;
     }
     /* Login */
@@ -964,7 +966,7 @@ a span {
         padding: 20px 80px;
     }
     .login-form {
-        display: grid;
+        display: $grid;
         margin: 0% 20% 5% 20%;
         padding: 20px 30px;
     }
@@ -1002,7 +1004,7 @@ a span {
         padding: 20px;
     }
     .registration-form {
-        display: grid;
+        display: $grid;
         margin: 5% 20%;
         padding: 20px 30px;
     }
@@ -1041,7 +1043,7 @@ a span {
 
 @media (max-width: 767.98px) {
     .header {
-        display: grid;
+        display: $grid;
         grid-template-columns: 20% 70%;
     }
     .sidebar,
@@ -1089,7 +1091,7 @@ a span {
     }
     #head,
     .header {
-        display: grid;
+        display: $grid;
         grid-template-columns: 10% 70%;
         align-items: center;
         padding: 1rem 0;
@@ -1148,7 +1150,7 @@ a span {
         padding: 30px;
     }
     .login-form {
-        display: grid;
+        display: $grid;
         margin: 0% 5% 5% 5%;
         padding: 10px 30px 30px 30px;
     }
@@ -1188,7 +1190,7 @@ a span {
     }
     .registration-form {
         background-color: var(--white-clr);
-        display: grid;
+        display: $grid;
         margin: 0% 5% 5% 5%;
         padding: 20px;
     }
@@ -1235,7 +1237,7 @@ a span {
         width: 100%;
     }
     .ls-r {
-        display: grid;
+        display: $grid;
         align-items: end;
         margin-right: 0;
     }
@@ -1247,7 +1249,7 @@ a span {
     }
     /* Single property */
     .amenity-description {
-        display: grid;
+        display: $grid;
         grid-template-columns: 100%;
     }
     .descriptions {
@@ -1256,11 +1258,48 @@ a span {
     .footer {
         display: none;
     }
+    .mobile-header {
+        display: $grid;
+        grid-template-rows: repeat(2, 40px);
+        background-color: var(--light-opacity);
+        padding: 10px;
+        color: var(--white-clr);
+    }
+    .mobile-header {
+        .top-mobile-nav {
+            display: flex;
+            justify-content: space-between;
+        }
+        .top-mobile-nav {
+            .submit-ad-btn {
+                color: var(--white-clr);
+                background-color: var(--blue-clr);
+                padding: 10px 20px;
+            }
+        }
+        .bottom-mobile-nav {
+            display: $grid;
+            grid-template-columns: 18% 30% auto;
+            font-size: 14px;
+            color: var(--dark-gray-clr);
+        }
+        .bottom-mobile-nav {
+            #right {
+                align-self: center;
+                font-size: .7em;
+                padding: 20px 9px;
+                color: var(--white-clr);
+            }
+            #left-less {
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+    }
     .mobile-footer {
-        display: grid;
+        display: $grid;
         grid-template-columns: repeat(3, auto);
         place-content: center;
-        // align-content: center;
     }
     .mobile-footer {
         .content {

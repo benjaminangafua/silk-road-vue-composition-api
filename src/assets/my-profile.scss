@@ -1,0 +1,60 @@
+@media (max-width: 575.98px) {
+    .main-content {
+        grid-template-columns: auto;
+    }
+    .provide-detail>strong {
+        display: none;
+    }
+    .provide-a-contact-detail {
+        display: grid;
+        font-weight: bolder;
+        font-size: 16px;
+        color: var(--green-clr);
+        margin: 5% auto;
+    }
+    .name,
+    .email,
+    .phone {
+        margin-bottom: 10%;
+    }
+    .property-hr {
+        display: none;
+    }
+    .main-contact-content {
+        margin-bottom: 10%;
+    }
+    button {
+        float: none;
+    }
+    .main-contact-content {
+        width: 100%;
+    }
+    .main-contact-content button {
+        width: 100%;
+    }
+    .btn-update-profile button {
+        padding-right: 130px;
+        padding-left: 130px;
+    }
+    .btn-update-profile {
+        display: grid;
+        place-content: center;
+    }
+    .main-content {
+        margin: 0;
+    }
+    form {
+        padding: 0px 20px;
+    }
+    .top-carts-list {
+        display: grid;
+    }
+    .carts-list,
+    .carts {
+        margin-bottom: 10%;
+    }
+    .price-ls {
+        color: var(--green-clr);
+        background-color: var(--white-clr);
+    }
+}

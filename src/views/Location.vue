@@ -28,7 +28,7 @@ const greaterThan = computed(()=>{
                 <div class="location-list">
                     <div>
                         <div class="select-category">
-                            <strong>Select a County</strong>
+                            <strong>Select a County within Liberia</strong>
                             <div class="category-hr"></div>
                         </div>
                         <div class="counties-m">Counties</div> <br>
@@ -70,7 +70,7 @@ const greaterThan = computed(()=>{
                             </div>  
                         </div>
                     </div>
-                    <div>
+                    <div class="location-district">
                         <div class="select-category">
                             <strong>Select a District within Grand Cape Mount County</strong>
                             <div class="district-hr"></div>
@@ -111,6 +111,7 @@ const greaterThan = computed(()=>{
 
 <style lang="scss" scoped>
     @import url('../assets/post-a-property.scss');
+    @import url('../assets/location.scss');
     
 
 .location {
