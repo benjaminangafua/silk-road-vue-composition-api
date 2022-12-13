@@ -294,15 +294,6 @@ b {
     padding-left: 1.8rem;
 }
 
-button {
-    border: none;
-    border-radius: 5px;
-    background: var(--dark-gray-clr);
-    color: var(--white-clr);
-    padding: 8px 0;
-    font-size: 1em;
-}
-
 
 /* My Profile */
 
@@ -352,7 +343,11 @@ button {
     padding-left: 60px;
     float: right;
     margin-top: 5%;
-    margin-right: 1.5%;
+    margin-right: 5%;
+}
+
+.profile-phone {
+    width: 39%;
 }
 
 button a {
@@ -408,11 +403,7 @@ button a {
     padding: 7px 78px;
 }
 
-.profile-phone {
-    width: 40%;
-}
-
-.btn-update-profile button {
+button .btn-update-profile button {
     padding-right: 60px;
     padding-left: 60px;
     float: right;
