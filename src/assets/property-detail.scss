@@ -1,106 +1,76 @@
-.property-hr {
-    width: 50%;
-    margin: 1% 0 2%;
+.property-details {
+    position: relative;
+    font-size: 1em;
 }
 
-.form-title,
-.physical-address,
-.description {
-    display: grid;
-    grid-template-columns: 80%;
-    margin-bottom: 2%;
+.property-details:after {
+    content: "";
+    background: #20B2AA;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 90%;
 }
 
-.input-fields-property-detail {
-    display: grid;
-    grid-template-columns: repeat(2, 40%);
-    gap: 3%
+.select-category1 {
+    margin: 2% auto auto;
+    color: var(--dark-gray-clr) !important;
+    ;
 }
 
-.input-item input,
-.form-title input,
-.physical-address input,
-.description textarea {
-    background: #d7dce2;
-    padding: 1.5% 3%;
-    border: none;
-}
-
-.input-item input {
-    padding: 3% 1% 3% 6%;
-    margin-bottom: 5%;
-}
-
-.r-property-input {
-    display: grid;
-}
-
-.l-property-input div input,
-.r-property-input div input {
-    width: 73%;
-}
-
-.r-property-input .price-input input {
-    width: 59%;
-}
-
-.l-property-input .size-input input {
-    width: 65.5%;
-}
-
-.input-item {
-    padding: 0;
-}
-
-.input-item select {
-    background-color: #8a97a5;
-    /* margin-left: -1%; */
-    color: var(--white-clr);
-    padding: 3% 3.5%;
-    border: none;
-}
-
-
-/* Upload images */
-
-.images-col-5 {
-    display: grid;
-    grid-template-columns: repeat(5, 18%);
-    gap: 2.5%;
-    padding: 1.5% 3%;
-    background: #d7dce2;
-    width: 74%;
-    margin: 3% 0;
-}
-
-
-/* Amenities */
-
-.amenities {
+.provide-detail {
+    margin-top: 2%;
     color: var(--dark-gray-clr) !important;
 }
 
-.amenities-cl-4:deep() {
-    display: grid;
-    grid-template-columns: repeat(4, 20%);
-    gap: 0.5%;
-    margin-top: 2%;
+.btn-upload button {
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
-.amenities-cl-4:deep(.amenities-cl-2) {
-    display: grid;
-    grid-template-columns: 80% 20%;
+.input-price-mobile,
+.product-detail {
+    display: none;
 }
 
-.amenities-cl-4:deep(.amenities-cl-2 div) {
-    padding-bottom: 14px;
-}
-
-.btn-continue button {
-    padding-right: 40px;
-    padding-left: 40px;
-}
-
-.btn-continue {
-    width: 80%;
+@media (max-width: 575.98px) {
+    .input-fields-property-detail,
+    .amenities {
+        display: none;
+    }
+    .product-detail {
+        display: grid;
+        color: var(--green-clr);
+        font-weight: bolder;
+        margin-bottom: 5%;
+    }
+    .input-price-mobile {
+        display: grid;
+    }
+    .float-none {
+        float: none;
+    }
+    .description,
+    .form-title,
+    .physical-address,
+    .btn-upload,
+    .btn-continue {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .btn-continue {
+        width: 100%;
+    }
+    .img5 {
+        display: none;
+    }
+    .images-col-5 {
+        grid-template-columns: repeat(4, 23%);
+        background: #d7dce2;
+        width: 94%;
+    }
+    #main-c {
+        padding-bottom: 0;
+    }
 }

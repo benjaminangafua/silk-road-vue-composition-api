@@ -81,15 +81,5 @@ const house_detail = ref(propertyData)
     @import url('../assets/post-a-property.scss');
     @import url('../assets/my-profile.scss');
  
-
-@media (max-width:575.98px) {
-    /* .main-content,
-    .carts-list {
-        display: block;
-    }
-    .category-title{
-        display: none;
-    } */
-}
 </style>
 

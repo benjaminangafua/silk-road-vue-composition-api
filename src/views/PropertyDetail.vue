@@ -50,12 +50,16 @@ const greaterThan = computed(()=>{
             </div>
             <div class="provide-detail">
                 <strong>Provide Property Detail</strong>
+                <div class="product-detail">Provide Product Details</div>
                 <div class="property-hr"></div>
             </div>
             <div class="property-detail-form">
 
                 <div class="form-title">
                     <input type="text" placeholder="Title">
+                </div>
+                <div class="form-title input-price-mobile">
+                    <input type="text" placeholder="Price">
                 </div>
 
                 <div class="input-fields-property-detail">
@@ -82,13 +86,13 @@ const greaterThan = computed(()=>{
             </div>
             <!-- Upload imgs -->
             <div class="upload-img">
-                <div class="btn-upload"> <i class="upload"></i> <button>Upload Photos</button></div>
+                <div class="btn-upload"> <i class="upload"></i> <button class="float-none"> Upload Photos</button></div>
                 <div class="images-col-5">
                     <div class="img"><img :src="house_detail[0].image" alt="" class="img1"></div>
                     <div class="img"><img :src="house_detail[1].image" alt="" class="img2"></div>
                     <div class="img"><img :src="house_detail[2].image" alt="" class="img3"></div>
                     <div class="img"><img :src="house_detail[3].image" alt="" class="img4"></div>
-                    <div class="img"><img :src="house_detail[4].image" alt="" class="img5"></div>
+                    <div class="img img5"><img :src="house_detail[4].image" alt="" class="img5"></div>
                 </div>
             </div>
 
@@ -110,32 +114,6 @@ const greaterThan = computed(()=>{
 </template>
 
 <style lang="scss" scoped>
-    @import url("../assets/property-detail.scss");
     @import url('../assets/post-a-property.scss'); 
-.property-details {
-    position: relative;
-    font-size: 1em;
-
-} 
-.property-details:after {
-  content: "";
-  background: #20B2AA;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  width: 90%;
-}
-.select-category1 {
-    margin: 2% auto auto;
-    color:  var(--dark-gray-clr) !important;;
-}
-.provide-detail{
-    margin-top: 2%;
-    color: var(--dark-gray-clr) !important;
-}
-.btn-upload button {
-    padding-right: 50px;
-    padding-left: 50px;
-}
+    @import url("../assets/property-detail.scss");
 </style>
