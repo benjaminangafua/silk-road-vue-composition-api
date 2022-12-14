@@ -1149,6 +1149,10 @@ a span {
         margin: 5%;
         padding: 30px;
     }
+    .main-registration-content,
+    .login-container {
+        display: none;
+    }
     .login-form {
         display: $grid;
         margin: 0% 5% 5% 5%;
@@ -1183,11 +1187,6 @@ a span {
         margin-top: 2%;
     }
     /* Registration */
-    .main-registration-content {
-        display: block;
-        margin: 5%;
-        padding: 20px;
-    }
     .registration-form {
         background-color: var(--white-clr);
         display: $grid;
@@ -1261,7 +1260,6 @@ a span {
     .mobile-header {
         display: $grid;
         grid-template-rows: repeat(2, 40px);
-        background-color: var(--light-opacity);
         padding: 10px;
         color: var(--white-clr);
     }

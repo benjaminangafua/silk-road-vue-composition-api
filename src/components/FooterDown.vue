@@ -76,4 +76,7 @@ import { RouterLink } from 'vue-router';
     .location-icon{
         color: var(--white-clr) !important;
     }
+    .mobile-footer{
+        background: var(--dark-gray-clr);
+    }
 </style>

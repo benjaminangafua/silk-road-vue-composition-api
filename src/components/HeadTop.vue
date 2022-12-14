@@ -118,80 +118,80 @@ function closeToggleBtn(e){
                     <div>  
                         <div class="bottom-left-nav" v-if="router_content.login">
                             <div><RouterLink to="/">HOME</RouterLink></div> 
-                            <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
+                            <div id="👉"> ❯</div>
                             <div class="active-board-txt">LOGIN</div>
                         </div> 
                         <!-- Register -->
                         <div class="bottom-left-nav" v-else-if="router_content.register">
                             <div><RouterLink to="/">HOME</RouterLink></div> 
-                            <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
+                            <div id="👉"> ❯</div>
                             <div class="active-board-txt">REGISTER</div>
                         </div> 
                         <!-- Grid or list layout -->
                         <div class="bottom-left-nav" v-else-if="router_content.grid_list">
                             <div><RouterLink to="/">HOME</RouterLink></div> 
-                            <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
+                            <div id="👉"> ❯</div>
                             <div class="active-board-txt"><RouterLink to="/grid">HOUSES </RouterLink></div>
                         </div> 
                         <!-- Profile -->
                         <div class="bottom-left-nav" v-else-if="router_content.profile">
                             <div><RouterLink to="/">HOME</RouterLink></div> 
-                            <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
+                            <div id="👉"> ❯</div>
                             <div class="active-board-txt"><RouterLink to="#">My Profile </RouterLink></div>
                         </div> 
                         <!-- Update Profile -->
                         <div class="bottom-left-nav" v-else-if="router_content.update_profile">
                             <div><RouterLink to="/">HOME</RouterLink></div> 
-                            <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
+                            <div id="👉"> ❯</div>
                             <div class="active-board-txt"><RouterLink to="#">Update Profile </RouterLink></div>
                         </div> 
                             <!-- Single post -->
                         <div class="bottom-left-nav" v-else-if="router_content.single">
                             <div><RouterLink to="/">HOME</RouterLink></div>  
-                                <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
+                                <div id="👉"> ❯</div>
                             <div class="post-a-property-nav-layout">
                                 <div><RouterLink to="/grid">HOUSES </RouterLink></div>
-                                <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
+                                <div id="👉"> ❯</div>
                                 <div class="active-board-txt">CATEGORY</div>
                             </div>
                         </div>
                             <!-- Category -->
                         <div class="bottom-left-nav" v-else-if="router_content.category">
                             <div><RouterLink to="/">HOME</RouterLink></div>  
-                                <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
+                                <div id="👉"> ❯</div>
                             <div class="post-a-property-nav-layout">
                                 <div><RouterLink to="#">POST A PROPERTY </RouterLink></div>
-                                <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
+                                <div id="👉"> ❯</div>
                                 <div class="active-board-txt">CATEGORY</div>
                             </div>
                         </div>
                             <!-- Location -->
                         <div class="bottom-left-nav" v-else-if="router_content.location">
                             <div><RouterLink to="/">HOME</RouterLink></div>  
-                                <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
+                                <div id="👉"> ❯</div>
                             <div class="post-a-property-nav-layout">
                                 <div><RouterLink to="#">POST A PROPERTY </RouterLink></div>
-                                <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
+                                <div id="👉"> ❯</div>
                                 <div class="active-board-txt">LOCATION</div>
                             </div>
                         </div>
                             <!-- Property Details -->
                         <div class="bottom-left-nav" v-else-if="router_content.property_detail">
                             <div><RouterLink to="/">HOME</RouterLink></div>  
-                                <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
+                                <div id="👉"> ❯</div>
                             <div class="post-a-property-nav-layout">
                                 <div><RouterLink to="#">POST A PROPERTY </RouterLink></div>
-                                <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
+                                <div id="👉"> ❯</div>
                                 <div class="active-board-txt">PROPERTY</div>
                             </div>
                         </div>
                             <!-- Contact Details -->
                         <div class="bottom-left-nav" v-else-if="router_content.contact_detail">
                             <div><RouterLink to="/">HOME</RouterLink></div>  
-                                <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
+                                <div id="👉"> ❯</div>
                             <div class="post-a-property-nav-layout">
                                 <div><RouterLink to="#">POST A PROPERTY </RouterLink></div>
-                                <div id="👉"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></div>
+                                <div id="👉"> ❯</div>
                                 <div class="active-board-txt">CONTACT</div>
                             </div>
                         </div>
@@ -210,12 +210,12 @@ function closeToggleBtn(e){
     </div>
     <div class="mobile-header">
         <div class="top-mobile-nav">
-            <div class="top-right-mobile-nav"> <i id="left-less" class="far fa-less-than"></i> Back</div>
+            <div class="top-right-mobile-nav"> ❮ Back</div>
             <div class="top-left-mobile-nav"> <button class="btn submit-ad-btn">Submit an Ad</button></div>
         </div>
         <div class="bottom-mobile-nav" v-if="property_nav.nav">
-            <div>HOME <span id="right"><font-awesome-icon  :icon="['fas', 'greater-than']" /></span> </div>
-            <div>Submit an Ad <span id="right"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></span> </div>
+            <div>HOME <span id="right">❯</span> </div>
+            <div>Submit an Ad <span id="right"> ❯</span> </div>
             <div>Category</div>
         </div>
     </div>
