@@ -22,6 +22,7 @@ const router_content = computed(()=>{
         register: route == '/register',
         grid_list:route == '/grid' || route == '/list',
         single: route =='/single-property/'+route.split("/")[2],
+
         profile:  route == '/profile',
         update_profile:  route == '/update-profile',
         category:  route == '/post-a-property/category',
@@ -31,7 +32,9 @@ const router_content = computed(()=>{
 
     }
 })
-
+const property_nav = computed(()=>{
+return{nav: router_content.value.profile||router_content.value.update_profile||router_content.value.category||router_content.value.location||router_content.value.property_detail||router_content.value.contact_detail}}
+)
 const head = ref()
 const logo = ref()
 const nav = ref()
@@ -210,7 +213,7 @@ function closeToggleBtn(e){
             <div class="top-right-mobile-nav"> <i id="left-less" class="far fa-less-than"></i> Back</div>
             <div class="top-left-mobile-nav"> <button class="btn submit-ad-btn">Submit an Ad</button></div>
         </div>
-        <div class="bottom-mobile-nav">
+        <div class="bottom-mobile-nav" v-if="property_nav.nav">
             <div>HOME <span id="right"><font-awesome-icon  :icon="['fas', 'greater-than']" /></span> </div>
             <div>Submit an Ad <span id="right"> <font-awesome-icon  :icon="['fas', 'greater-than']" /></span> </div>
             <div>Category</div>
