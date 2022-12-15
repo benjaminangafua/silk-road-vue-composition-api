@@ -209,14 +209,20 @@ function closeToggleBtn(e){
         </div>
     </div>
     <div class="mobile-header">
-        <div class="top-mobile-nav">
-            <div class="top-right-mobile-nav"> ❮ Back</div>
+
+        <div class="top-mobile-nav" v-if="router_content.register">
+            <div class="top-right-mobile-nav"><span>HOME</span> ❯ <span>REGISTER</span></div>
             <div class="top-left-mobile-nav"> <button class="btn submit-ad-btn">Submit an Ad</button></div>
         </div>
+        <div class="top-mobile-nav" v-else-if="router_content.login">
+            <div class="top-right-mobile-nav"><span>HOME</span> ❯ <span>LOGIN</span></div>
+            <div class="top-left-mobile-nav"> <button class="btn submit-ad-btn">Submit an Ad</button></div>
+        </div>
+
         <div class="bottom-mobile-nav" v-if="property_nav.nav">
             <div>HOME <span id="right">❯</span> </div>
             <div>Submit an Ad <span id="right"> ❯</span> </div>
-            <div>Category</div>
+            <div>Category</div> 
         </div>
     </div>
 </template>

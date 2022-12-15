@@ -26,7 +26,7 @@ import HeadTopVue from '../components/HeadTop.vue';
             <h2>LOGIN</h2>
         </div>
         <div class="log-input">
-            <div class="input2" id="placeholder-p">
+            <div class="input2">
                 <select id="">
                     <option value="+231">+231</option>
                     <option value="+234">+234</option>

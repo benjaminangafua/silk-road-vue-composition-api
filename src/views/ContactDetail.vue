@@ -93,4 +93,16 @@ strong{
 .btn-continue {
     width: 100%;
 }
+@media (max-width: 575.98px) {
+    #input2 {
+  width: 60%;
+}
+.c-code input{
+  padding: 7px 10px 7px 40px;
+}
+#phone-icon {
+  margin-left: -13rem;
+}
+    
+}
 </style>
