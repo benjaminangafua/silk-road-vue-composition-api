@@ -1,0 +1,30 @@
+.category {
+    position: relative;
+    font-size: 1em;
+}
+
+.category:after {
+    content: "";
+    background: #20B2AA;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 75%;
+}
+
+.select-category1 {
+    margin: 2% auto auto;
+    color: var(--dark-gray-clr) !important;
+    ;
+}
+
+@media (max-width:575.98px) {
+    .list-2-col-category[data-v-55f05130] {
+        margin-top: 5%;
+        grid-template-columns: 65% 5%;
+    }
+    .circle-arrow>div {
+        margin-bottom: 25%;
+    }
+}

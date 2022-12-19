@@ -909,9 +909,7 @@ a span {
 
 .post-a-property-nav-layout {
     display: $grid;
-    grid-template-columns: 88% 12% auto;
-    /* place-items: center normal;
-    place-content: center */
+    grid-template-columns: 50% 20% auto;
 }
 
 .mobile-footer,

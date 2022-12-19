@@ -55,27 +55,5 @@ const greaterThan = computed(()=>{
 
 <style lang="scss" scoped>
     @import url('../assets/post-a-property.scss');
-
-
-   
-.category {
-    position: relative;
-    font-size: 1em;
-
-} 
-.category:after {
-  content: "";
-  background: #20B2AA;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  width: 75%;
-}
-
-.select-category1 {
-    margin: 2% auto auto;
-    color:  var(--dark-gray-clr) !important;;
-}
-
+    @import url('../assets/category.scss');
 </style>

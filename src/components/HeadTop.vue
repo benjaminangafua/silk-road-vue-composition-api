@@ -160,7 +160,7 @@ function closeToggleBtn(e){
                             <div><RouterLink to="/">HOME</RouterLink></div>  
                                 <div id="👉"> ❯</div>
                             <div class="post-a-property-nav-layout">
-                                <div><RouterLink to="#">POST A PROPERTY </RouterLink></div>
+                                <div><RouterLink to="#">PROPERTY </RouterLink></div>
                                 <div id="👉"> ❯</div>
                                 <div class="active-board-txt">CATEGORY</div>
                             </div>
@@ -170,7 +170,7 @@ function closeToggleBtn(e){
                             <div><RouterLink to="/">HOME</RouterLink></div>  
                                 <div id="👉"> ❯</div>
                             <div class="post-a-property-nav-layout">
-                                <div><RouterLink to="#">POST A PROPERTY </RouterLink></div>
+                                <div><RouterLink to="#">PROPERTY </RouterLink></div>
                                 <div id="👉"> ❯</div>
                                 <div class="active-board-txt">LOCATION</div>
                             </div>
@@ -180,7 +180,7 @@ function closeToggleBtn(e){
                             <div><RouterLink to="/">HOME</RouterLink></div>  
                                 <div id="👉"> ❯</div>
                             <div class="post-a-property-nav-layout">
-                                <div><RouterLink to="#">POST A PROPERTY </RouterLink></div>
+                                <div><RouterLink to="#">PROPERTY </RouterLink></div>
                                 <div id="👉"> ❯</div>
                                 <div class="active-board-txt">PROPERTY</div>
                             </div>
@@ -190,7 +190,7 @@ function closeToggleBtn(e){
                             <div><RouterLink to="/">HOME</RouterLink></div>  
                                 <div id="👉"> ❯</div>
                             <div class="post-a-property-nav-layout">
-                                <div><RouterLink to="#">POST A PROPERTY </RouterLink></div>
+                                <div><RouterLink to="#">PROPERTY </RouterLink></div>
                                 <div id="👉"> ❯</div>
                                 <div class="active-board-txt">CONTACT</div>
                             </div>
