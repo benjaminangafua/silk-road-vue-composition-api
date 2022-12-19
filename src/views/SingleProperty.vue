@@ -112,4 +112,7 @@ const property_obj = property[0]
  #head-bg-color{
         background-color: #505050;
     }
+    .content-grids {
+        margin-top: 0;
+    }
 </style>
