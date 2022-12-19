@@ -1,13 +1,9 @@
 <script setup> 
 import FooterDown from '../components/FooterDown.vue'
 import HeadTop from '../components/HeadTop.vue';
-import  {RouterLink}  from 'vue-router';
-import propertyData from '../property-data.json'
-import PropertyIconLayout from '../components/PropertyIconLayout.vue'
-import { ref} from 'vue';
-import { computed } from '@vue/runtime-core';
-
-const house_detail = ref(propertyData)
+import  {RouterLink}  from 'vue-router'; 
+import PropertyIconLayout from '../components/PropertyIconLayout.vue' 
+import ProfilePropertyList from '../components/ProfilePropertyList.vue'
 </script>
 <template>
     <div class="container-c">
@@ -21,6 +17,7 @@ const house_detail = ref(propertyData)
             <div class="main-contact-content">
                 <div class="provide-detail">
                     <strong>My Profile</strong>
+                    <div class="provide-a-contact-detail">Provide a contact detail</div>
                     <div class="property-hr"></div>
                 </div>
                 <div class="contact-content">
@@ -58,39 +55,16 @@ const house_detail = ref(propertyData)
                 <div class="btn-save"> <button><RouterLink to="/profile">Save</RouterLink> </button></div>
             </div>
 
-            <!-- Property List -->
-                <div>
-                    <div class="category-title">
-                        <div class="posting active"><RouterLink to="#">My Postings</RouterLink> </div>
-                        <div class="location"> <RouterLink to="#">My Favorites</RouterLink> </div>
-                    </div>
-                <div class="content-list scrollable">
-
-                    <div class="carts-list"  v-for="(detail, index) in house_detail"  :key="detail.id">
-                        <div class="ls-r">
-                            <div class="cart-txt">
-                                 <div class="top-carts-list">
-                                    <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
-                                    <div class="price-ls"><strong>$500.00</strong>/month</div>
-                                </div>
-                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
-                                
-                            </div>
-                            <!-- Icons -->
-                            <PropertyIconLayout />
-                        </div>
-                        <div class="img-ls"><router-link v-bind:to="'/single-property/'+(Number(index)+1)"><img :src="detail.image"  alt=""></router-link></div>
-                        
-                    </div>
-                </div>
-                </div>
-            </div>
+            <!-- Property List --> 
+            <ProfilePropertyList />
         </div>
-        <div id="footer"><FooterDown /></div>
+    </div>
+    <div id="footer"><FooterDown /></div>
     </div>
 </template>
 <style lang="scss" scoped>
     @import url('../assets/post-a-property.scss');
-
+    @import url('../assets/update-profile.scss');
+    
 </style>
 

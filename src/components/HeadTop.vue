@@ -208,14 +208,17 @@ function closeToggleBtn(e){
             <a @click.prevent="toggleHamburger" ref="toggleBtn"><i class="fa fa-bars"></i> </a>
         </div>
     </div>
+    <!-- Mobile Header -->
     <div class="mobile-header">
 
-        <div class="top-mobile-nav" v-if="router_content.register">
-            <div class="top-right-mobile-nav"><span>HOME</span> ❯ <span>REGISTER</span></div>
+        <div class="bottom-mobile-nav" v-if="router_content.register">
+            <div class="top-right-mobile-nav">HOME <span id="right">❯</span> </div>
+            <div>REGISTER</div > 
             <div class="top-left-mobile-nav"> <button class="btn submit-ad-btn">Submit an Ad</button></div>
-        </div>
-        <div class="top-mobile-nav" v-else-if="router_content.login">
-            <div class="top-right-mobile-nav"><span>HOME</span> ❯ <span>LOGIN</span></div>
+      </div>
+        <div class="bottom-mobile-nav" v-else-if="router_content.login">
+            <div class="top-right-mobile-nav">HOME <span id="right">❯</span> </div>
+            <div >LOGIN</div > 
             <div class="top-left-mobile-nav"> <button class="btn submit-ad-btn">Submit an Ad</button></div>
         </div>
 
@@ -226,3 +229,13 @@ function closeToggleBtn(e){
         </div>
     </div>
 </template>
+<style scoped>
+    @media (max-width: 575.98px) {
+        .submit-ad-btn{
+            float: right;
+            background-color: var(--blue-clr);
+            padding: 8px 15px;
+        }
+        
+    }
+</style>

@@ -1,0 +1,27 @@
+@media (max-width:575.98px) {
+    .main-content {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 3% 5%;
+    }
+    .main-contact-content {
+        width: 100%;
+    }
+    .provide-a-contact-detail {
+        display: grid;
+        font-weight: bolder;
+        font-size: 16px;
+        color: var(--green-clr);
+        margin: 5% 0;
+    }
+    .btn-save {
+        display: grid;
+        place-content: center;
+        margin-bottom: 10%;
+    }
+    .btn-save button {
+        float: none;
+        padding-right: 167px;
+        padding-left: 167px;
+    }
+}

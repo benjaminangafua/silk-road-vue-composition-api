@@ -1259,7 +1259,6 @@ a span {
     }
     .mobile-header {
         display: $grid;
-        grid-template-rows: repeat(2, 40px);
         padding: 10px;
         color: var(--white-clr);
     }

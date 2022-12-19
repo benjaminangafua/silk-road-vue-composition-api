@@ -10,7 +10,7 @@
         font-weight: bolder;
         font-size: 16px;
         color: var(--green-clr);
-        margin: 5%;
+        margin: 5% 0;
     }
     .name,
     .email,
@@ -38,13 +38,7 @@
         place-content: center;
     }
     .main-content {
-        margin: 0;
-    }
-    form {
-        padding: 0px 20px;
-    }
-    .carts-list {
-        margin: 0 3%;
+        margin: 3% 5%;
     }
     .top-carts-list {
         display: grid;

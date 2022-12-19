@@ -2,12 +2,8 @@
 import FooterDown from '../components/FooterDown.vue'
 import HeadTop from '../components/HeadTop.vue';
 import  {RouterLink}  from 'vue-router';
-import PropertyIconLayout from '../components/PropertyIconLayout.vue'
-import { ref} from 'vue';
-import { computed } from '@vue/runtime-core';
-import propertyData from '../property-data.json'
-
-const house_detail = ref(propertyData)
+import PropertyIconLayout from '../components/PropertyIconLayout.vue' 
+import ProfilePropertyList from '../components/ProfilePropertyList.vue';
 </script>
 <template>
     <div class="container-c">
@@ -46,32 +42,7 @@ const house_detail = ref(propertyData)
             </div>
 
             <!-- Property List -->
-                <div>
-                    <div class="category-title">
-                        <div class="posting active"><RouterLink to="#">My Postings</RouterLink> </div>
-                        <div class="location"> <RouterLink to="#">My Favorites</RouterLink> </div>
-                    </div>
-                <div class="content-list scrollable">
-
-                    <div class="carts-list"  v-for="(detail, index) in house_detail"  :key="detail.id">
-                        <div class="ls-r">
-                            <div class="cart-txt">
-                                <div class="top-carts-list">
-                                    <div class="cart-small-text bed-room">3 Bedroom Townhouse</div>
-                                    <div class="price-ls"><strong>$500.00/</strong>month</div>
-
-                                </div>
-
-                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span> 45 Circle Dr, Monrovia, Liberia</div>
-                                </div>
-                            <!-- Icons -->
-                            <PropertyIconLayout />
-                        </div>
-                        <div class="img-ls"><router-link v-bind:to="'/single-property/'+(Number(index)+1)"><img :src="detail.image"  alt=""></router-link></div>
-                        
-                    </div>
-                </div>
-                </div>
+            <ProfilePropertyList />
             </div>
         </div>
         <div id="footer"><FooterDown /></div>
