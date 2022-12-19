@@ -264,7 +264,7 @@ button a {
 }
 
 .c-code select {
-    padding: 7px;
+    padding: 7px 23px;
     background-color: var(--dark-gray-clr);
     border: none;
     color: var(--white-clr);
@@ -355,7 +355,7 @@ b {
 }
 
 .profile-phone {
-    width: 39%;
+    width: 64%;
 }
 
 .content-list {
@@ -401,10 +401,6 @@ b {
     left: 0;
     height: 3px;
     width: 95%;
-}
-
-.c-code input {
-    padding: 7px 78px;
 }
 
 .btn-update-profile button {
