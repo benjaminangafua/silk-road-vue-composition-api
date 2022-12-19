@@ -1052,6 +1052,23 @@ a span {
     .content-grids {
         grid-template-columns: none;
     }
+    .bottom-left-nav {
+        grid-template-columns: 55% 25% auto;
+    }
+    .content-nav {
+        font-size: 13px;
+    }
+    .content-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .5% 2%;
+    }
+    #input2 {
+        width: 73.53%;
+    }
+    .input2 select {
+        width: 15%;
+    }
 }
 
 
