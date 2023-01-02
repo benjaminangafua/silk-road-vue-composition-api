@@ -128,6 +128,11 @@ const router = createRouter({
             name: 'updateProfile',
             component: () =>
                 import ('../views/UpdateProfile.vue')
+        }, {
+            path: '/add-email',
+            name: 'addEmail',
+            component: () =>
+                import ('../components/AdEmailDetail.vue')
         }
 
 

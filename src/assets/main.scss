@@ -30,8 +30,6 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.418)), url("/images/building4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    padding-bottom: 1.28%;
 }
 
 
@@ -158,6 +156,13 @@ a {
 
 /* Home page main */
 
+.row-3 {
+    display: grid;
+    grid-template-rows: auto 2fr auto;
+    min-height: 100vh;
+    margin: 0;
+}
+
 .main {
     display: $grid;
     margin-top: 10%;
@@ -187,6 +192,10 @@ a {
 .main div input::placeholder {
     color: var(--white-clr);
     opacity: 1;
+}
+
+.mobile-txt {
+    display: none;
 }
 
 .filter {
@@ -324,20 +333,15 @@ input[type=range]::-moz-range-thumb {
 
 /* Forms */
 
-.main-login,
-.main-registration-content {
-    display: $grid;
-    margin: 10% 17%;
-    color: var(--white-clr);
-    border: 1px solid var(--white-clr);
-    background-color: var(--dark-opacity);
-}
-
 
 /*LOGIN PAGE */
 
-.log-contain {
-    height: 100vh;
+.login-container,
+.register-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .bottom-l {
@@ -350,8 +354,26 @@ input[type=range]::-moz-range-thumb {
 }
 
 .main-login {
+    display: $grid;
     grid-template-columns: 54% auto;
     padding: 70px 50px;
+}
+
+.main-login,
+.main-registration-content {
+    display: $grid;
+    margin: 5% 17%;
+    color: var(--white-clr);
+    border: 1px solid var(--white-clr);
+    background-color: var(--dark-opacity);
+}
+
+.login-form {
+    display: $grid;
+    margin: -30% 20% 0% 53%;
+    padding: 20px 30px;
+    height: 350px;
+    background-color: var(--white-clr);
 }
 
 .content button {
@@ -359,19 +381,12 @@ input[type=range]::-moz-range-thumb {
     border: solid 2px var(--white-clr);
 }
 
-.login-form {
-    display: $grid;
-    margin: -35% 20% 0% 53%;
-    padding: 20px 40px 29px 40px;
-    background-color: var(--white-clr);
-}
-
 #login-select {
     width: 24%;
     margin-right: -2%;
 }
 
-.heading h2 {
+.heading {
     color: var(--dark-gray-clr)
 }
 
@@ -380,7 +395,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .log-input div {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .input1 input,
@@ -431,6 +446,8 @@ input[type=range]::-moz-range-thumb {
 
 .btn,
 .btn button {
+    display: grid;
+    place-items: center;
     justify-self: end;
     padding: 4px 22px;
     color: var(--white-clr);
@@ -453,8 +470,9 @@ input[type=range]::-moz-range-thumb {
 
 .registration-form {
     display: $grid;
-    margin: -35% 53% 0%20%;
+    margin: -29% 53% 0%20%;
     padding: 13px 40px;
+    height: 350px;
     background-color: var(--white-clr);
 }
 
@@ -482,7 +500,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 #lock1 {
-    margin-left: -20%;
+    margin-left: -21%;
 }
 
 #phone-icon {
@@ -948,7 +966,7 @@ a span {
 
 @media (max-width: 991.98px) {
     .container {
-        height: 100%;
+        // height: 100%;
     }
     .logo {
         margin-left: 0;
@@ -1069,6 +1087,30 @@ a span {
     .input2 select {
         width: 15%;
     }
+    #main-c {
+        padding: 3%;
+        margin: auto 0%;
+    }
+    .form-title,
+    .physical-address,
+    .description {
+        grid-template-columns: 100%;
+    }
+    .input-fields-property-detail {
+        grid-template-columns: repeat(2, 50%);
+    }
+    .r-property-input .price-input input {
+        width: 57%;
+    }
+    .images-col-5 {
+        width: 94%;
+    }
+    .amenities-cl-4 {
+        grid-template-columns: repeat(4, 25%);
+    }
+    .btn-continue button {
+        margin: 3%;
+    }
 }
 
 
@@ -1079,7 +1121,7 @@ a span {
         display: none;
     }
     .container {
-        height: 100vh;
+        // height: 100vh;
     }
     #closeToggle {
         display: none;

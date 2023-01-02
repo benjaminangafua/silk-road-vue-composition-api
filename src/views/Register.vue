@@ -4,24 +4,20 @@ import HeadTopVue from '../components/HeadTop.vue';
 
 </script>
 <template> 
-<div class="container">
+<div class="container register-container">
     <HeadTopVue />
     
-    <div class="rg-container">
-        <div class="main-registration-content">
-            <div></div>
-            <div class="rg-content content">
-                <h4>Already have an account?</h4>
-                <p>If you already have an account you can login to get the view of the latest properties in stock
-                </p>
-                <button class="pointer"><RouterLink to="/login">Login</RouterLink> </button>
-            </div>
-        </div>
-    </div>
-    <div>
+    <div class="main-registration-content"> 
+        <div></div>
+        <div class="rg-content content">
+            <h4>Already have an account?</h4>
+            <p>If you already have an account you can login to get the view of the latest properties in stock
+            </p>
+            <button class="pointer"><RouterLink to="/login">Login</RouterLink> </button>
+        </div> 
+    </div> 
         <!-- Registration Form -->
-        <form action="">
-            <div class="registration-form">
+        <form action="" class="registration-form"> 
                 <div class="heading">
                     <h2>REGISTRATION</h2>
                 </div>
@@ -53,9 +49,6 @@ import HeadTopVue from '../components/HeadTop.vue';
                 <div class="log-option">
                     <div>Register with <i class="fa-brands fa-facebook-f pointer"></i> <i class="fa-brands fa-twitter pointer"></i></div>
                 </div>
-            </div>
-            <div></div>
-        </form>
-    </div>
+        </form> 
 </div>
 </template>

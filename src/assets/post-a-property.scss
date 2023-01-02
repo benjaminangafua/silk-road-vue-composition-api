@@ -150,7 +150,7 @@ button a {
 .description {
     display: grid;
     grid-template-columns: 80%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
 
 .input-fields-property-detail {
@@ -328,12 +328,6 @@ b {
 .ls-r,
 .cart-txt {
     direction: ltr;
-}
-
-.name,
-.email,
-.phone {
-    margin-bottom: 10%;
 }
 
 #password,

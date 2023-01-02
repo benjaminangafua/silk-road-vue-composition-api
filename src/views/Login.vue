@@ -5,9 +5,9 @@ import HeadTopVue from '../components/HeadTop.vue';
 
 </script>
 <template> 
-<div class="container">
-<HeadTopVue />
-<div class="login-container">
+<div class="container login-container">
+    <HeadTopVue /> 
+
     <div class="main-login">
         <div class="content">
             <h4>Don't have an account?</h4>
@@ -16,15 +16,10 @@ import HeadTopVue from '../components/HeadTop.vue';
             <button class="pointer"><RouterLink to="/register">Register</RouterLink> </button>
         </div>
         <div></div>
-    </div>
-</div>
-
-        <!-- Login Form -->
-    <form action="">
-    <div class="login-form">
-        <div class="heading">
-            <h2>LOGIN</h2>
-        </div>
+    </div> 
+    <!-- Login Form --> 
+    <form action="" class="login-form">  
+        <h2 class="heading">LOGIN</h2> 
         <div class="log-input">
             <div class="input2">
                 <select id="">
@@ -46,8 +41,7 @@ import HeadTopVue from '../components/HeadTop.vue';
         </div>
         <div class="log-option">
             <div>Log in with <i class="fa-brands fa-facebook-f pointer"></i> <i class="fa-brands fa-twitter pointer"></i></div>
-        </div>
-    </div>
-</form>   
+        </div> 
+    </form> 
 </div>
 </template>
