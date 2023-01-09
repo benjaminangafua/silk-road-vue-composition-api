@@ -5,7 +5,7 @@ import HeadTopVue from '../components/HeadTop.vue';
 </script>
 <template> 
 <div class="container register-container">
-    <HeadTopVue />
+    <div><HeadTopVue /></div>
     
     <div class="main-registration-content"> 
         <div></div>
@@ -18,7 +18,7 @@ import HeadTopVue from '../components/HeadTop.vue';
     </div> 
         <!-- Registration Form -->
         <form action="" class="registration-form"> 
-                <div class="heading">
+                <div class="register-heading">
                     <h2>REGISTRATION</h2>
                 </div>
                 <div class="log-input">
@@ -43,11 +43,13 @@ import HeadTopVue from '../components/HeadTop.vue';
                         <font-awesome-icon id="password" :icon="['fas', 'lock']" />
                     </div>
                    
-                    <div class="agree-term">I agree to the terms and conditions <input type="checkbox" name="" id=""></div>
+                    <div class="agree-term">I agree to the <b class="light-teal">Terms and Conditions </b> <input type="checkbox" name="" id=""></div>
                     <div class="btn pointer"><button class="pointer">Register</button></div>
                 </div>
                 <div class="log-option">
                     <div>Register with <i class="fa-brands fa-facebook-f pointer"></i> <i class="fa-brands fa-twitter pointer"></i></div>
+                    <br>
+                    <div>Already have an account? <b class="light-teal"><RouterLink to="/login">Login</RouterLink> </b> </div>
                 </div>
         </form> 
 </div>

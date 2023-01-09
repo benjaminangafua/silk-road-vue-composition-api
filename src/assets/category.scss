@@ -5,7 +5,7 @@
 
 .category:after {
     content: "";
-    background: #20B2AA;
+    background: var(--light-teal);
     position: absolute;
     bottom: 0;
     left: 0;

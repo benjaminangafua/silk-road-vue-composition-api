@@ -1,20 +1,4 @@
-:root {
-    --white-clr: #ffffff;
-    --black-clr: #000000;
-    --blue-clr: #4068df;
-    --bg-color: #d6dbe1;
-    --light-gray-clr: #4f4f4f;
-    --dark-gray-clr: #748090;
-    --green-clr: #1fb2aa;
-    --text-clr: #4a5259;
-    --header-txt-clr: #bdc1c7;
-    --header-bg-clr: #4f4f4f;
-    --property-txt-clr: #98999a;
-    --property-bg: #f5f5f5;
-    --light-opacity: #00000054;
-    --dark-opacity: rgba(0, 0, 0, 0.719);
-}
-
+@import url('./color.scss');
 $grid: grid;
 
 /* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"); */
@@ -27,7 +11,7 @@ body {
 }
 
 .container {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.418)), url("/images/building4.jpg");
+    background-image: linear-gradient(var(--body-opacity-left), var(--body-opacity-right)), url("/images/building4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -90,7 +74,7 @@ a {
     grid-template-columns: 50% auto;
 }
 
-#👉>svg {
+#👉:deep(>svg) {
     font-size: 0.5em;
     display: $grid;
     margin: 25%;
@@ -169,6 +153,7 @@ a {
     justify-content: center;
     align-items: center;
     color: var(--white-clr);
+    height: max-content;
 }
 
 .main div:first-child {
@@ -181,7 +166,7 @@ a {
 
 .main div input {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.603);
+    background-color: var(--container-opacity);
     border: none;
     padding: 10px 10px 10px 25px;
     font-weight: 500;
@@ -215,8 +200,6 @@ input:focus {
 
 .bottom-content {
     display: $grid;
-    margin-top: 5%;
-    /* padding-bottom: 5%; */
     display: $grid;
     justify-content: center;
     align-items: center;
@@ -235,7 +218,7 @@ input:focus {
 /* HOME WIDGET */
 
 .main-widget {
-    background-color: rgba(0, 0, 0, 0.603);
+    background-color: var(--container-opacity);
     color: var(--white-clr);
     display: $grid;
     margin: 3% 25%;
@@ -263,7 +246,7 @@ input:focus {
 
 .main-widget div input:first-child {
     width: 97.1%;
-    background-color: rgba(0, 0, 0, 0.603);
+    background-color: var(--container-opacity);
     border: none;
     padding: 10px;
     font-weight: 500;
@@ -306,7 +289,7 @@ input:focus {
 
 .r-detail-select div button,
 .content button {
-    padding: 8px 60px;
+    padding: 8px 50px;
     color: var(--white-clr);
     border: none;
     border-radius: 5px;
@@ -321,13 +304,17 @@ input[type=range] {
     -webkit-appearance: none;
     width: 100%;
     height: 4px;
-    background: linear-gradient(20deg, var(--green-clr) 60%, hsla(177, 70%, 41%, 0.502) 60%);
+    background: linear-gradient(20deg, var(--green-clr) 60%, var(--right-teal-opacity) 60%);
 }
 
 input[type=range]::-webkit-slider-thumb,
 input[type=range]::-moz-range-thumb {
     border-radius: 50px;
     border: double 1px var(--green-clr);
+}
+
+.light-teal a {
+    color: var(--light-teal);
 }
 
 
@@ -452,7 +439,7 @@ input[type=range]::-moz-range-thumb {
     padding: 4px 22px;
     color: var(--white-clr);
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     background-color: var(--dark-gray-clr);
 }
 
@@ -462,6 +449,10 @@ input[type=range]::-moz-range-thumb {
 
 
 /* REGISTRATION FORM */
+
+.register-heading {
+    color: var(--dark-gray-clr);
+}
 
 .main-registration-content {
     grid-template-columns: auto 54%;
@@ -586,7 +577,7 @@ input[type=range]::-moz-range-thumb {
 
 .search input {
     width: 100% !important;
-    background-color: var(--header-bg-clr);
+    background-color: var(--light-gray-clr);
 }
 
 .search input::placeholder {
@@ -1117,11 +1108,16 @@ a span {
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 
 @media (max-width: 575.98px) {
-    #👉 {
+    .mobile-bottom-home-nav {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 0% 2%;
+    }
+    #👉:deep() {
         display: none;
     }
-    .container {
-        // height: 100vh;
+    .main-registration-content {
+        display: none;
     }
     #closeToggle {
         display: none;
@@ -1130,7 +1126,7 @@ a span {
         padding: 0 10px;
     }
     .toggle-menu-border {
-        border-bottom: 0.5px solid rgb(134, 133, 133);
+        border-bottom: 0.5px solid var(--menu-border);
         padding: 1rem;
     }
     #top_nav_left {
@@ -1176,7 +1172,7 @@ a span {
     }
     .fa-bars {
         display: block !important;
-        font-size: 1.7em;
+        font-size: 1.4em;
         float: right;
         color: var(--green-clr);
     }
@@ -1193,30 +1189,32 @@ a span {
     /* Main  Page*/
     .main {
         margin: 10% 5%;
+        height: 180px;
     }
     .main div:first-child {
         font-size: 1rem;
     }
     .main-widget {
         margin: 10% 5%;
+        height: 310px;
     }
     /* Login */
     .main-login {
-        display: block;
-        margin: 5%;
-        padding: 30px;
-    }
-    .main-registration-content,
-    .login-container {
         display: none;
+    }
+    .log-option {
+        text-align: center;
+    }
+    .btn,
+    .btn button {
+        justify-self: inherit;
+        padding: 5px 22px;
+        font-size: 14px;
     }
     .login-form {
         display: $grid;
         margin: 0% 5% 5% 5%;
-        padding: 10px 30px 30px 30px;
-    }
-    .log-input div {
-        margin-bottom: 10%;
+        padding: 10px 30px 45px 30px;
     }
     .input1 input,
     .input2 input,
@@ -1248,7 +1246,10 @@ a span {
         background-color: var(--white-clr);
         display: $grid;
         margin: 0% 5% 5% 5%;
-        padding: 20px;
+        padding: 10px 20px 130px 20px;
+    }
+    .log-input div {
+        margin-bottom: 10%;
     }
     .input1 select {
         padding: 8px 3px;
@@ -1274,7 +1275,7 @@ a span {
         margin-top: 2%;
     }
     #phone-icon {
-        margin-left: -76%;
+        margin-left: -74%;
     }
     .input2 select {
         width: 21%;
@@ -1318,6 +1319,7 @@ a span {
         display: $grid;
         padding: 10px;
         color: var(--white-clr);
+        background-color: var(--light-opacity);
     }
     .mobile-header {
         .top-mobile-nav {
@@ -1333,15 +1335,18 @@ a span {
         }
         .bottom-mobile-nav {
             display: $grid;
-            grid-template-columns: 20% 30% auto;
+            grid-template-columns: 20% 32% auto;
             font-size: 14px;
             color: var(--dark-gray-clr);
+            margin-left: .2rem;
+            margin-right: .7rem;
         }
         .bottom-mobile-nav {
+            // display: flex;
+            // place-items: center;
             #right {
-                align-self: center;
-                font-size: .7em;
-                padding: 20px 9px;
+                // font-size: .7em;
+                padding: 0px 9px;
                 color: var(--white-clr);
             }
             #left-less {

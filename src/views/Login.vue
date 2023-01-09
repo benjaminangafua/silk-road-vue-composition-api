@@ -6,7 +6,7 @@ import HeadTopVue from '../components/HeadTop.vue';
 </script>
 <template> 
 <div class="container login-container">
-    <HeadTopVue /> 
+   <div><HeadTopVue /> </div> 
 
     <div class="main-login">
         <div class="content">
@@ -41,6 +41,8 @@ import HeadTopVue from '../components/HeadTop.vue';
         </div>
         <div class="log-option">
             <div>Log in with <i class="fa-brands fa-facebook-f pointer"></i> <i class="fa-brands fa-twitter pointer"></i></div>
+                    <br>
+                    <div>Don't have an account? <b class="light-teal"><RouterLink to="/register">Register</RouterLink></b> </div>
         </div> 
     </form> 
 </div>

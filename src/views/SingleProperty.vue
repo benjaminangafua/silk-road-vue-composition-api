@@ -23,90 +23,91 @@ const property = computed(()=>house_detail.value.filter((item,index)=> {
 const property_obj = property[0]
 </script>
 <template>  
-<div id="head-bg-color"><HeadTopVue /></div>
-    
-    <div id="property-grd">
-        <div class="grid-container">
-            <!-- Side bar -->
-            <SidebarVue/>
-            <!-- Main-content -->
-            <div class="main-content">
-            <!-- Property Layout -->
-                <div class="content-grids">
-                    <div class="single-property-layout">
-                        <div class="carts" v-if="route =='/single-property/'+property_num">
-                            <div class="img"><img :src="property[0].image"  alt=""></div>
-                            
-                            <div class="cart-txt">
-                                <div class="price"><strong>$500.00/</strong> month</div>
+    <div class="row-3">
+        <div id="head-bg-color"><HeadTopVue /></div>
+        <div id="property-grd">
+            <div class="grid-container">
+                <!-- Side bar -->
+                <SidebarVue/>
+                <!-- Main-content -->
+                <div class="main-content">
+                <!-- Property Layout -->
+                    <div class="content-grids">
+                        <div class="single-property-layout">
+                            <div class="carts" v-if="route =='/single-property/'+property_num">
+                                <div class="img"><img :src="property[0].image"  alt=""></div>
+                                
+                                <div class="cart-txt">
+                                    <div class="price"><strong>$500.00/</strong> month</div>
 
-                                <div class="cart-small-text bed-room">{{property[0].description}}</div>
-                                <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{property[0].location}}</div>
-                                <div class="cart-small-text">{{property[0].owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
-                            </div>
-                            <!-- Icons -->
-                            <PropertyIconLayout />
-                        
-                        <div class="available-amenities">
-                            <div class="btn-primary"><button>Give Peter a call</button><button>Give Peter an email</button></div>
-                            <h4>Property Description</h4>
+                                    <div class="cart-small-text bed-room">{{property[0].description}}</div>
+                                    <div class="cart-small-text"><span class="location-icon"><font-awesome-icon :icon="['fas', 'map-marker-alt']" /></span>  {{property[0].location}}</div>
+                                    <div class="cart-small-text">{{property[0].owner_name}}<span class="material-symbols-outlined star-icon">hotel_class</span></div>
+                                </div>
+                                <!-- Icons -->
+                                <PropertyIconLayout />
                             
-                            <p class="property-description">
-                            This building comprises of 3 rooms all with inside bathroom and dresser.
-                            The rectangular building faces north on its small lot, which sits on Town Highway 25 in the village of Bakersfield. 
-                            </p>
-                        </div>
-                        <div class="available-amenities"> 
-                            <h4>Property Description</h4>
-                            <div class="amenity-description">
-                                <div class="descriptions">
-                                    
-                                        <li>Swimming Pools</li>
-                                        <li>Laundry</li>
-                                        <li>Advertisement</li>
-                                        <li>Garden</li>
-                                        <li>Generator</li>
-                                        <li>SHARE PROPERTY</li>
-                                        <li><span><i class="fa-brands fa-facebook-f pointer"></i> </span> <span><i class="fa-brands fa-instagram pointer"></i></span> <span><i class="fa-brands fa-twitter pointer"></i></span></li>
-                                        <li>SHARE PROPERTY</li>
-                                     
-                                </div>
-                                <div class="descriptions">
-                                    
-                                        <li>Study</li>
-                                        <li>Internet Access</li>
-                                        <li>Satellite Television</li>
-                                        <li>Fitted Kitchen</li>
-                                        <li>Water Reservoir</li>
-                                        <li>Store Room</li>
-                                     
-                                </div>
-                                <div class="descriptions">
-                                     
-                                        <li>Running Water</li>
-                                        <li>Electricity</li>
-                                        <li>Generator</li>
-                                        <li>Gazebo</li>
-                                        <li>Balcony</li>
-                                        <li>Security Fence</li>
-                                    
+                            <div class="available-amenities">
+                                <div class="btn-primary"><button>Give Peter a call</button><button>Give Peter an email</button></div>
+                                <h4>Property Description</h4>
+                                
+                                <p class="property-description">
+                                This building comprises of 3 rooms all with inside bathroom and dresser.
+                                The rectangular building faces north on its small lot, which sits on Town Highway 25 in the village of Bakersfield. 
+                                </p>
+                            </div>
+                            <div class="available-amenities"> 
+                                <h4>Property Description</h4>
+                                <div class="amenity-description">
+                                    <div class="descriptions">
+                                        
+                                            <li>Swimming Pools</li>
+                                            <li>Laundry</li>
+                                            <li>Advertisement</li>
+                                            <li>Garden</li>
+                                            <li>Generator</li>
+                                            <li>SHARE PROPERTY</li>
+                                            <li><span><i class="fa-brands fa-facebook-f pointer"></i> </span> <span><i class="fa-brands fa-instagram pointer"></i></span> <span><i class="fa-brands fa-twitter pointer"></i></span></li>
+                                            <li>SHARE PROPERTY</li>
+                                        
+                                    </div>
+                                    <div class="descriptions">
+                                        
+                                            <li>Study</li>
+                                            <li>Internet Access</li>
+                                            <li>Satellite Television</li>
+                                            <li>Fitted Kitchen</li>
+                                            <li>Water Reservoir</li>
+                                            <li>Store Room</li>
+                                        
+                                    </div>
+                                    <div class="descriptions">
+                                        
+                                            <li>Running Water</li>
+                                            <li>Electricity</li>
+                                            <li>Generator</li>
+                                            <li>Gazebo</li>
+                                            <li>Balcony</li>
+                                            <li>Security Fence</li>
+                                        
+                                    </div>
                                 </div>
                             </div>
+                            <div class="img">
+                                <img src="/images/gps.gif" alt="">
+                            </div>
+                            </div>
                         </div>
-                        <div class="img">
-                            <img src="/images/gps.gif" alt="">
+                        <div class="advertisement">
+                            Advertisement
                         </div>
-                        </div>
-                    </div>
-                    <div class="advertisement">
-                        Advertisement
                     </div>
                 </div>
             </div>
+            <div class="grid-learn-more">Learn More</div>
         </div>
-    <div class="grid-learn-more">Learn More</div>
-    <FooterDown />
- </div>
+        <FooterDown />
+    </div>
 </template>
 <style scoped>
  #head-bg-color{

@@ -17,6 +17,7 @@ const active_clr = computed(()=>{
 
 const router_content = computed(()=>{
     return {
+        home: route == '/',
         logged: route == '/logged',
         login: route == '/login',
         register: route == '/register',
@@ -35,6 +36,12 @@ const router_content = computed(()=>{
 const property_nav = computed(()=>{
 return{nav: router_content.value.profile||router_content.value.update_profile||router_content.value.category||router_content.value.location||router_content.value.property_detail||router_content.value.contact_detail}}
 )
+const _nav_txt = computed(()=>{
+    return{
+        home: `<div>HOME</div>`,
+        arrow: `<div id="👉"> ❯</div>`
+    }
+})
 const head = ref()
 const logo = ref()
 const nav = ref()
@@ -49,7 +56,7 @@ const hr = ref()
 const hr1 = ref()
 
 function toggleHamburger(e){  
-    console.log(topNav.value.id) 
+    console.log(topNav.value.childNodes) 
     if( nav.value.className =="nav"){
         closeToggle.value.style =`display:block; color:#fff; cursor:pointer;`
         toggleBtn.value.style.display = "none"
@@ -117,81 +124,81 @@ function closeToggleBtn(e){
                 <div class="bottom-nav"  id="bottom-nav"  ref="bottomNav">
                     <div>  
                         <div class="bottom-left-nav" v-if="router_content.login">
-                            <div><RouterLink to="/">HOME</RouterLink></div> 
-                            <div id="👉"> ❯</div>
+                            <RouterLink to="/"><div v-html="_nav_txt.home"></div> </RouterLink>
+                            <div v-html="_nav_txt.arrow"></div>
                             <div class="active-board-txt">LOGIN</div>
                         </div> 
                         <!-- Register -->
                         <div class="bottom-left-nav" v-else-if="router_content.register">
-                            <div><RouterLink to="/">HOME</RouterLink></div> 
-                            <div id="👉"> ❯</div>
+                            <RouterLink to="/"><div v-html="_nav_txt.home"></div> </RouterLink> 
+                            <div v-html="_nav_txt.arrow"></div>
                             <div class="active-board-txt">REGISTER</div>
                         </div> 
                         <!-- Grid or list layout -->
                         <div class="bottom-left-nav" v-else-if="router_content.grid_list">
-                            <div><RouterLink to="/">HOME</RouterLink></div> 
-                            <div id="👉"> ❯</div>
+                            <RouterLink to="/"><div v-html="_nav_txt.home"></div> </RouterLink> 
+                            <div v-html="_nav_txt.arrow"></div>
                             <div class="active-board-txt"><RouterLink to="/grid">HOUSES </RouterLink></div>
                         </div> 
                         <!-- Profile -->
                         <div class="bottom-left-nav" v-else-if="router_content.profile">
-                            <div><RouterLink to="/">HOME</RouterLink></div> 
-                            <div id="👉"> ❯</div>
+                            <RouterLink to="/"><div v-html="_nav_txt.home"></div> </RouterLink> 
+                            <div v-html="_nav_txt.arrow"></div>
                             <div class="active-board-txt"><RouterLink to="#">My Profile </RouterLink></div>
                         </div> 
                         <!-- Update Profile -->
                         <div class="bottom-left-nav" v-else-if="router_content.update_profile">
-                            <div><RouterLink to="/">HOME</RouterLink></div> 
-                            <div id="👉"> ❯</div>
+                            <RouterLink to="/"><div v-html="_nav_txt.home"></div> </RouterLink>
+                            <div v-html="_nav_txt.arrow"></div>
                             <div class="active-board-txt"><RouterLink to="#">Update Profile </RouterLink></div>
                         </div> 
                             <!-- Single post -->
                         <div class="bottom-left-nav" v-else-if="router_content.single">
-                            <div><RouterLink to="/">HOME</RouterLink></div>  
-                                <div id="👉"> ❯</div>
+                            <RouterLink to="/"><div v-html="_nav_txt.home"></div> </RouterLink>  
+                                <div v-html="_nav_txt.arrow"></div>
                             <div class="post-a-property-nav-layout">
                                 <div><RouterLink to="/grid">HOUSES </RouterLink></div>
-                                <div id="👉"> ❯</div>
+                                <div v-html="_nav_txt.arrow"></div>
                                 <div class="active-board-txt">CATEGORY</div>
                             </div>
                         </div>
                             <!-- Category -->
                         <div class="bottom-left-nav" v-else-if="router_content.category">
-                            <div><RouterLink to="/">HOME</RouterLink></div>  
-                                <div id="👉"> ❯</div>
+                            <RouterLink to="/"><div v-html="_nav_txt.home"></div> </RouterLink>  
+                                <div v-html="_nav_txt.arrow"></div>
                             <div class="post-a-property-nav-layout">
                                 <div><RouterLink to="#">PROPERTY </RouterLink></div>
-                                <div id="👉"> ❯</div>
+                                <div v-html="_nav_txt.arrow"></div>
                                 <div class="active-board-txt">CATEGORY</div>
                             </div>
                         </div>
                             <!-- Location -->
                         <div class="bottom-left-nav" v-else-if="router_content.location">
-                            <div><RouterLink to="/">HOME</RouterLink></div>  
-                                <div id="👉"> ❯</div>
+                            <RouterLink to="/"><div v-html="_nav_txt.home"></div> </RouterLink>  
+                                <div v-html="_nav_txt.arrow"></div>
                             <div class="post-a-property-nav-layout">
                                 <div><RouterLink to="#">PROPERTY </RouterLink></div>
-                                <div id="👉"> ❯</div>
+                                <div v-html="_nav_txt.arrow"></div>
                                 <div class="active-board-txt">LOCATION</div>
                             </div>
                         </div>
                             <!-- Property Details -->
                         <div class="bottom-left-nav" v-else-if="router_content.property_detail">
-                            <div><RouterLink to="/">HOME</RouterLink></div>  
-                                <div id="👉"> ❯</div>
+                            <RouterLink to="/"><div v-html="_nav_txt.home"></div> </RouterLink>  
+                                <div v-html="_nav_txt.arrow"></div>
                             <div class="post-a-property-nav-layout">
                                 <div><RouterLink to="#">PROPERTY </RouterLink></div>
-                                <div id="👉"> ❯</div>
+                                <div v-html="_nav_txt.arrow"></div>
                                 <div class="active-board-txt">PROPERTY</div>
                             </div>
                         </div>
                             <!-- Contact Details -->
                         <div class="bottom-left-nav" v-else-if="router_content.contact_detail">
-                            <div><RouterLink to="/">HOME</RouterLink></div>  
-                                <div id="👉"> ❯</div>
+                            <RouterLink to="/"><div v-html="_nav_txt.home"></div> </RouterLink>  
+                                <div v-html="_nav_txt.arrow"></div>
                             <div class="post-a-property-nav-layout">
                                 <div><RouterLink to="#">PROPERTY </RouterLink></div>
-                                <div id="👉"> ❯</div>
+                                <div v-html="_nav_txt.arrow"></div>
                                 <div class="active-board-txt">CONTACT</div>
                             </div>
                         </div>
@@ -210,18 +217,23 @@ function closeToggleBtn(e){
     </div>
     <!-- Mobile Header -->
     <div class="mobile-header">
-
-        <div class="bottom-mobile-nav" v-if="router_content.register">
+        <!-- Top menu -->
+        <div class="mobile-bottom-home-nav" v-if="router_content.home">
+            <div><router-link to="/widget"><font-awesome-icon :icon="['fas', 'filter']" /></router-link>  FILTER</div>
+            <div> <button class="btn submit-ad-btn">Submit an Ad</button></div>
+      </div>
+        <div class="bottom-mobile-nav" v-else-if="router_content.register">
             <div class="top-right-mobile-nav">HOME <span id="right">❯</span> </div>
-            <div>REGISTER</div > 
+            <div  class="active-board-txt">REGISTER</div > 
             <div class="top-left-mobile-nav"> <button class="btn submit-ad-btn">Submit an Ad</button></div>
       </div>
         <div class="bottom-mobile-nav" v-else-if="router_content.login">
             <div class="top-right-mobile-nav">HOME <span id="right">❯</span> </div>
-            <div >LOGIN</div > 
+            <div  class="active-board-txt">LOGIN</div > 
             <div class="top-left-mobile-nav"> <button class="btn submit-ad-btn">Submit an Ad</button></div>
         </div>
 
+        <!-- Bottom menu -->
         <div class="bottom-mobile-nav" v-if="property_nav.nav">
             <div>HOME <span id="right">❯</span> </div>
             <div>Submit an Ad <span id="right"> ❯</span> </div>

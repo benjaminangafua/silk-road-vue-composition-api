@@ -4,7 +4,7 @@ import HeadTopVue from '../components/HeadTop.vue';
 </script>
 <template> 
 <div class="container row-3">
-    <HeadTopVue />
+   <div><HeadTopVue /></div> 
    <div class="main">
             <div class="desktop-heading"> Real estate without the hassle</div>
             <div class="mobile-txt">Shopping without the hassle</div>
@@ -18,23 +18,3 @@ import HeadTopVue from '../components/HeadTop.vue';
     </div>
 </div>
 </template>
-
-<style scoped>
-.container{
-    height: 100vh;
-}
-
-@media (max-width: 575.98px) {
-    .container{
-        height: 100vh;
-    }
-    
-}
-@media (max-height: 575.98px) {
-    .container{
-        height: 100%;
-    }
-    
-}
-
-</style>

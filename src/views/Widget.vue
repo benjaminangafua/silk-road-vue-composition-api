@@ -3,8 +3,8 @@ import HeadTopVue from '../components/HeadTop.vue';
 
 </script>
 <template> 
- <div class="container">
-    <HeadTopVue />
+ <div class="container row-3">
+   <div><HeadTopVue /></div> 
     <div class="main-widget">
         <div class="filter-line">
             <div class="filter-cup"><font-awesome-icon :icon="['fas', 'filter']" /> FILTER</div>
@@ -63,17 +63,3 @@ import HeadTopVue from '../components/HeadTop.vue';
     </div>
 </div>
 </template> 
-
-<style scoped>
-    .container{
-        height:100vh;
-    }
-    
-@media (max-height: 575.98px) {
-    .container{
-        height: 100%;
-    }
-    
-}
-
-</style>

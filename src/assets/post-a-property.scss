@@ -6,7 +6,7 @@
 }
 
 a {
-    color: #505050;
+    color: var(--text-clr);
 }
 
 button {
@@ -29,11 +29,11 @@ button a {
 
 .active a,
 .active {
-    color: #20B2AA !important;
+    color: var(--light-teal) !important;
 }
 
 #head-bg-color {
-    background-color: #505050;
+    background-color: var(--light-gray-clr);
 }
 
 #main-c {
@@ -42,13 +42,13 @@ button a {
 }
 
 .main-bg-clr {
-    background-color: #f5f5f5;
+    background-color: var(--property-bg);
 }
 
 .category-title {
     display: grid;
     grid-template-columns: repeat(4, auto);
-    border-bottom: 1px solid hsl(212, 9%, 67.3%);
+    border-bottom: 1px solid var(--category-title-clr);
 }
 
 
@@ -125,7 +125,7 @@ button a {
 
 .other-areas input {
     /* width: 86%; */
-    background: #d7dce2;
+    background: var(--bg-color);
     padding: 1%;
     border: none;
 }
@@ -163,7 +163,7 @@ button a {
 .form-title input,
 .physical-address input,
 .description textarea {
-    background: #d7dce2;
+    background: var(--bg-color);
     padding: 1.5% 3%;
     border: none;
 }
@@ -195,7 +195,7 @@ button a {
 }
 
 .input-item select {
-    background-color: #8a97a5;
+    background-color: var(--property-txt-clr);
     /* margin-left: -1%; */
     color: var(--white-clr);
     padding: 3% 3.5%;
@@ -210,7 +210,7 @@ button a {
     grid-template-columns: repeat(5, 18%);
     gap: 2.5%;
     padding: 1.5% 3%;
-    background: #d7dce2;
+    background: var(--bg-color);
     width: 74%;
     margin: 3% 0;
 }
@@ -293,7 +293,7 @@ b {
 }
 
 .c-code input {
-    background: #d7dce2;
+    background: var(--bg-color);
     border: none;
     padding: 7px 30px;
     padding-left: 1.8rem;
@@ -389,7 +389,7 @@ b {
 
 .posting :after {
     content: "";
-    background: #20B2AA;
+    background: var(--light-teal);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -413,7 +413,7 @@ b {
 
 #footer {
     min-height: 100%;
-    background: hsl(214, 11%, 51%);
+    background: var(--footer-bg-clr);
 }
 
 @media (max-width: 575.98px) {
@@ -436,6 +436,6 @@ b {
     }
     .select-category>strong {
         font-weight: bold;
-        color: #20B2AA !important;
+        color: var(--light-teal) !important;
     }
 }

@@ -5,7 +5,7 @@
 
 .property-details:after {
     content: "";
-    background: #20B2AA;
+    background: var(--light-teal);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -71,7 +71,7 @@
     }
     .images-col-5 {
         grid-template-columns: repeat(4, 23%);
-        background: #d7dce2;
+        background: var(--bg-color);
         width: 94%;
     }
     #main-c {
