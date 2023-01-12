@@ -75,10 +75,11 @@ a {
 }
 
 #👉:deep(>svg) {
+    align-items: start;
     font-size: 0.5em;
     display: $grid;
     margin: 25%;
-    align-items: start;
+    color: var(--white-clr);
 }
 
 .top_nav_left {
@@ -1144,11 +1145,12 @@ a span {
     }
     #head,
     .header {
-        display: $grid;
+        display: grid;
         grid-template-columns: 10% 70%;
         align-items: center;
-        padding: 1rem 0;
+        padding: 1rem;
         transition: width 1s;
+        justify-content: space-between;
     }
     .hide {
         display: none;
