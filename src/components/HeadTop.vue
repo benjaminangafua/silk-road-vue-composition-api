@@ -1,10 +1,17 @@
 <script setup>
-import { RouterLink } from "vue-router";
+import { RouterLink, useRouter } from "vue-router";
 import { ref, onMounted, reactive, computed } from "vue";
 import { useRoute } from "vue-router";
 import propertyData from "../property-data.json";
 const house_detail = reactive(propertyData);
 
+
+  const router = useRouter()
+
+const backward=computed(()=>{
+  return {router1:router.go(-1)}
+}
+)
 const route = useRoute().path;
 
 const active_clr = computed(() => {
@@ -48,7 +55,7 @@ const _nav_txt = computed(() => {
     arrow: `<div id="👉"> ❯</div>`,
     mobile_top_nav:`
         <div id="mobile-top-nav">
-            <div id="left-arrow">❮ Back</div>
+            <div id="left-arrow">❮ <small>Back</small></div>
             <div class="top-left-mobile-nav">
                 <button class="btn submit-ad-btn">Submit an Ad</button>
             </div>
@@ -368,7 +375,7 @@ function closeToggleBtn(e) {
     <!-- Bottom menu -->
     <div v-if="property_nav.nav">
 
-        <div v-html="_nav_txt.mobile_top_nav"></div>
+        <div @click.prevent="backward.router1" v-html="_nav_txt.mobile_top_nav"></div>
         
         <div class="bottom-mobile-nav">
 
@@ -404,6 +411,7 @@ function closeToggleBtn(e) {
     }
     .mobile-header:deep(#mobile-top-nav #left-arrow){
       font-size: 14px;
+      cursor:pointer;
     }
 }
 </style>
