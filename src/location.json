@@ -1,0 +1,130 @@
+[
+
+    {
+        "id": 1,
+        "title": "Select a Category",
+        "isOpen": false,
+        "subItems": [{
+                "id": 1,
+                "isOpen": false,
+                "title": "Subitem 1",
+                "content": "Content 1"
+            },
+            {
+                "id": 2,
+                "isOpen": false,
+                "title": "Subitem 2",
+                "content": "Content 2"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "isOpen": false,
+        "title": "Select a Location",
+        "subItems": [{
+                "id": 4,
+                "isOpen": false,
+                "title": "Lofa",
+                "content": "Content 3"
+            },
+
+            {
+                "id": 5,
+                "isOpen": false,
+                "title": "Bong",
+                "content": "Content 4"
+            },
+            {
+                "id": 6,
+                "isOpen": false,
+                "title": "Bomi",
+                "content": "Content 3"
+            },
+
+            {
+                "id": 7,
+                "isOpen": false,
+                "title": "Grand Gedeh",
+                "content": "Content 4"
+            },
+
+            {
+                "id": 8,
+                "isOpen": false,
+                "title": "Grand Kru",
+                "content": "Content 3"
+            },
+
+            {
+                "id": 9,
+                "isOpen": false,
+                "title": "Grand Cape Mount",
+                "content": "Content 4"
+            },
+
+            {
+                "id": 10,
+                "isOpen": false,
+                "title": "Gbarpolu",
+                "content": "Content 3"
+            },
+
+            {
+                "id": 11,
+                "isOpen": false,
+                "title": "Nimba",
+                "content": "Content 4"
+            },
+
+            {
+                "id": 12,
+                "isOpen": false,
+                "title": "Sinoe",
+                "content": "Content 3"
+            },
+
+            {
+                "id": 13,
+                "isOpen": false,
+                "title": "Grand Bassa",
+                "content": "Content 4"
+            },
+
+            {
+                "id": 14,
+                "isOpen": false,
+                "title": "River Cess",
+                "content": "Content 3"
+            },
+
+            {
+                "id": 15,
+                "isOpen": false,
+                "title": "River Gee",
+                "content": "Content 4"
+            },
+
+            {
+                "id": 16,
+                "isOpen": false,
+                "title": "Maryland",
+                "content": "Content 3"
+            },
+
+            {
+                "id": 17,
+                "isOpen": false,
+                "title": "Montserrado",
+                "content": "Content 4"
+            },
+
+            {
+                "id": 18,
+                "isOpen": false,
+                "title": "Margibi",
+                "content": "Content 3"
+            }
+        ]
+    }
+]

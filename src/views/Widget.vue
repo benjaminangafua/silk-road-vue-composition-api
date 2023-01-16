@@ -2,48 +2,10 @@
 import HeadTopVue from '../components/HeadTop.vue';
 import { reactive } from 'vue'
 import { Collapse } from 'vue-collapsed'
+import location from '../location.json'
 import { ref, onMounted } from 'vue'
  
-    const items = ref([
-        {
-          id: 1,
-          title: "Select a Category",
-          isOpen: false,
-          subItems: [
-            {
-              id: 1,
-              isOpen: false,
-              title: "Subitem 1",
-              content: "Content 1"
-            },
-            {
-              id: 2,
-              isOpen: false,
-              title: "Subitem 2",
-              content: "Content 2"
-            }
-          ]
-        },
-        {
-          id: 2,
-          isOpen: false,
-          title: "Select a Location",
-          subItems: [
-            {
-              id: 3,
-              isOpen: false,
-              title: "Subitem 3",
-              content: "Content 3"
-            },
-            {
-              id: 4,
-              isOpen: false,
-              title: "Subitem 4",
-              content: "Content 4"
-            }
-          ]
-        }
-      ]);
+    const items = ref(location);
       
     const toggleOpen = (item) => {
         item.isOpen = !item.isOpen

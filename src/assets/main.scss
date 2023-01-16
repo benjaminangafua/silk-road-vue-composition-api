@@ -1240,7 +1240,7 @@ a span {
     .main-widget {
         background-color: transparent;
         margin: 10% 0.5%;
-        height: 310px;
+        height: max-content;
         padding: 0%;
         div input:first-child {
             width: 80%;
