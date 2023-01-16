@@ -14,13 +14,13 @@ import { ref, onMounted } from 'vue'
               id: 1,
               isOpen: false,
               title: "Subitem 1",
-              content: "Subitem 1 content"
+              content: "Content 1"
             },
             {
               id: 2,
               isOpen: false,
               title: "Subitem 2",
-              content: "Subitem 2 content"
+              content: "Content 2"
             }
           ]
         },
@@ -33,13 +33,13 @@ import { ref, onMounted } from 'vue'
               id: 3,
               isOpen: false,
               title: "Subitem 3",
-              content: "Subitem 3 content"
+              content: "Content 3"
             },
             {
               id: 4,
               isOpen: false,
               title: "Subitem 4",
-              content: "Subitem 4 content"
+              content: "Content 4"
             }
           ]
         }
@@ -62,7 +62,7 @@ import { ref, onMounted } from 'vue'
                 <div>Sale</div>
             </div>
         </div>
-        <div><input type="text" class="property" placeholder="KEYWORD"></div>
+        <div class="input-layout-for-mobile"><input type="text" class="property" placeholder="KEYWORD"></div>
         <div class="select-detail">
             <div class="accordion-border">
                 <div v-for="item in items" :key="item.id" class="widget-mobile-filter-accordion">
@@ -72,15 +72,19 @@ import { ref, onMounted } from 'vue'
                         </div>
                         <div>❯</div>
                     </div>
-                    <div v-if="item.isOpen">
-                        <div v-for="subItem in item.subItems" :key="subItem.id">
-                        <div @click="toggleOpen(subItem)">
-                            {{ subItem.title }}
-                        </div>
-                        <div v-if="subItem.isOpen">
-                            {{ subItem.content }}
-                        </div>
-                        </div>
+
+                        <div v-if="item.isOpen">
+                            <div class="accordion-border">
+                                <div v-for="subItem in item.subItems" :key="subItem.id" class="widget-mobile-filter-sub-item-accordion">
+                                    <div class="accordion-title"  @click="toggleOpen(subItem)">
+                                        🎧 {{ subItem.title }}                                                                        
+                                        <div>🢖</div>
+                                    </div>
+                                    <div v-if="subItem.isOpen" class="widget-mobile-filter-sub-item-accordion">
+                                        {{ subItem.content }}
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>

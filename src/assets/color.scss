@@ -1,7 +1,5 @@
 :root {
     --black-clr: #000000;
-    --dark-opacity: #000000b7;
-    --light-opacity: #00000054;
     --light-gray-clr: #4f4f4f;
     --text-clr: #4a5259;
     --dark-gray-clr: #748090;
@@ -13,11 +11,14 @@
     --light-teal: #20b2aa;
     --green-clr: #1fb2aa;
     --blue-clr: #4068df;
+    --menu-border: rgb(134, 133, 133);
     --footer-bg-clr: hsl(214, 11%, 51%);
     --category-title-clr: hsl(212, 9%, 67.3%);
+    --light-opacity: #00000054;
+    --dark-opacity: #000000b7;
     --right-teal-opacity: hsla(177, 70%, 41%, 0.502);
     --container-opacity: rgba(0, 0, 0, 0.603);
     --body-opacity-right: rgba(0, 0, 0, 0.418);
     --body-opacity-left: rgba(0, 0, 0, 0.733);
-    --menu-border: rgb(134, 133, 133);
+    --dark-gray-clr-2: #748090d5;
 }
