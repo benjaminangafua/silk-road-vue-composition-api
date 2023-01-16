@@ -24,6 +24,7 @@ const active_clr = computed(() => {
 const router_content = computed(() => {
   return {
     home: route == "/",
+    widget: route=='/widget',
     logged: route == "/logged",
     login: route == "/login",
     register: route == "/register",
@@ -346,7 +347,7 @@ function closeToggleBtn(e) {
   <!-- Mobile Header -->
   <div class="mobile-header">
     <!-- Top menu -->
-    <div class="mobile-bottom-home-nav" v-if="router_content.home">
+    <div class="mobile-bottom-home-nav" v-if="router_content.home||router_content.widget">
       <div>
         <router-link to="/widget"
           ><font-awesome-icon :icon="['fas', 'filter']"

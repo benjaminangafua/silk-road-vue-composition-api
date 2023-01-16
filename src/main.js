@@ -21,6 +21,7 @@ import { faLocation } from '@fortawesome/free-solid-svg-icons'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { faGripHorizontal } from '@fortawesome/free-solid-svg-icons'
 import { faGreaterThan } from '@fortawesome/free-solid-svg-icons'
+import { Collapse } from 'vue-collapsed'
 
 /* add icons to the library */
 library.add(faLocation)
@@ -37,6 +38,7 @@ library.add(faGreaterThan)
 const app = createApp(App)
 
 app.component('font-awesome-icon', FontAwesomeIcon)
+app.component('Collapse', Collapse)
 
 app.use(router)
 
