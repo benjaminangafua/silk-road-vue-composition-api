@@ -1,18 +1,18 @@
 <script setup>
-import { RouterLink, useRouter } from "vue-router";
-import { ref, onMounted, reactive, computed } from "vue";
-import { useRoute } from "vue-router";
+import { RouterLink,useRoute, useRouter } from "vue-router";
+import { ref, onMounted, reactive, computed } from "vue"; 
 import propertyData from "../property-data.json";
 const house_detail = reactive(propertyData);
 
 
-  const router = useRouter()
 
+  const router = useRouter()
+const route = useRoute().path;
+console.log(route)
 const backward=computed(()=>{
   return {router1:router.go(-1)}
 }
 )
-const route = useRoute().path;
 
 const active_clr = computed(() => {
   return {
